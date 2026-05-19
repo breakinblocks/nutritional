@@ -36,10 +36,13 @@ public final class NutritionalItemTagsProvider extends IntrinsicHolderTagsProvid
                 Items.APPLE, Items.MELON_SLICE, Items.GLISTERING_MELON_SLICE,
                 Items.SWEET_BERRIES, Items.GLOW_BERRIES,
                 Items.GOLDEN_APPLE, Items.ENCHANTED_GOLDEN_APPLE,
-                Items.CHORUS_FRUIT, Items.PUMPKIN_PIE);
+                Items.CHORUS_FRUIT, Items.PUMPKIN_PIE,
+                Items.HONEY_BOTTLE,
+                Items.SUGAR_CANE, Items.SUGAR, Items.COCOA_BEANS);
 
         tag(NUTRIENT_GRAIN).add(
-                Items.BREAD, Items.COOKIE, Items.CAKE, Items.PUMPKIN_PIE);
+                Items.BREAD, Items.COOKIE, Items.CAKE, Items.PUMPKIN_PIE,
+                Items.WHEAT);
 
         tag(NUTRIENT_PROTEIN).add(
                 Items.BEEF, Items.COOKED_BEEF,
@@ -51,13 +54,15 @@ public final class NutritionalItemTagsProvider extends IntrinsicHolderTagsProvid
                 Items.SALMON, Items.COOKED_SALMON,
                 Items.TROPICAL_FISH, Items.PUFFERFISH,
                 Items.EGG, Items.RABBIT_STEW, Items.MUSHROOM_STEW,
-                Items.SUSPICIOUS_STEW);
+                Items.SUSPICIOUS_STEW,
+                Items.ROTTEN_FLESH, Items.SPIDER_EYE);
 
         tag(NUTRIENT_VEGETABLE).add(
                 Items.CARROT, Items.GOLDEN_CARROT,
                 Items.POTATO, Items.BAKED_POTATO,
                 Items.BEETROOT, Items.BEETROOT_SOUP,
-                Items.DRIED_KELP, Items.PUMPKIN_PIE);
+                Items.DRIED_KELP, Items.PUMPKIN_PIE,
+                Items.POISONOUS_POTATO);
 
         tag(NUTRIENT_DAIRY).add(Items.MILK_BUCKET);
     }

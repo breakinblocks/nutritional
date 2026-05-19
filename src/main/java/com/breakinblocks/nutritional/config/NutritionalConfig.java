@@ -46,6 +46,9 @@ public final class NutritionalConfig {
         public final ModConfigSpec.BooleanValue logMissingFood;
         public final ModConfigSpec.BooleanValue logMissingNutrients;
 
+        public final ModConfigSpec.BooleanValue userpackEnabled;
+        public final ModConfigSpec.DoubleValue diminishingExponent;
+
         Server(ModConfigSpec.Builder b) {
             b.push("nutrition");
             nutritionMultiplier = b.comment("Global multiplier for nutrient yield from food.")
@@ -79,6 +82,15 @@ public final class NutritionalConfig {
                     .define("missing_food", false);
             logMissingNutrients = b.comment("Log food items that have no nutrient mapping.")
                     .define("missing_nutrients", false);
+            b.pop();
+
+            b.push("userpack");
+            userpackEnabled = b.comment("Load JSON from config/nutritional/ as a high-priority datapack source.")
+                    .define("enabled", true);
+            diminishingExponent = b.comment("Exponent for the diminishing-returns curve used by /nutritional update-foods.",
+                    "Output scale = sum(input scales) / (input count ^ exponent) / output count.",
+                    "Lower values (0.5) make recipes closer to additive; higher values (1.0) heavily damp them.")
+                    .defineInRange("diminishing_exponent", 0.75, 0.1, 2.0);
             b.pop();
         }
     }

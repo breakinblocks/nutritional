@@ -35,7 +35,14 @@ Item membership comes from tags (`#nutritional:nutrient/<id>`). Per-item scale o
 
 - `/nutritional get|set|add|subtract|reset <player> <nutrient> [<value>]`
 - `/nutritional reload` - reloads datapacks
-- `/nutritional-food` - prints nutrient yield for the held item
+- `/nutritional food` - prints nutrient yield for the held item
+- `/nutritional food set <nutrient> [<scale>]` - tag the held item as the given nutrient (default scale 1.0). Repeated calls accumulate, so pumpkin pie can be fruit + grain + vegetable.
+- `/nutritional food remove <nutrient>` - undo a `set`.
+- `/nutritional update-foods` - scan every edible item, walk crafting recipes for items lacking a baseline mapping, and write derived nutrient scales into the config pack. Items it can't derive are logged.
+
+## Config datapack
+
+A live datapack source rooted at `config/nutritional/` is auto-loaded on server start. The folder is created with a starter `pack.mcmeta` and `README.md` on first run. JSON dropped here merges with the built-in defaults on the next `/reload`. Everything the `food set` and `update-foods` commands write goes here. Entries written for items from optional mods are wrapped in a `neoforge:mod_loaded` condition so they silently disappear if that mod is uninstalled.
 
 ## Client UX
 
@@ -43,7 +50,7 @@ Item membership comes from tags (`#nutritional:nutrient/<id>`). Per-item scale o
 - A small HUD widget in the top-right shows the current diet tier (translated, themed icon, configurable visibility per tier).
 - Default keybind **N** opens a screen with bars for every nutrient and the active tier label. A button on that screen toggles the HUD widget on/off without leaving the game.
 
-Client toggles for tooltip / HUD / GUI button live in `nutritional-client.toml`. Server tunables (decay rates, death penalty, multipliers, logging) live in `nutritional-server.toml`.
+Client toggles for tooltip / HUD / GUI button live in `nutritional-client.toml`. Server tunables live in `nutritional-server.toml`, including decay rates, death penalty values, the global nutrition multiplier, logging verbosity, `userpack.enabled` (master toggle for the `config/nutritional/` source), and `userpack.diminishing_exponent` (the exponent used by `update-foods` when dampening multi-ingredient recipes — default `0.75`, lower = closer to additive, higher = more aggressive damping).
 
 ## Advancements
 

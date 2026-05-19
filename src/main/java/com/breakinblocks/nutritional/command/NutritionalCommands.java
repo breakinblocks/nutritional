@@ -13,6 +13,5 @@ public final class NutritionalCommands {
     @SubscribeEvent
     public static void onRegisterCommands(RegisterCommandsEvent event) {
         NutritionalCommand.register(event.getDispatcher());
-        NutritionalFoodCommand.register(event.getDispatcher());
     }
 }

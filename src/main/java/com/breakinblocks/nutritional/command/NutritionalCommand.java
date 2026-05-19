@@ -1,11 +1,15 @@
 package com.breakinblocks.nutritional.command;
 
 import com.breakinblocks.nutritional.Nutritional;
+import com.breakinblocks.nutritional.common.InvertedNutrientIndex;
+import com.breakinblocks.nutritional.common.NutritionalLogic;
 import com.breakinblocks.nutritional.data.attachment.NutritionalAttachments;
 import com.breakinblocks.nutritional.data.attachment.PlayerNutritionData;
 import com.breakinblocks.nutritional.data.codec.NutrientDefinition;
 import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
 import com.breakinblocks.nutritional.net.NutritionalNetwork;
+import com.breakinblocks.nutritional.userpack.recipe.FoodSetWriter;
+import com.breakinblocks.nutritional.userpack.recipe.UpdateFoodsRunner;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.FloatArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
@@ -23,10 +27,14 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.item.ItemStack;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.function.UnaryOperator;
+import java.util.stream.Collectors;
 
 public final class NutritionalCommand {
 
@@ -78,7 +86,47 @@ public final class NutritionalCommand {
         root.then(Commands.literal("reload")
                 .executes(NutritionalCommand::executeReload));
 
+        root.then(Commands.literal("food")
+                .executes(NutritionalCommand::executeFoodInfo)
+                .then(Commands.literal("set")
+                        .then(Commands.argument("nutrient", ResourceLocationArgument.id())
+                                .suggests(NUTRIENT_SUGGESTIONS)
+                                .executes(ctx -> FoodSetWriter.setOnHeld(ctx, ResourceLocationArgument.getId(ctx, "nutrient"), 1.0f))
+                                .then(Commands.argument("scale", FloatArgumentType.floatArg(0.0f))
+                                        .executes(ctx -> FoodSetWriter.setOnHeld(ctx,
+                                                ResourceLocationArgument.getId(ctx, "nutrient"),
+                                                FloatArgumentType.getFloat(ctx, "scale"))))))
+                .then(Commands.literal("remove")
+                        .then(Commands.argument("nutrient", ResourceLocationArgument.id())
+                                .suggests(NUTRIENT_SUGGESTIONS)
+                                .executes(ctx -> FoodSetWriter.removeFromHeld(ctx,
+                                        ResourceLocationArgument.getId(ctx, "nutrient"))))));
+
+        root.then(Commands.literal("update-foods")
+                .executes(UpdateFoodsRunner::run));
+
         dispatcher.register(root);
+    }
+
+    private static int executeFoodInfo(CommandContext<CommandSourceStack> ctx) throws CommandSyntaxException {
+        ServerPlayer player = ctx.getSource().getPlayerOrException();
+        ItemStack held = player.getItemInHand(InteractionHand.MAIN_HAND);
+        if (held.isEmpty()) {
+            ctx.getSource().sendFailure(Component.literal("Hold an item in your main hand."));
+            return 0;
+        }
+        List<ResourceLocation> nutrients = InvertedNutrientIndex.nutrientsFor(held.getItem());
+        Map<ResourceLocation, Float> yield = NutritionalLogic.calculateNutrition(held, player);
+        String namePart = held.getHoverName().getString();
+        if (nutrients.isEmpty()) {
+            ctx.getSource().sendSuccess(() -> Component.literal(namePart + " has no nutrient mapping."), false);
+            return 0;
+        }
+        String summary = yield.entrySet().stream()
+                .map(e -> e.getKey() + "=" + String.format("%.2f", e.getValue()))
+                .collect(Collectors.joining(", "));
+        ctx.getSource().sendSuccess(() -> Component.literal(namePart + " -> " + summary), false);
+        return nutrients.size();
     }
 
     private static int executeGet(CommandContext<CommandSourceStack> ctx) throws CommandSyntaxException {

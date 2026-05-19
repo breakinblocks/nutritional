@@ -1,0 +1,19 @@
+{
+  "values": {
+    "minecraft:poisonous_potato": {
+      "scales": {
+        "nutritional:vegetable": 0.25
+      }
+    },
+    "minecraft:rotten_flesh": {
+      "scales": {
+        "nutritional:protein": 0.25
+      }
+    },
+    "minecraft:spider_eye": {
+      "scales": {
+        "nutritional:protein": 0.25
+      }
+    }
+  }
+}

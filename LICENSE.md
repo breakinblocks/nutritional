@@ -1,6 +1,6 @@
-MIT License
+# MIT License
 
-Copyright (c) 2017 Wes Cook
+Copyright (c) 2026 Saereth
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+This project is a from-scratch rewrite of [Nutrition](https://github.com/WesCook/Nutrition) by Wes Cook, originally also released under MIT. The historical license accompanying the legacy 1.12 source tree is preserved on the `1.12` branch.

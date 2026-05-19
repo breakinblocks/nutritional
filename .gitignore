@@ -96,5 +96,6 @@ src/generated/resources/.cache/
 *.md
 !readme.md
 !README.md
+!LICENSE.md
 !metadata/changelogs/*.md
 

@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "${loader_version_range}"
 license = "${mod_license}"
-issueTrackerURL = "https://github.com/Saereth/Nutrition-UE/issues"
+issueTrackerURL = "https://github.com/breakinblocks/nutritional/issues"
 
 [[mods]]
 modId = "${mod_id}"

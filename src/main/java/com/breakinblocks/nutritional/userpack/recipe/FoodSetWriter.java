@@ -6,6 +6,7 @@ import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
 import com.breakinblocks.nutritional.userpack.UserPackWriter;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -53,9 +54,9 @@ public final class FoodSetWriter {
             return 0;
         }
 
-        server.reloadResources(server.getPackRepository().getSelectedIds());
         ctx.getSource().sendSuccess(() -> Component.literal(
-                "Set " + itemId + " -> " + nutrientId + " (scale " + String.format("%.2f", scale) + "). Datapacks reloaded."), true);
+                "Wrote " + itemId + " -> " + nutrientId + " (scale " + String.format("%.2f", scale) + "). Run /reload to apply.")
+                .withStyle(ChatFormatting.GREEN), true);
         return 1;
     }
 
@@ -68,7 +69,6 @@ public final class FoodSetWriter {
             return 0;
         }
 
-        MinecraftServer server = ctx.getSource().getServer();
         ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(held.getItem());
         try {
             UserPackWriter.removeItemFromNutrientTag(nutrientId, itemId);
@@ -79,9 +79,9 @@ public final class FoodSetWriter {
             return 0;
         }
 
-        server.reloadResources(server.getPackRepository().getSelectedIds());
         ctx.getSource().sendSuccess(() -> Component.literal(
-                "Removed " + itemId + " -> " + nutrientId + ". Datapacks reloaded."), true);
+                "Removed " + itemId + " -> " + nutrientId + ". Run /reload to apply.")
+                .withStyle(ChatFormatting.GREEN), true);
         return 1;
     }
 }

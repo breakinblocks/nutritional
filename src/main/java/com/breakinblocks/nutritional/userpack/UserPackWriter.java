@@ -1,5 +1,6 @@
 package com.breakinblocks.nutritional.userpack;
 
+import com.breakinblocks.nutritional.Nutritional;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
@@ -189,6 +190,7 @@ public final class UserPackWriter {
         } catch (Exception e) {
             Files.move(tmp, target, StandardCopyOption.REPLACE_EXISTING);
         }
+        Nutritional.LOGGER.info("UserPackWriter wrote {}", target.toAbsolutePath());
     }
 
     @FunctionalInterface

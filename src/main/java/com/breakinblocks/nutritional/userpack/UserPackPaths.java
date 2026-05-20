@@ -34,7 +34,7 @@ public final class UserPackPaths {
 
     public static Path tagFile(ResourceLocation nutrientId) {
         return dataRoot().resolve(Nutritional.MOD_ID)
-                .resolve("tags").resolve("items").resolve("nutrient")
+                .resolve("tags").resolve("item").resolve("nutrient")
                 .resolve(nutrientId.getPath() + ".json");
     }
 

@@ -24,7 +24,7 @@ public final class UserPackSource {
     @SubscribeEvent
     public static void onAddPackFinders(AddPackFindersEvent event) {
         if (event.getPackType() != PackType.SERVER_DATA) return;
-        if (!NutritionalConfig.SERVER.userpackEnabled.get()) return;
+        if (!NutritionalConfig.STARTUP.userpackEnabled.get()) return;
 
         UserPackBootstrap.ensureDirectoryStructure();
 

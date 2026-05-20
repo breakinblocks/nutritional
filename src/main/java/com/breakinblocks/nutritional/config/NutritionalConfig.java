@@ -7,6 +7,9 @@ import org.apache.commons.lang3.tuple.Pair;
 
 public final class NutritionalConfig {
 
+    public static final ModConfigSpec STARTUP_SPEC;
+    public static final Startup STARTUP;
+
     public static final ModConfigSpec SERVER_SPEC;
     public static final Server SERVER;
 
@@ -14,6 +17,10 @@ public final class NutritionalConfig {
     public static final Client CLIENT;
 
     static {
+        Pair<Startup, ModConfigSpec> startupPair = new ModConfigSpec.Builder().configure(Startup::new);
+        STARTUP = startupPair.getLeft();
+        STARTUP_SPEC = startupPair.getRight();
+
         Pair<Server, ModConfigSpec> serverPair = new ModConfigSpec.Builder().configure(Server::new);
         SERVER = serverPair.getLeft();
         SERVER_SPEC = serverPair.getRight();
@@ -26,8 +33,21 @@ public final class NutritionalConfig {
     private NutritionalConfig() {}
 
     public static void register(ModContainer container) {
+        container.registerConfig(ModConfig.Type.STARTUP, STARTUP_SPEC);
         container.registerConfig(ModConfig.Type.SERVER, SERVER_SPEC);
         container.registerConfig(ModConfig.Type.CLIENT, CLIENT_SPEC);
+    }
+
+    public static final class Startup {
+        public final ModConfigSpec.BooleanValue userpackEnabled;
+
+        Startup(ModConfigSpec.Builder b) {
+            b.push("userpack");
+            userpackEnabled = b.comment("Master toggle for the config/nutritional/ datapack source.",
+                    "Disable to skip loading anything from that folder on server start.")
+                    .define("enabled", true);
+            b.pop();
+        }
     }
 
     public static final class Server {
@@ -46,7 +66,6 @@ public final class NutritionalConfig {
         public final ModConfigSpec.BooleanValue logMissingFood;
         public final ModConfigSpec.BooleanValue logMissingNutrients;
 
-        public final ModConfigSpec.BooleanValue userpackEnabled;
         public final ModConfigSpec.DoubleValue diminishingExponent;
 
         Server(ModConfigSpec.Builder b) {
@@ -85,8 +104,6 @@ public final class NutritionalConfig {
             b.pop();
 
             b.push("userpack");
-            userpackEnabled = b.comment("Load JSON from config/nutritional/ as a high-priority datapack source.")
-                    .define("enabled", true);
             diminishingExponent = b.comment("Exponent for the diminishing-returns curve used by /nutritional update-foods.",
                     "Output scale = sum(input scales) / (input count ^ exponent) / output count.",
                     "Lower values (0.5) make recipes closer to additive; higher values (1.0) heavily damp them.")

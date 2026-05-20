@@ -6,6 +6,8 @@ import com.breakinblocks.nutritional.common.NutritionalLogic;
 import com.breakinblocks.nutritional.data.attachment.NutritionalAttachments;
 import com.breakinblocks.nutritional.data.attachment.PlayerNutritionData;
 import com.breakinblocks.nutritional.data.codec.NutrientDefinition;
+import com.breakinblocks.nutritional.data.datamap.NutrientScales;
+import com.breakinblocks.nutritional.data.datamap.NutritionalDataMaps;
 import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
 import com.breakinblocks.nutritional.net.NutritionalNetwork;
 import com.breakinblocks.nutritional.userpack.recipe.FoodSetWriter;
@@ -16,6 +18,7 @@ import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.suggestion.SuggestionProvider;
+import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.SharedSuggestionProvider;
@@ -23,6 +26,7 @@ import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.commands.arguments.ResourceLocationArgument;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
@@ -34,7 +38,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.UnaryOperator;
-import java.util.stream.Collectors;
 
 public final class NutritionalCommand {
 
@@ -88,6 +91,8 @@ public final class NutritionalCommand {
 
         root.then(Commands.literal("food")
                 .executes(NutritionalCommand::executeFoodInfo)
+                .then(Commands.literal("get")
+                        .executes(NutritionalCommand::executeFoodInfo))
                 .then(Commands.literal("set")
                         .then(Commands.argument("nutrient", ResourceLocationArgument.id())
                                 .suggests(NUTRIENT_SUGGESTIONS)
@@ -115,17 +120,29 @@ public final class NutritionalCommand {
             ctx.getSource().sendFailure(Component.literal("Hold an item in your main hand."));
             return 0;
         }
+
         List<ResourceLocation> nutrients = InvertedNutrientIndex.nutrientsFor(held.getItem());
-        Map<ResourceLocation, Float> yield = NutritionalLogic.calculateNutrition(held, player);
-        String namePart = held.getHoverName().getString();
+        ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(held.getItem());
+        String displayName = held.getHoverName().getString();
+
         if (nutrients.isEmpty()) {
-            ctx.getSource().sendSuccess(() -> Component.literal(namePart + " has no nutrient mapping."), false);
+            ctx.getSource().sendSuccess(() -> Component.literal(displayName + " (" + itemId + ") has no nutrient mapping.")
+                    .withStyle(ChatFormatting.YELLOW), false);
             return 0;
         }
-        String summary = yield.entrySet().stream()
-                .map(e -> e.getKey() + "=" + String.format("%.2f", e.getValue()))
-                .collect(Collectors.joining(", "));
-        ctx.getSource().sendSuccess(() -> Component.literal(namePart + " -> " + summary), false);
+
+        Map<ResourceLocation, Float> yields = NutritionalLogic.calculateNutrition(held, player);
+        NutrientScales scales = BuiltInRegistries.ITEM.wrapAsHolder(held.getItem()).getData(NutritionalDataMaps.NUTRIENT_SCALES);
+
+        ctx.getSource().sendSuccess(() -> Component.literal(displayName + " (" + itemId + "):")
+                .withStyle(ChatFormatting.GREEN), false);
+        for (ResourceLocation nutrientId : nutrients) {
+            float scale = scales != null ? scales.scaleFor(nutrientId) : 1.0f;
+            float yield = yields.getOrDefault(nutrientId, 0.0f);
+            ctx.getSource().sendSuccess(() -> Component.literal(
+                    "  " + nutrientId + "  scale " + String.format("%.2f", scale)
+                            + "  yield " + String.format("%.2f", yield)), false);
+        }
         return nutrients.size();
     }
 

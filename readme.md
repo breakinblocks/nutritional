@@ -50,7 +50,7 @@ A live datapack source rooted at `config/nutritional/` is auto-loaded on server 
 - A small HUD widget in the top-right shows the current diet tier (translated, themed icon, configurable visibility per tier).
 - Default keybind **N** opens a screen with bars for every nutrient and the active tier label. A button on that screen toggles the HUD widget on/off without leaving the game.
 
-Client toggles for tooltip / HUD / GUI button live in `nutritional-client.toml`. Server tunables live in `nutritional-server.toml`, including decay rates, death penalty values, the global nutrition multiplier, logging verbosity, `userpack.enabled` (master toggle for the `config/nutritional/` source), and `userpack.diminishing_exponent` (the exponent used by `update-foods` when dampening multi-ingredient recipes — default `0.75`, lower = closer to additive, higher = more aggressive damping).
+Client toggles for tooltip / HUD / GUI button live in `nutritional-client.toml`. Server tunables live in `nutritional-server.toml`, including decay rates, death penalty values, the global nutrition multiplier, logging verbosity, and `userpack.diminishing_exponent` (the exponent used by `update-foods` when dampening multi-ingredient recipes — default `0.75`, lower = closer to additive, higher = more aggressive damping). The master `userpack.enabled` toggle for the `config/nutritional/` source lives in `nutritional-startup.toml`.
 
 ## Advancements
 

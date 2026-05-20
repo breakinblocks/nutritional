@@ -3,6 +3,7 @@ package com.breakinblocks.nutritional.userpack.recipe;
 import com.breakinblocks.nutritional.Nutritional;
 import com.breakinblocks.nutritional.userpack.UserPackWriter;
 import com.mojang.brigadier.context.CommandContext;
+import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -20,10 +21,22 @@ public final class UpdateFoodsRunner {
     private UpdateFoodsRunner() {}
 
     public static int run(CommandContext<CommandSourceStack> ctx) {
-        MinecraftServer server = ctx.getSource().getServer();
+        CommandSourceStack source = ctx.getSource();
+        MinecraftServer server = source.getServer();
+
         List<Item> candidates = EdibleItemScanner.scanForUnmapped(server);
+        int total = candidates.size();
+        source.sendSuccess(() -> Component.literal("Scanning " + total + " edible items without nutrient mappings...")
+                .withStyle(ChatFormatting.GRAY), true);
+
+        if (total == 0) {
+            source.sendSuccess(() -> Component.literal("All edible items are already mapped. Nothing to do.")
+                    .withStyle(ChatFormatting.GREEN), true);
+            return 0;
+        }
 
         int derived = 0;
+        int writeFailed = 0;
         List<ResourceLocation> missing = new ArrayList<>();
         for (Item item : candidates) {
             ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(item);
@@ -33,18 +46,30 @@ public final class UpdateFoodsRunner {
                 Nutritional.LOGGER.warn("update-foods: no baseline values for {}", itemId);
                 continue;
             }
-            if (!writeEntries(itemId, maybe.get())) continue;
+            if (!writeEntries(itemId, maybe.get())) {
+                writeFailed++;
+                continue;
+            }
             derived++;
-        }
-
-        if (derived > 0) {
-            server.reloadResources(server.getPackRepository().getSelectedIds());
         }
 
         int derivedCount = derived;
         int missingCount = missing.size();
-        ctx.getSource().sendSuccess(() -> Component.literal(
-                "Derived " + derivedCount + " entries, " + missingCount + " missing (see server log)."), true);
+        int writeFailedCount = writeFailed;
+
+        ChatFormatting summaryColor = derived > 0 ? ChatFormatting.GREEN : ChatFormatting.YELLOW;
+        source.sendSuccess(() -> Component.literal(
+                "update-foods complete: " + derivedCount + " derived, "
+                        + missingCount + " unmappable, "
+                        + writeFailedCount + " write errors. See server log for details.")
+                .withStyle(summaryColor), true);
+
+        if (derived > 0) {
+            source.sendSuccess(() -> Component.literal("Reloading datapacks to apply changes...")
+                    .withStyle(ChatFormatting.GRAY), true);
+            server.reloadResources(server.getPackRepository().getSelectedIds());
+        }
+
         return derived;
     }
 

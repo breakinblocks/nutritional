@@ -7,7 +7,10 @@ plugins {
     id 'me.modmuss50.mod-publish-plugin' version '1.1.0'
 }
 
-version = mod_version
+def resolvedModVersion = mod_version.toString().endsWith("-SNAPSHOT")
+        ? mod_version.toString().replace("-SNAPSHOT", "-" + new java.text.SimpleDateFormat("yyyyMMdd-HHmmss").format(new Date()) + "-SNAPSHOT")
+        : mod_version.toString()
+version = "${minecraft_version}-${resolvedModVersion}"
 group = mod_group_id
 
 base {
@@ -194,11 +197,16 @@ publishMods {
     }
 }
 
-tasks.named('publishMods') {
-    def mavenUser = providers.environmentVariable("MAVEN_USER")
-    if (mavenUser.isPresent()) {
-        dependsOn 'publishMavenJavaPublicationToBreakInBlocksRepository'
-    }
+tasks.register('publishMaven') {
+    description = 'Publishes the mod and API JARs to the BreakInBlocks Maven repository.'
+    group = 'publishing'
+    dependsOn 'publishMavenJavaPublicationToBreakInBlocksRepository'
+}
+
+tasks.register('publishMod') {
+    description = 'Publishes the mod to CurseForge and the BreakInBlocks Maven repository.'
+    group = 'publishing'
+    dependsOn 'publishMods', 'publishMaven'
 }
 
 afterEvaluate {

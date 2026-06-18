@@ -6,6 +6,7 @@ import com.breakinblocks.nutritional.datagen.builtin.DefaultAdvancements;
 import com.breakinblocks.nutritional.datagen.builtin.DefaultDimensionModifiers;
 import com.breakinblocks.nutritional.datagen.builtin.DefaultEffects;
 import com.breakinblocks.nutritional.datagen.builtin.DefaultFoodHints;
+import com.breakinblocks.nutritional.datagen.builtin.DefaultNutrientScales;
 import com.breakinblocks.nutritional.datagen.builtin.DefaultNutrients;
 import com.breakinblocks.nutritional.datagen.builtin.DefaultRewards;
 import com.breakinblocks.nutritional.datagen.builtin.DefaultTiers;
@@ -48,6 +49,9 @@ public final class NutritionalDataGenerators {
 
         generator.addProvider(event.includeServer(),
                 new NutritionalItemTagsProvider(output, event.getLookupProvider(), existing));
+
+        generator.addProvider(event.includeServer(),
+                new DefaultNutrientScales(output, event.getLookupProvider()));
 
         generator.addProvider(event.includeServer(),
                 new AdvancementProvider(output, event.getLookupProvider(), existing, List.of(new DefaultAdvancements())));

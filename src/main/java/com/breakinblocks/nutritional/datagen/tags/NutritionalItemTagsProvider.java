@@ -1,6 +1,7 @@
 package com.breakinblocks.nutritional.datagen.tags;
 
 import com.breakinblocks.nutritional.Nutritional;
+import com.breakinblocks.nutritional.datagen.builtin.ModCompatFoods;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -60,6 +61,16 @@ public final class NutritionalItemTagsProvider extends IntrinsicHolderTagsProvid
                 Items.DRIED_KELP, Items.PUMPKIN_PIE);
 
         tag(NUTRIENT_DAIRY).add(Items.MILK_BUCKET);
+
+        for (ModCompatFoods.Entry entry : ModCompatFoods.entries()) {
+            for (ResourceLocation nutrient : entry.scales().keySet()) {
+                tag(tagFor(nutrient)).addOptional(entry.item());
+            }
+        }
+    }
+
+    private static TagKey<Item> tagFor(ResourceLocation nutrient) {
+        return tag(nutrient.getPath());
     }
 
     private static TagKey<Item> tag(String name) {

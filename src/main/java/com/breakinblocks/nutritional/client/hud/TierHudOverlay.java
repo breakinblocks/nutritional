@@ -6,6 +6,7 @@ import com.breakinblocks.nutritional.config.NutritionalConfig;
 import com.breakinblocks.nutritional.data.codec.DietTierDefinition;
 import com.breakinblocks.nutritional.data.codec.TierDisplay;
 import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
+import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
@@ -34,7 +35,7 @@ public final class TierHudOverlay {
         event.registerAbove(VanillaGuiLayers.HOTBAR, LAYER_ID, TierHudOverlay::render);
     }
 
-    private static void render(GuiGraphics graphics, net.minecraft.client.DeltaTracker delta) {
+    private static void render(GuiGraphics graphics, DeltaTracker delta) {
         if (!NutritionalConfig.CLIENT.hudEnabled.get()) return;
         Minecraft mc = Minecraft.getInstance();
         if (mc.options.hideGui || mc.player == null || mc.getConnection() == null) return;

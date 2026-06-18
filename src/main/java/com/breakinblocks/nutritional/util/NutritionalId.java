@@ -1,13 +1,13 @@
 package com.breakinblocks.nutritional.util;
 
 import com.breakinblocks.nutritional.Nutritional;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public final class NutritionalId {
 
     private NutritionalId() {}
 
-    public static ResourceLocation of(String path) {
-        return ResourceLocation.fromNamespaceAndPath(Nutritional.MOD_ID, path);
+    public static Identifier of(String path) {
+        return Identifier.fromNamespaceAndPath(Nutritional.MOD_ID, path);
     }
 }

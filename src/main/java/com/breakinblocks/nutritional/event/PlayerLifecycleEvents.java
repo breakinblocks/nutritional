@@ -9,7 +9,7 @@ import com.breakinblocks.nutritional.data.codec.NutrientDefinition;
 import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
 import com.breakinblocks.nutritional.net.NutritionalNetwork;
 import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -29,11 +29,11 @@ public final class PlayerLifecycleEvents {
         if (!(event.getEntity() instanceof ServerPlayer player)) return;
 
         PlayerNutritionData carried = player.getData(NutritionalAttachments.PLAYER_NUTRITION);
-        Registry<NutrientDefinition> registry = NutritionalDatapack.nutrients(player.serverLevel().registryAccess());
+        Registry<NutrientDefinition> registry = NutritionalDatapack.nutrients(player.level().registryAccess());
 
-        Map<ResourceLocation, Float> penalties = new HashMap<>();
-        registry.holders().toList().forEach(ref -> {
-            ResourceLocation id = ref.key().location();
+        Map<Identifier, Float> penalties = new HashMap<>();
+        registry.listElements().toList().forEach(ref -> {
+            Identifier id = ref.key().identifier();
             float now = carried.get(id, ref.value().defaultValue());
             float next = NutritionalLogic.applyDeathPenalty(now);
             if (next != now) penalties.put(id, next);

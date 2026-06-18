@@ -15,7 +15,6 @@
       "translate": "advancement.nutritional.eat_grain.desc"
     },
     "icon": {
-      "count": 1,
       "id": "minecraft:bread"
     },
     "title": {

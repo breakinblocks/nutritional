@@ -1,7 +1,7 @@
 package com.breakinblocks.nutritional.client;
 
 import com.breakinblocks.nutritional.data.attachment.PlayerNutritionData;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,8 +20,8 @@ public final class ClientNutritionCache {
         data = incoming;
     }
 
-    public static void applyDelta(Map<ResourceLocation, Float> updates) {
-        Map<ResourceLocation, Float> merged = new HashMap<>(data.values());
+    public static void applyDelta(Map<Identifier, Float> updates) {
+        Map<Identifier, Float> merged = new HashMap<>(data.values());
         merged.putAll(updates);
         data = new PlayerNutritionData(merged, data.consecutiveBalancedDays(), data.lastDayEvaluated(), data.earnedRewards(), data.currentTier());
     }

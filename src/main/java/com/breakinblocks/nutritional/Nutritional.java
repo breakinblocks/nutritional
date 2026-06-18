@@ -10,7 +10,7 @@ import com.breakinblocks.nutritional.data.registry.NutritionalRegistries;
 import com.breakinblocks.nutritional.effect.NutritionalMobEffects;
 import com.breakinblocks.nutritional.util.NutritionalId;
 import com.mojang.logging.LogUtils;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -39,7 +39,7 @@ public final class Nutritional {
         LOGGER.info("{} initialized.", MOD_ID);
     }
 
-    public static ResourceLocation id(String path) {
+    public static Identifier id(String path) {
         return NutritionalId.of(path);
     }
 }

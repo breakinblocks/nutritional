@@ -48,8 +48,8 @@ public final class NutritionalServerEvents {
         Registry<NutritionEffectDef> effects = NutritionalDatapack.effects(access);
         for (NutritionEffectDef def : effects) {
             for (ResourceKey<?> ref : def.nutrients()) {
-                if (NutritionalDatapack.nutrients(access).get(ref.location()) == null) {
-                    Nutritional.LOGGER.warn("Effect references unknown nutrient: {}", ref.location());
+                if (NutritionalDatapack.nutrients(access).get(ref.identifier()) == null) {
+                    Nutritional.LOGGER.warn("Effect references unknown nutrient: {}", ref.identifier());
                 }
             }
         }

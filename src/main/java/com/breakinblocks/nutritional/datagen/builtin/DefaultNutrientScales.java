@@ -17,7 +17,7 @@ public final class DefaultNutrientScales extends DataMapProvider {
     }
 
     @Override
-    protected void gather() {
+    protected void gather(HolderLookup.Provider provider) {
         Builder<NutrientScales, Item> builder = builder(NutritionalDataMaps.NUTRIENT_SCALES);
         for (ModCompatFoods.Entry entry : ModCompatFoods.entries()) {
             builder.add(entry.item(), new NutrientScales(entry.scales()), false, new ModLoadedCondition(entry.modId()));

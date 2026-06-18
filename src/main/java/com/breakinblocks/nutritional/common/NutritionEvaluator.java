@@ -10,7 +10,7 @@ import com.breakinblocks.nutritional.data.codec.ParticleVisibility;
 import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -26,14 +26,14 @@ public final class NutritionEvaluator {
 
     public static void evaluate(ServerPlayer player) {
         PlayerNutritionData data = player.getData(NutritionalAttachments.PLAYER_NUTRITION);
-        Registry<NutritionEffectDef> effects = NutritionalDatapack.effects(player.serverLevel().registryAccess());
-        Registry<NutrientDefinition> nutrients = NutritionalDatapack.nutrients(player.serverLevel().registryAccess());
+        Registry<NutritionEffectDef> effects = NutritionalDatapack.effects(player.level().registryAccess());
+        Registry<NutrientDefinition> nutrients = NutritionalDatapack.nutrients(player.level().registryAccess());
 
         Map<Holder<MobEffect>, AppliedEffect> byMobEffect = new HashMap<>();
-        Map<ResourceLocation, PlayerModifierTracker.ModifierSpec> desiredModifiers = new HashMap<>();
+        Map<Identifier, PlayerModifierTracker.ModifierSpec> desiredModifiers = new HashMap<>();
 
-        for (Holder.Reference<NutritionEffectDef> ref : effects.holders().toList()) {
-            ResourceLocation effectId = ref.key().location();
+        for (Holder.Reference<NutritionEffectDef> ref : effects.listElements().toList()) {
+            Identifier effectId = ref.key().identifier();
             NutritionEffectDef def = ref.value();
             Decision decision = decide(def, data, nutrients);
             if (!decision.apply) continue;
@@ -45,7 +45,7 @@ public final class NutritionEvaluator {
             }
 
             for (AttributeModifierEntry mod : def.attributeModifiers()) {
-                ResourceLocation modId = Nutritional.id("effect_modifier/" + effectId.getNamespace() + "/" + effectId.getPath() + "/" + mod.attribute().getRegisteredName().replace(':', '/'));
+                Identifier modId = Nutritional.id("effect_modifier/" + effectId.getNamespace() + "/" + effectId.getPath() + "/" + mod.attribute().getRegisteredName().replace(':', '/'));
                 desiredModifiers.put(modId, new PlayerModifierTracker.ModifierSpec(mod.attribute(), mod.amount(), mod.operation()));
             }
         }
@@ -86,9 +86,9 @@ public final class NutritionEvaluator {
     private static List<Float> collectValues(NutritionEffectDef def, PlayerNutritionData data, Registry<NutrientDefinition> nutrients) {
         List<Float> values = new ArrayList<>(def.nutrients().size());
         for (var key : def.nutrients()) {
-            NutrientDefinition n = nutrients.get(key.location());
+            NutrientDefinition n = nutrients.getValue(key.identifier());
             if (n == null) continue;
-            values.add(data.get(key.location(), n.defaultValue()));
+            values.add(data.get(key.identifier(), n.defaultValue()));
         }
         return values;
     }

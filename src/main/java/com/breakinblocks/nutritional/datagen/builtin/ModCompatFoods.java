@@ -1,7 +1,7 @@
 package com.breakinblocks.nutritional.datagen.builtin;
 
 import com.breakinblocks.nutritional.Nutritional;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -10,9 +10,9 @@ import java.util.Map;
 
 public final class ModCompatFoods {
 
-    public record Entry(String modId, ResourceLocation item, Map<ResourceLocation, Float> scales) {}
+    public record Entry(String modId, Identifier item, Map<Identifier, Float> scales) {}
 
-    private record Scale(ResourceLocation nutrient, float value) {}
+    private record Scale(Identifier nutrient, float value) {}
 
     private static final List<Entry> ENTRIES = new ArrayList<>();
 
@@ -27,8 +27,8 @@ public final class ModCompatFoods {
     }
 
     private static void food(String itemId, Scale... scales) {
-        ResourceLocation item = ResourceLocation.parse(itemId);
-        Map<ResourceLocation, Float> map = new LinkedHashMap<>();
+        Identifier item = Identifier.parse(itemId);
+        Map<Identifier, Float> map = new LinkedHashMap<>();
         for (Scale scale : scales) {
             map.put(scale.nutrient(), scale.value());
         }

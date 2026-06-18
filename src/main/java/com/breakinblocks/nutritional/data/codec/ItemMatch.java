@@ -7,7 +7,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.core.component.DataComponentPredicate;
+import net.minecraft.core.component.DataComponentExactPredicate;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
@@ -19,18 +19,18 @@ import java.util.Optional;
 
 public record ItemMatch(Optional<Holder<Item>> item,
                         Optional<TagKey<Item>> tag,
-                        Optional<DataComponentPredicate> components) {
+                        Optional<DataComponentExactPredicate> components) {
 
     public static final Codec<ItemMatch> CODEC = RecordCodecBuilder.<ItemMatch>create(instance -> instance.group(
             BuiltInRegistries.ITEM.holderByNameCodec().optionalFieldOf("item").forGetter(ItemMatch::item),
             TagKey.codec(Registries.ITEM).optionalFieldOf("tag").forGetter(ItemMatch::tag),
-            DataComponentPredicate.CODEC.optionalFieldOf("components").forGetter(ItemMatch::components)
+            DataComponentExactPredicate.CODEC.optionalFieldOf("components").forGetter(ItemMatch::components)
     ).apply(instance, ItemMatch::new)).validate(ItemMatch::validate);
 
     public static final StreamCodec<RegistryFriendlyByteBuf, ItemMatch> STREAM_CODEC = StreamCodec.composite(
             ByteBufCodecs.optional(ByteBufCodecs.holderRegistry(Registries.ITEM)), ItemMatch::item,
             ByteBufCodecs.optional(NutritionalStreamCodecs.tagKey(Registries.ITEM)), ItemMatch::tag,
-            ByteBufCodecs.optional(DataComponentPredicate.STREAM_CODEC), ItemMatch::components,
+            ByteBufCodecs.optional(DataComponentExactPredicate.STREAM_CODEC), ItemMatch::components,
             ItemMatch::new
     );
 

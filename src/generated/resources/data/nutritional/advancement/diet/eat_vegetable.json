@@ -15,7 +15,6 @@
       "translate": "advancement.nutritional.eat_vegetable.desc"
     },
     "icon": {
-      "count": 1,
       "id": "minecraft:carrot"
     },
     "title": {

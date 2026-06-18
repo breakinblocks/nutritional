@@ -7,11 +7,10 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.IntrinsicHolderTagsProvider;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -24,11 +23,10 @@ public final class NutritionalItemTagsProvider extends IntrinsicHolderTagsProvid
     public static final TagKey<Item> NUTRIENT_DAIRY     = tag("dairy");
 
     public NutritionalItemTagsProvider(PackOutput output,
-                                       CompletableFuture<HolderLookup.Provider> lookup,
-                                       ExistingFileHelper existing) {
+                                       CompletableFuture<HolderLookup.Provider> lookup) {
         super(output, Registries.ITEM, lookup,
                 item -> BuiltInRegistries.ITEM.getResourceKey(item).orElseThrow(),
-                Nutritional.MOD_ID, existing);
+                Nutritional.MOD_ID);
     }
 
     @Override
@@ -63,17 +61,17 @@ public final class NutritionalItemTagsProvider extends IntrinsicHolderTagsProvid
         tag(NUTRIENT_DAIRY).add(Items.MILK_BUCKET);
 
         for (ModCompatFoods.Entry entry : ModCompatFoods.entries()) {
-            for (ResourceLocation nutrient : entry.scales().keySet()) {
-                tag(tagFor(nutrient)).addOptional(entry.item());
+            for (Identifier nutrient : entry.scales().keySet()) {
+                getOrCreateRawBuilder(tagFor(nutrient)).addOptionalElement(entry.item());
             }
         }
     }
 
-    private static TagKey<Item> tagFor(ResourceLocation nutrient) {
+    private static TagKey<Item> tagFor(Identifier nutrient) {
         return tag(nutrient.getPath());
     }
 
     private static TagKey<Item> tag(String name) {
-        return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Nutritional.MOD_ID, "nutrient/" + name));
+        return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Nutritional.MOD_ID, "nutrient/" + name));
     }
 }

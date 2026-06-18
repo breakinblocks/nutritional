@@ -13,7 +13,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ItemStack;
@@ -27,11 +27,11 @@ public final class NutritionalLogic {
 
     private NutritionalLogic() {}
 
-    public static Map<ResourceLocation, Float> calculateNutrition(ItemStack stack, ServerPlayer player) {
-        List<ResourceLocation> applicable = InvertedNutrientIndex.nutrientsFor(stack.getItem());
+    public static Map<Identifier, Float> calculateNutrition(ItemStack stack, ServerPlayer player) {
+        List<Identifier> applicable = InvertedNutrientIndex.nutrientsFor(stack.getItem());
         if (applicable.isEmpty()) return Map.of();
 
-        RegistryAccess access = player.serverLevel().registryAccess();
+        RegistryAccess access = player.level().registryAccess();
         float baseFood = getBaseFoodValue(stack, access);
         if (baseFood <= 0.0f) return Map.of();
 
@@ -43,8 +43,8 @@ public final class NutritionalLogic {
         Optional<NutrientScales> scales = Optional.ofNullable(
                 BuiltInRegistries.ITEM.wrapAsHolder(stack.getItem()).getData(NutritionalDataMaps.NUTRIENT_SCALES));
 
-        Map<ResourceLocation, Float> result = new HashMap<>();
-        for (ResourceLocation nutrientId : applicable) {
+        Map<Identifier, Float> result = new HashMap<>();
+        for (Identifier nutrientId : applicable) {
             float scale = scales.map(s -> s.scaleFor(nutrientId)).orElse(1.0f);
             float yield = (float) (baseFood * 0.5 * nutritionMul * absorption * scale * dimYield * (1.0 - lossRatio));
             result.put(nutrientId, yield);
@@ -54,7 +54,7 @@ public final class NutritionalLogic {
 
     public static DimensionModifier dimensionModifier(ServerPlayer player, RegistryAccess access) {
         Registry<DimensionModifier> registry = NutritionalDatapack.dimensionModifiers(access);
-        DimensionModifier mod = registry.get(player.serverLevel().dimension().location());
+        DimensionModifier mod = registry.getValue(player.level().dimension().identifier());
         return mod != null ? mod : DimensionModifier.IDENTITY;
     }
 
@@ -76,7 +76,7 @@ public final class NutritionalLogic {
         if (!NutritionalConfig.SERVER.decayEnabled.get()) return current;
         double globalMul = NutritionalConfig.SERVER.decayMultiplier.get();
         double decayRateAttr = player.getAttributeValue(NutritionalAttributes.NUTRIENT_DECAY_RATE);
-        double dimDecay = dimensionModifier(player, player.serverLevel().registryAccess()).decayMultiplier();
+        double dimDecay = dimensionModifier(player, player.level().registryAccess()).decayMultiplier();
         float decay = (float) (foodDrop * 0.075 * def.decay() * globalMul * decayRateAttr * dimDecay);
         return PlayerNutritionData.clamp(current - decay);
     }

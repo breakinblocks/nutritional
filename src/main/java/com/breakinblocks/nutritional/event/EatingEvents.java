@@ -11,7 +11,7 @@ import com.breakinblocks.nutritional.data.codec.NutrientDefinition;
 import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
 import com.breakinblocks.nutritional.net.NutritionalNetwork;
 import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
@@ -50,13 +50,13 @@ public final class EatingEvents {
     }
 
     private static void applyNutrients(ServerPlayer player, ItemStack stack) {
-        Map<ResourceLocation, Float> deltas = NutritionalLogic.calculateNutrition(stack, player);
+        Map<Identifier, Float> deltas = NutritionalLogic.calculateNutrition(stack, player);
         if (deltas.isEmpty()) return;
 
-        Registry<NutrientDefinition> registry = NutritionalDatapack.nutrients(player.serverLevel().registryAccess());
+        Registry<NutrientDefinition> registry = NutritionalDatapack.nutrients(player.level().registryAccess());
         PlayerNutritionData current = player.getData(NutritionalAttachments.PLAYER_NUTRITION);
         PlayerNutritionData updated = current.adjust(deltas, id -> {
-            NutrientDefinition def = registry.get(id);
+            NutrientDefinition def = registry.getValue(id);
             return def != null ? def.defaultValue() : 50.0f;
         });
         player.setData(NutritionalAttachments.PLAYER_NUTRITION, updated);
@@ -64,11 +64,11 @@ public final class EatingEvents {
         NutritionEvaluator.evaluate(player);
     }
 
-    private static Map<ResourceLocation, Float> deltaSnapshot(PlayerNutritionData updated,
+    private static Map<Identifier, Float> deltaSnapshot(PlayerNutritionData updated,
                                                               PlayerNutritionData previous,
-                                                              Set<ResourceLocation> changedKeys) {
-        Map<ResourceLocation, Float> out = new HashMap<>();
-        for (ResourceLocation id : changedKeys) {
+                                                              Set<Identifier> changedKeys) {
+        Map<Identifier, Float> out = new HashMap<>();
+        for (Identifier id : changedKeys) {
             float now = updated.get(id, 0.0f);
             if (Float.compare(now, previous.get(id, 0.0f)) != 0) out.put(id, now);
         }
@@ -76,7 +76,7 @@ public final class EatingEvents {
     }
 
     private static ApplicationPhase phaseFor(ItemStack stack, ServerPlayer player) {
-        Optional<FoodHintDef> hint = NutritionalLogic.findFoodHint(stack, player.serverLevel().registryAccess());
+        Optional<FoodHintDef> hint = NutritionalLogic.findFoodHint(stack, player.level().registryAccess());
         return hint.map(FoodHintDef::applicationPhase).orElse(ApplicationPhase.FINISH_USING);
     }
 }

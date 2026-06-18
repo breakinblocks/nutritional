@@ -9,8 +9,9 @@ import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
 import com.breakinblocks.nutritional.net.NutritionalNetwork;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.profiling.Profiler;
 import net.minecraft.util.profiling.ProfilerFiller;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -44,15 +45,15 @@ public final class DecayTicker {
     }
 
     private static void applyDecay(ServerPlayer player, int foodDrop) {
-        ProfilerFiller profiler = player.serverLevel().getProfiler();
+        ProfilerFiller profiler = Profiler.get();
         profiler.push("nutritional:decay");
         try {
-            Registry<NutrientDefinition> registry = NutritionalDatapack.nutrients(player.serverLevel().registryAccess());
+            Registry<NutrientDefinition> registry = NutritionalDatapack.nutrients(player.level().registryAccess());
             PlayerNutritionData current = player.getData(NutritionalAttachments.PLAYER_NUTRITION);
 
-            Map<ResourceLocation, Float> updates = new HashMap<>();
-            for (Holder.Reference<NutrientDefinition> ref : registry.holders().toList()) {
-                ResourceLocation id = ref.key().location();
+            Map<Identifier, Float> updates = new HashMap<>();
+            for (Holder.Reference<NutrientDefinition> ref : registry.listElements().toList()) {
+                Identifier id = ref.key().identifier();
                 NutrientDefinition def = ref.value();
                 float now = current.get(id, def.defaultValue());
                 float next = NutritionalLogic.applyDecay(now, foodDrop, def, player);

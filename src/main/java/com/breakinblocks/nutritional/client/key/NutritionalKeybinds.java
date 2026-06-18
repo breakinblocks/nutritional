@@ -13,16 +13,19 @@ import net.neoforged.neoforge.client.event.ClientTickEvent;
 
 public final class NutritionalKeybinds {
 
+    public static final KeyMapping.Category CATEGORY =
+            KeyMapping.Category.register(Nutritional.id("nutritional"));
+
     public static final KeyMapping OPEN_NUTRITION = new KeyMapping(
             "key.nutritional.open_nutrition",
             InputConstants.Type.KEYSYM,
             InputConstants.KEY_N,
-            "key.categories.nutritional"
+            CATEGORY
     );
 
     private NutritionalKeybinds() {}
 
-    @EventBusSubscriber(modid = Nutritional.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+    @EventBusSubscriber(modid = Nutritional.MOD_ID, value = Dist.CLIENT)
     public static final class ModBus {
         private ModBus() {}
 

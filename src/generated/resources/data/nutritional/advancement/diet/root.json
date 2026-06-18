@@ -15,7 +15,6 @@
       "translate": "advancement.nutritional.root.desc"
     },
     "icon": {
-      "count": 1,
       "id": "minecraft:bread"
     },
     "show_toast": false,

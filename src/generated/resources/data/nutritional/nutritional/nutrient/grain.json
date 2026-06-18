@@ -1,6 +1,4 @@
 {
   "color": "#f4d92e",
-  "icon": {
-    "id": "minecraft:bread"
-  }
+  "icon": "minecraft:bread"
 }

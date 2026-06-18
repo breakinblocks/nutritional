@@ -8,8 +8,9 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.permissions.Permissions;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
 
@@ -23,7 +24,7 @@ public final class NutritionalFoodCommand {
 
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(Commands.literal("nutritional-food")
-                .requires(src -> src.hasPermission(2))
+                .requires(src -> src.permissions().hasPermission(Permissions.COMMANDS_GAMEMASTER))
                 .executes(NutritionalFoodCommand::executeInfo));
     }
 
@@ -34,8 +35,8 @@ public final class NutritionalFoodCommand {
             ctx.getSource().sendFailure(Component.literal("Hold an item in your main hand."));
             return 0;
         }
-        List<ResourceLocation> nutrients = InvertedNutrientIndex.nutrientsFor(held.getItem());
-        Map<ResourceLocation, Float> yield = NutritionalLogic.calculateNutrition(held, player);
+        List<Identifier> nutrients = InvertedNutrientIndex.nutrientsFor(held.getItem());
+        Map<Identifier, Float> yield = NutritionalLogic.calculateNutrition(held, player);
         String namePart = held.getHoverName().getString();
         if (nutrients.isEmpty()) {
             ctx.getSource().sendSuccess(() -> Component.literal(namePart + " has no nutrient mapping."), false);

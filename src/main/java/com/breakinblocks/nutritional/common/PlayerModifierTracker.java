@@ -1,7 +1,7 @@
 package com.breakinblocks.nutritional.common;
 
 import net.minecraft.core.Holder;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
@@ -16,27 +16,27 @@ import java.util.WeakHashMap;
 
 public final class PlayerModifierTracker {
 
-    private final Map<UUID, Map<ResourceLocation, Holder<Attribute>>> applied = new WeakHashMap<>();
+    private final Map<UUID, Map<Identifier, Holder<Attribute>>> applied = new WeakHashMap<>();
     private final boolean permanent;
 
     public PlayerModifierTracker(boolean permanent) {
         this.permanent = permanent;
     }
 
-    public void apply(ServerPlayer player, Map<ResourceLocation, ModifierSpec> desired) {
+    public void apply(ServerPlayer player, Map<Identifier, ModifierSpec> desired) {
         UUID pid = player.getUUID();
-        Map<ResourceLocation, Holder<Attribute>> current = applied.computeIfAbsent(pid, k -> new HashMap<>());
+        Map<Identifier, Holder<Attribute>> current = applied.computeIfAbsent(pid, k -> new HashMap<>());
 
-        Set<ResourceLocation> toRemove = new HashSet<>(current.keySet());
+        Set<Identifier> toRemove = new HashSet<>(current.keySet());
         toRemove.removeAll(desired.keySet());
-        for (ResourceLocation id : toRemove) {
+        for (Identifier id : toRemove) {
             Holder<Attribute> attrHolder = current.remove(id);
             AttributeInstance inst = player.getAttribute(attrHolder);
             if (inst != null) inst.removeModifier(id);
         }
 
-        for (Map.Entry<ResourceLocation, ModifierSpec> entry : desired.entrySet()) {
-            ResourceLocation id = entry.getKey();
+        for (Map.Entry<Identifier, ModifierSpec> entry : desired.entrySet()) {
+            Identifier id = entry.getKey();
             ModifierSpec spec = entry.getValue();
             AttributeInstance inst = player.getAttribute(spec.attribute);
             if (inst == null) continue;
@@ -55,9 +55,9 @@ public final class PlayerModifierTracker {
 
     public void clear(ServerPlayer player) {
         UUID pid = player.getUUID();
-        Map<ResourceLocation, Holder<Attribute>> current = applied.remove(pid);
+        Map<Identifier, Holder<Attribute>> current = applied.remove(pid);
         if (current == null) return;
-        for (Map.Entry<ResourceLocation, Holder<Attribute>> entry : current.entrySet()) {
+        for (Map.Entry<Identifier, Holder<Attribute>> entry : current.entrySet()) {
             AttributeInstance inst = player.getAttribute(entry.getValue());
             if (inst != null) inst.removeModifier(entry.getKey());
         }

@@ -14,7 +14,7 @@ import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -37,7 +37,7 @@ public final class NutritionTooltip {
         ItemStack stack = event.getItemStack();
         if (stack.isEmpty()) return;
 
-        List<ResourceLocation> applicable = InvertedNutrientIndex.nutrientsFor(stack.getItem());
+        List<Identifier> applicable = InvertedNutrientIndex.nutrientsFor(stack.getItem());
         if (applicable.isEmpty()) return;
 
         Minecraft mc = Minecraft.getInstance();
@@ -49,8 +49,8 @@ public final class NutritionTooltip {
                 BuiltInRegistries.ITEM.wrapAsHolder(stack.getItem()).getData(NutritionalDataMaps.NUTRIENT_SCALES));
 
         TreeMap<String, List<String>> byScale = new TreeMap<>();
-        for (ResourceLocation id : applicable) {
-            NutrientDefinition def = nutrients.get(id);
+        for (Identifier id : applicable) {
+            NutrientDefinition def = nutrients.getValue(id);
             if (def == null || !def.visible()) continue;
             float scale = scales.map(s -> s.scaleFor(id)).orElse(1.0f);
             String scaleKey = String.format("%.2f", scale);
@@ -68,7 +68,7 @@ public final class NutritionTooltip {
         }
     }
 
-    private static String translationKey(ResourceLocation id) {
+    private static String translationKey(Identifier id) {
         return "nutrient." + id.getNamespace() + "." + id.getPath();
     }
 }

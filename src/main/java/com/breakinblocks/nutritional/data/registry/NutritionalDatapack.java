@@ -14,26 +14,26 @@ public final class NutritionalDatapack {
     private NutritionalDatapack() {}
 
     public static Registry<NutrientDefinition> nutrients(RegistryAccess access) {
-        return access.registryOrThrow(NutritionalRegistries.NUTRIENT);
+        return access.lookupOrThrow(NutritionalRegistries.NUTRIENT);
     }
 
     public static Registry<NutritionEffectDef> effects(RegistryAccess access) {
-        return access.registryOrThrow(NutritionalRegistries.EFFECT);
+        return access.lookupOrThrow(NutritionalRegistries.EFFECT);
     }
 
     public static Registry<FoodHintDef> foodHints(RegistryAccess access) {
-        return access.registryOrThrow(NutritionalRegistries.FOOD_HINT);
+        return access.lookupOrThrow(NutritionalRegistries.FOOD_HINT);
     }
 
     public static Registry<DietTierDefinition> tiers(RegistryAccess access) {
-        return access.registryOrThrow(NutritionalRegistries.DIET_TIER);
+        return access.lookupOrThrow(NutritionalRegistries.DIET_TIER);
     }
 
     public static Registry<SustainedRewardDefinition> rewards(RegistryAccess access) {
-        return access.registryOrThrow(NutritionalRegistries.SUSTAINED_REWARD);
+        return access.lookupOrThrow(NutritionalRegistries.SUSTAINED_REWARD);
     }
 
     public static Registry<DimensionModifier> dimensionModifiers(RegistryAccess access) {
-        return access.registryOrThrow(NutritionalRegistries.DIMENSION_MODIFIER);
+        return access.lookupOrThrow(NutritionalRegistries.DIMENSION_MODIFIER);
     }
 }

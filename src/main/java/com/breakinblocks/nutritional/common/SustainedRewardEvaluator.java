@@ -13,7 +13,7 @@ import com.breakinblocks.nutritional.net.NutritionalNetwork;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 
 import java.util.HashMap;
@@ -30,11 +30,11 @@ public final class SustainedRewardEvaluator {
 
     public static void evaluate(ServerPlayer player) {
         PlayerNutritionData data = player.getData(NutritionalAttachments.PLAYER_NUTRITION);
-        long currentDay = player.serverLevel().getDayTime() / TICKS_PER_DAY;
+        long currentDay = player.level().getOverworldClockTime() / TICKS_PER_DAY;
         boolean dayChanged = currentDay != data.lastDayEvaluated();
 
-        Registry<DietTierDefinition> tiers = NutritionalDatapack.tiers(player.serverLevel().registryAccess());
-        Registry<SustainedRewardDefinition> rewards = NutritionalDatapack.rewards(player.serverLevel().registryAccess());
+        Registry<DietTierDefinition> tiers = NutritionalDatapack.tiers(player.level().registryAccess());
+        Registry<SustainedRewardDefinition> rewards = NutritionalDatapack.rewards(player.level().registryAccess());
         if (rewards.size() == 0) return;
 
         int streak = data.consecutiveBalancedDays();
@@ -44,11 +44,11 @@ public final class SustainedRewardEvaluator {
             streak = data.currentTier().isPresent() ? 1 : 0;
         }
 
-        Set<ResourceLocation> earned = new HashSet<>(data.earnedRewards());
-        Map<ResourceLocation, PlayerModifierTracker.ModifierSpec> activeModifiers = new HashMap<>();
+        Set<Identifier> earned = new HashSet<>(data.earnedRewards());
+        Map<Identifier, PlayerModifierTracker.ModifierSpec> activeModifiers = new HashMap<>();
 
-        for (Holder.Reference<SustainedRewardDefinition> ref : rewards.holders().toList()) {
-            ResourceLocation rewardId = ref.key().location();
+        for (Holder.Reference<SustainedRewardDefinition> ref : rewards.listElements().toList()) {
+            Identifier rewardId = ref.key().identifier();
             SustainedRewardDefinition def = ref.value();
             boolean qualifies = qualifies(def, data.currentTier(), tiers);
             boolean longEnough = streak >= def.consecutiveDaysRequired();
@@ -79,43 +79,43 @@ public final class SustainedRewardEvaluator {
         }
     }
 
-    private static void addModifiers(Map<ResourceLocation, PlayerModifierTracker.ModifierSpec> sink,
-                                     ResourceLocation rewardId,
+    private static void addModifiers(Map<Identifier, PlayerModifierTracker.ModifierSpec> sink,
+                                     Identifier rewardId,
                                      SustainedRewardDefinition def) {
         for (AttributeModifierEntry mod : def.attributeModifiers()) {
-            ResourceLocation modId = Nutritional.id("sustained/" + rewardId.getNamespace() + "/" + rewardId.getPath() + "/" + mod.attribute().getRegisteredName().replace(':', '/'));
+            Identifier modId = Nutritional.id("sustained/" + rewardId.getNamespace() + "/" + rewardId.getPath() + "/" + mod.attribute().getRegisteredName().replace(':', '/'));
             sink.put(modId, new PlayerModifierTracker.ModifierSpec(mod.attribute(), mod.amount(), mod.operation()));
         }
     }
 
     private static boolean qualifies(SustainedRewardDefinition def,
-                                     Optional<ResourceLocation> activeTier,
+                                     Optional<Identifier> activeTier,
                                      Registry<DietTierDefinition> tiers) {
         if (activeTier.isEmpty()) return false;
-        DietTierDefinition currentDef = tiers.get(activeTier.get());
-        DietTierDefinition requiredDef = tiers.get(def.qualifyingTier().location());
+        DietTierDefinition currentDef = tiers.getValue(activeTier.get());
+        DietTierDefinition requiredDef = tiers.getValue(def.qualifyingTier().identifier());
         if (currentDef == null || requiredDef == null) return false;
         return currentDef.priority() >= requiredDef.priority();
     }
 
     private static boolean belowFloor(SustainedRewardDefinition def,
-                                      Optional<ResourceLocation> activeTier,
+                                      Optional<Identifier> activeTier,
                                       Registry<DietTierDefinition> tiers) {
         Optional<ResourceKey<DietTierDefinition>> floor = def.loseOnTierBelow();
         if (floor.isEmpty()) return false;
-        DietTierDefinition floorDef = tiers.get(floor.get().location());
+        DietTierDefinition floorDef = tiers.getValue(floor.get().identifier());
         if (floorDef == null) return false;
         if (activeTier.isEmpty()) return true;
-        DietTierDefinition currentDef = tiers.get(activeTier.get());
+        DietTierDefinition currentDef = tiers.getValue(activeTier.get());
         return currentDef == null || currentDef.priority() < floorDef.priority();
     }
 
     public static void stripOnDeath(ServerPlayer player) {
         PlayerNutritionData data = player.getData(NutritionalAttachments.PLAYER_NUTRITION);
-        Registry<SustainedRewardDefinition> rewards = NutritionalDatapack.rewards(player.serverLevel().registryAccess());
-        Set<ResourceLocation> retained = new HashSet<>();
-        for (ResourceLocation rewardId : data.earnedRewards()) {
-            SustainedRewardDefinition def = rewards.get(rewardId);
+        Registry<SustainedRewardDefinition> rewards = NutritionalDatapack.rewards(player.level().registryAccess());
+        Set<Identifier> retained = new HashSet<>();
+        for (Identifier rewardId : data.earnedRewards()) {
+            SustainedRewardDefinition def = rewards.getValue(rewardId);
             if (def != null && !def.loseOnDeath()) retained.add(rewardId);
         }
         if (!retained.equals(data.earnedRewards())) {

@@ -6,6 +6,7 @@ import com.breakinblocks.nutritional.common.NutritionEvaluator;
 import com.breakinblocks.nutritional.common.PlayerModifierScopes;
 import com.breakinblocks.nutritional.common.SustainedRewardEvaluator;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.profiling.Profiler;
 import net.minecraft.util.profiling.ProfilerFiller;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -26,7 +27,7 @@ public final class EvaluatorTicker {
         if (raw.level().isClientSide()) return;
         if (!(raw instanceof ServerPlayer player)) return;
         if (player.tickCount % RE_EVAL_INTERVAL == 0) {
-            ProfilerFiller profiler = player.serverLevel().getProfiler();
+            ProfilerFiller profiler = Profiler.get();
             profiler.push("nutritional:evaluate");
             try {
                 profiler.push("effects");

@@ -9,11 +9,11 @@ import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -23,10 +23,10 @@ import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 
 import java.util.Optional;
 
-@EventBusSubscriber(modid = Nutritional.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = Nutritional.MOD_ID, value = Dist.CLIENT)
 public final class TierHudOverlay {
 
-    public static final ResourceLocation LAYER_ID = Nutritional.id("tier_hud");
+    public static final Identifier LAYER_ID = Nutritional.id("tier_hud");
 
     private TierHudOverlay() {}
 
@@ -35,17 +35,17 @@ public final class TierHudOverlay {
         event.registerAbove(VanillaGuiLayers.HOTBAR, LAYER_ID, TierHudOverlay::render);
     }
 
-    private static void render(GuiGraphics graphics, DeltaTracker delta) {
+    private static void render(GuiGraphicsExtractor graphics, DeltaTracker delta) {
         if (!NutritionalConfig.CLIENT.hudEnabled.get()) return;
         Minecraft mc = Minecraft.getInstance();
         if (mc.options.hideGui || mc.player == null || mc.getConnection() == null) return;
 
-        Optional<ResourceLocation> tierId = ClientNutritionCache.get().currentTier();
+        Optional<Identifier> tierId = ClientNutritionCache.get().currentTier();
         if (tierId.isEmpty()) return;
 
         RegistryAccess access = mc.getConnection().registryAccess();
         Registry<DietTierDefinition> tiers = NutritionalDatapack.tiers(access);
-        DietTierDefinition tier = tiers.get(tierId.get());
+        DietTierDefinition tier = tiers.getValue(tierId.get());
         if (tier == null) return;
 
         TierDisplay display = tier.display();
@@ -64,17 +64,17 @@ public final class TierHudOverlay {
         int y = 6;
 
         graphics.fill(x, y, x + width, y + height, 0xA0000000);
-        graphics.renderOutline(x, y, width, height, display.color() | 0xFF000000);
+        graphics.outline(x, y, width, height, display.color() | 0xFF000000);
 
         int textX = x + padding;
         if (display.icon().isPresent()) {
             ItemStack iconStack = new ItemStack(display.icon().get());
-            graphics.pose().pushPose();
-            graphics.pose().scale(0.625f, 0.625f, 1.0f);
-            graphics.renderItem(iconStack, (int) ((x + padding) / 0.625f), (int) ((y + 2) / 0.625f));
-            graphics.pose().popPose();
+            graphics.pose().pushMatrix();
+            graphics.pose().scale(0.625f, 0.625f);
+            graphics.item(iconStack, (int) ((x + padding) / 0.625f), (int) ((y + 2) / 0.625f));
+            graphics.pose().popMatrix();
             textX += iconSize + 4;
         }
-        graphics.drawString(font, label, textX, y + 3, display.color() | 0xFF000000, false);
+        graphics.text(font, label, textX, y + 3, display.color() | 0xFF000000, false);
     }
 }

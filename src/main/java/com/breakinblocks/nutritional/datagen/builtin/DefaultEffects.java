@@ -51,7 +51,7 @@ public final class DefaultEffects {
         ));
 
         ctx.register(STRENGTH, new NutritionEffectDef(
-                MobEffects.DAMAGE_BOOST,
+                MobEffects.STRENGTH,
                 0,
                 85.0f, 100.0f,
                 DetectionMode.ANY,

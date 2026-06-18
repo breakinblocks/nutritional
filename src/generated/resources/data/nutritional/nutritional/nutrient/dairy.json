@@ -1,6 +1,4 @@
 {
   "color": "#fff8e7",
-  "icon": {
-    "id": "minecraft:milk_bucket"
-  }
+  "icon": "minecraft:milk_bucket"
 }

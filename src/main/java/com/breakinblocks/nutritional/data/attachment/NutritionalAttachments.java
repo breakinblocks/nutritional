@@ -16,7 +16,7 @@ public final class NutritionalAttachments {
     public static final Supplier<AttachmentType<PlayerNutritionData>> PLAYER_NUTRITION = ATTACHMENT_TYPES.register(
             "player_nutrition",
             () -> AttachmentType.builder(() -> PlayerNutritionData.EMPTY)
-                    .serialize(PlayerNutritionData.CODEC)
+                    .serialize(PlayerNutritionData.CODEC.fieldOf("nutrition"))
                     .copyOnDeath()
                     .build()
     );

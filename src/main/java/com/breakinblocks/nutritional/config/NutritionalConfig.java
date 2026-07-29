@@ -88,14 +88,23 @@ public final class NutritionalConfig {
         public final ModConfigSpec.BooleanValue guiButtonEnabled;
         public final ModConfigSpec.BooleanValue tooltipEnabled;
         public final ModConfigSpec.BooleanValue hudEnabled;
+        public final ModConfigSpec.EnumValue<HudAnchor> hudAnchor;
+        public final ModConfigSpec.IntValue hudOffsetX;
+        public final ModConfigSpec.IntValue hudOffsetY;
 
         Client(ModConfigSpec.Builder b) {
             b.push("ui");
             guiEnabled = b.define("gui_enabled", true);
             guiButtonEnabled = b.define("gui_button_enabled", true);
             tooltipEnabled = b.define("tooltip_enabled", true);
-            hudEnabled = b.comment("Render the diet-tier HUD widget in the top-right corner.")
+            hudEnabled = b.comment("Render the diet-tier HUD widget.")
                     .define("hud_enabled", true);
+            hudAnchor = b.comment("Screen edge the diet-tier HUD widget is positioned relative to.")
+                    .defineEnum("hud_anchor", HudAnchor.TOP_RIGHT);
+            hudOffsetX = b.comment("Horizontal pixel offset from the anchor. Set in-game with the Move HUD button on the nutrition screen.")
+                    .defineInRange("hud_offset_x", -6, -4096, 4096);
+            hudOffsetY = b.comment("Vertical pixel offset from the anchor.")
+                    .defineInRange("hud_offset_y", 6, -4096, 4096);
             b.pop();
         }
     }

@@ -26,6 +26,7 @@ import java.util.Optional;
 public final class NutritionScreen extends Screen {
 
     private Button hudToggle;
+    private Button hudMove;
 
     private static final int ICON_COL = 22;
     private static final int NAME_COL = 70;
@@ -45,14 +46,22 @@ public final class NutritionScreen extends Screen {
         ClientPacketDistributor.sendToServer(new RequestNutritionPayload());
 
         hudToggle = Button.builder(hudButtonText(), b -> toggleHud())
-                .pos(width / 2 - 105, height - 30)
-                .size(120, 20)
+                .pos(width / 2 - 145, height - 30)
+                .size(100, 20)
                 .build();
         addRenderableWidget(hudToggle);
 
+        hudMove = Button.builder(Component.translatable("screen.nutritional.hud.move"),
+                        b -> Minecraft.getInstance().setScreen(new HudPlacementScreen(this)))
+                .pos(width / 2 - 40, height - 30)
+                .size(100, 20)
+                .build();
+        hudMove.active = NutritionalConfig.CLIENT.hudEnabled.get();
+        addRenderableWidget(hudMove);
+
         addRenderableWidget(
                 Button.builder(Component.translatable("screen.nutritional.close"), b -> onClose())
-                        .pos(width / 2 + 25, height - 30)
+                        .pos(width / 2 + 65, height - 30)
                         .size(80, 20)
                         .build());
     }
@@ -65,7 +74,9 @@ public final class NutritionScreen extends Screen {
     private void toggleHud() {
         boolean enabled = NutritionalConfig.CLIENT.hudEnabled.get();
         NutritionalConfig.CLIENT.hudEnabled.set(!enabled);
+        NutritionalConfig.CLIENT_SPEC.save();
         hudToggle.setMessage(hudButtonText());
+        hudMove.active = !enabled;
     }
 
     @Override

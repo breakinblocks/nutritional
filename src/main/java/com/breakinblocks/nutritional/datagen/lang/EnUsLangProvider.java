@@ -2,6 +2,7 @@ package com.breakinblocks.nutritional.datagen.lang;
 
 import com.breakinblocks.nutritional.Nutritional;
 import com.breakinblocks.nutritional.attribute.NutritionalAttributes;
+import com.breakinblocks.nutritional.config.HudAnchor;
 import com.breakinblocks.nutritional.effect.NutritionalMobEffects;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -52,6 +53,24 @@ public final class EnUsLangProvider extends LanguageProvider {
         add("screen.nutritional.close", "Close");
         add("screen.nutritional.hud.on", "HUD: On");
         add("screen.nutritional.hud.off", "HUD: Off");
+        add("screen.nutritional.hud.move", "Move HUD");
+        add("screen.nutritional.hud.place.title", "Position the HUD widget");
+        add("screen.nutritional.hud.place.hint.drag", "Drag the widget to move it.");
+        add("screen.nutritional.hud.place.hint.keys", "Arrow keys nudge, Shift for 10px, Shift+drag ignores snapping.");
+        add("screen.nutritional.hud.place.readout", "%s — offset %s, %s");
+        add("screen.nutritional.hud.place.sample", "Nutrition");
+        add("screen.nutritional.hud.place.reset", "Reset");
+        add("screen.nutritional.hud.place.done", "Done");
+
+        add(HudAnchor.TOP_LEFT.translationKey(), "Top left");
+        add(HudAnchor.TOP_CENTER.translationKey(), "Top center");
+        add(HudAnchor.TOP_RIGHT.translationKey(), "Top right");
+        add(HudAnchor.MIDDLE_LEFT.translationKey(), "Middle left");
+        add(HudAnchor.MIDDLE_CENTER.translationKey(), "Middle center");
+        add(HudAnchor.MIDDLE_RIGHT.translationKey(), "Middle right");
+        add(HudAnchor.BOTTOM_LEFT.translationKey(), "Bottom left");
+        add(HudAnchor.BOTTOM_CENTER.translationKey(), "Bottom center");
+        add(HudAnchor.BOTTOM_RIGHT.translationKey(), "Bottom right");
 
         add("key.nutritional.open_nutrition", "Open Nutrition Screen");
         add("key.categories.nutritional", "Nutritional");

@@ -25,7 +25,7 @@ On top of the tiers:
 ## Seeing your diet
 
 - Press **N** to open a screen with a bar for every food group and your current diet tier.
-- A small widget in the top-right corner shows your current tier at a glance. You can toggle it from a button on the diet screen.
+- A small widget in the top-right corner shows your current tier at a glance. The diet screen has buttons to toggle it and to move it: pick **Move HUD**, then drag the widget wherever you like, or nudge it with the arrow keys. It snaps to screen edges and centers, and keeps its place when you change resolution or GUI scale.
 - Hovering a food shows which groups it fills and how much.
 - If you use JEI, looking up a food shows a "Provides nutrients" entry with the same information.
 

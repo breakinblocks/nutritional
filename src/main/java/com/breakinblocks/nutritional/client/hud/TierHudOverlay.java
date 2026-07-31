@@ -11,6 +11,7 @@ import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.screens.ChatScreen;
 import net.minecraft.client.multiplayer.ClientPacketListener;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
@@ -52,6 +53,7 @@ public final class TierHudOverlay {
 
         boolean placing = HudPlacement.isActive();
         if (!placing && (!NutritionalConfig.CLIENT.hudEnabled.get() || mc.options.hideGui)) return;
+        if (!placing && mc.screen != null && !(mc.screen instanceof ChatScreen)) return;
 
         Optional<Content> active = activeContent(mc);
         if (active.isEmpty() && !placing) return;

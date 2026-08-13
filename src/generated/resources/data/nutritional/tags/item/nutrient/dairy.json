@@ -1800,6 +1800,90 @@
     {
       "id": "undergarden:butterbunch",
       "required": false
+    },
+    {
+      "id": "pantryforblockheads:berry_muffin",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:burger",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cheese",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cheese_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cheese_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate_cupcake",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate_doughnut",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate_icecream",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cupcake",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:icecream",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:muffin",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pancakes",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pepperoni_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pepperoni_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pink_doughnut",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pink_doughnut_sprinkles",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:sandwich",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:soy_milk",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:vegetable_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:vegetable_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:waffle",
+      "required": false
     }
   ]
 }

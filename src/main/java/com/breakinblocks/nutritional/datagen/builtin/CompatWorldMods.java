@@ -225,11 +225,11 @@ final class CompatWorldMods {
         food("farm_and_charm:corn_grits", s("grain", 0.4942f), s("vegetable", 0.5058f));
         food("farm_and_charm:dog_food", s("protein", 0.8931f), s("vegetable", 0.1069f));
         food("farm_and_charm:dough", s("grain", 1.0f));
-        food("farm_and_charm:farmer_salad", s("fruit", 0.1694f), s("vegetable", 0.8306f));
+        food("farm_and_charm:farmer_salad", s("fruit", 0.1688f), s("vegetable", 0.8312f));
         food("farm_and_charm:farmers_bread", s("grain", 1.0f));
-        food("farm_and_charm:farmers_breakfast", s("grain", 0.3637f), s("protein", 0.4211f), s("vegetable", 0.2152f));
+        food("farm_and_charm:farmers_breakfast", s("grain", 0.3645f), s("protein", 0.4209f), s("vegetable", 0.2145f));
         food("farm_and_charm:flour", s("grain", 0.8889f), s("vegetable", 0.1111f));
-        food("farm_and_charm:goulash", s("protein", 0.2785f), s("vegetable", 0.7215f));
+        food("farm_and_charm:goulash", s("protein", 0.2783f), s("vegetable", 0.7217f));
         food("farm_and_charm:grandmothers_strawberry_cake", s("fruit", 0.5184f), s("grain", 0.4816f));
         food("farm_and_charm:lamb_ham", s("protein", 1.0f));
         food("farm_and_charm:lamb_with_corn", s("dairy", 0.0918f), s("grain", 0.1193f), s("protein", 0.3571f), s("vegetable", 0.4318f));
@@ -241,8 +241,8 @@ final class CompatWorldMods {
         food("farm_and_charm:oat_pancake", s("fruit", 0.1267f), s("grain", 0.8733f));
         food("farm_and_charm:oatmeal_with_strawberries", s("dairy", 0.2068f), s("fruit", 0.3966f), s("grain", 0.3966f));
         food("farm_and_charm:onion", s("vegetable", 1.0f));
-        food("farm_and_charm:onion_soup", s("grain", 0.2252f), s("protein", 0.0825f), s("vegetable", 0.6923f));
-        food("farm_and_charm:pasta_with_onion_sauce", s("grain", 0.3898f), s("vegetable", 0.6102f));
+        food("farm_and_charm:onion_soup", s("grain", 0.224f), s("protein", 0.0816f), s("vegetable", 0.6944f));
+        food("farm_and_charm:pasta_with_onion_sauce", s("grain", 0.3877f), s("vegetable", 0.6123f));
         food("farm_and_charm:potato_soup", s("vegetable", 1.0f));
         food("farm_and_charm:potato_with_roast_meat", s("fruit", 0.3152f), s("protein", 0.3895f), s("vegetable", 0.2953f));
         food("farm_and_charm:raw_pasta", s("grain", 1.0f));
@@ -256,8 +256,8 @@ final class CompatWorldMods {
         food("farm_and_charm:strawberry", s("fruit", 1.0f));
         food("farm_and_charm:strawberry_tea", s("fruit", 1.0f));
         food("farm_and_charm:strawberry_tea_cup", s("fruit", 1.0f));
-        food("farm_and_charm:stuffed_chicken", s("protein", 0.5443f), s("vegetable", 0.4557f));
-        food("farm_and_charm:stuffed_rabbit", s("protein", 0.5746f), s("vegetable", 0.4254f));
+        food("farm_and_charm:stuffed_chicken", s("protein", 0.5434f), s("vegetable", 0.4566f));
+        food("farm_and_charm:stuffed_rabbit", s("protein", 0.5736f), s("vegetable", 0.4264f));
         food("farm_and_charm:tomato", s("vegetable", 1.0f));
         food("farm_and_charm:yeast", s("grain", 1.0f));
     }

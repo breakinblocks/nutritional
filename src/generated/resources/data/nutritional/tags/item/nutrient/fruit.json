@@ -882,6 +882,10 @@
       "required": false
     },
     {
+      "id": "veggiesdelight:broccoli_soup",
+      "required": false
+    },
+    {
       "id": "veggiesdelight:dandelion_juice",
       "required": false
     },
@@ -4095,6 +4099,46 @@
     },
     {
       "id": "vinery:white_taiga_grapejuice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:berry_muffin",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:blueberries",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate_cupcake",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate_doughnut",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate_icecream",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:grapes",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:lemon",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:peach",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:strawberry",
       "required": false
     }
   ]

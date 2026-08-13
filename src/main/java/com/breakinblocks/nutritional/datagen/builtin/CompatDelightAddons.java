@@ -107,10 +107,10 @@ final class CompatDelightAddons {
     }
 
     private static void alexsdelight() {
-        food("alexsdelight:acacia_blossom_soup", s("grain", 0.1412f), s("protein", 0.3329f), s("vegetable", 0.5259f));
-        food("alexsdelight:bison_burger", s("grain", 0.2363f), s("protein", 0.4293f), s("vegetable", 0.3344f));
+        food("alexsdelight:acacia_blossom_soup", s("grain", 0.1403f), s("protein", 0.3315f), s("vegetable", 0.5282f));
+        food("alexsdelight:bison_burger", s("grain", 0.2368f), s("protein", 0.4291f), s("vegetable", 0.3341f));
         food("alexsdelight:bison_patty", s("protein", 1.0f));
-        food("alexsdelight:bunfungus_sandwich", s("grain", 0.6f), s("vegetable", 0.4f));
+        food("alexsdelight:bunfungus_sandwich", s("grain", 0.6012f), s("vegetable", 0.3988f));
         food("alexsdelight:cooked_bison", s("protein", 1.0f));
         food("alexsdelight:cooked_bunfungus", s("grain", 0.5f), s("vegetable", 0.5f));
         food("alexsdelight:cooked_bunfungus_drumstick", s("grain", 0.3333f), s("protein", 0.3333f), s("vegetable", 0.3333f));
@@ -136,7 +136,7 @@ final class CompatDelightAddons {
         food("aquaculturedelight:crispy_fried_perch", s("grain", 0.2222f), s("protein", 0.7778f));
         food("aquaculturedelight:crispy_nori_kelp", s("vegetable", 1.0f));
         food("aquaculturedelight:fish_and_chips", s("protein", 0.3079f), s("vegetable", 0.6921f));
-        food("aquaculturedelight:fish_chorba", s("protein", 0.4737f), s("vegetable", 0.5263f));
+        food("aquaculturedelight:fish_chorba", s("protein", 0.4734f), s("vegetable", 0.5266f));
         food("aquaculturedelight:fish_roll_medley", s("grain", 0.3335f), s("protein", 0.6665f));
         food("aquaculturedelight:fish_roll_medley_1", s("grain", 0.5f), s("protein", 0.5f));
         food("aquaculturedelight:fish_roll_medley_2", s("grain", 0.5f), s("protein", 0.5f));
@@ -146,13 +146,13 @@ final class CompatDelightAddons {
         food("aquaculturedelight:fish_roll_medley_6", s("grain", 0.5f), s("protein", 0.5f));
         food("aquaculturedelight:fish_roll_medley_7", s("grain", 0.5f), s("protein", 0.5f));
         food("aquaculturedelight:fried_perch_roll", s("grain", 0.5555f), s("protein", 0.4445f));
-        food("aquaculturedelight:halaszle", s("grain", 0.2546f), s("protein", 0.439f), s("vegetable", 0.3064f));
-        food("aquaculturedelight:halibut_with_tartar_sauce", s("protein", 0.6654f), s("vegetable", 0.3346f));
+        food("aquaculturedelight:halaszle", s("grain", 0.2552f), s("protein", 0.4395f), s("vegetable", 0.3053f));
+        food("aquaculturedelight:halibut_with_tartar_sauce", s("protein", 0.6643f), s("vegetable", 0.3357f));
         food("aquaculturedelight:jellyfish_jelly", s("fruit", 0.3333f), s("grain", 0.3333f), s("protein", 0.3333f));
-        food("aquaculturedelight:large_fish_with_vegetables", s("grain", 0.2037f), s("protein", 0.4019f), s("vegetable", 0.3943f));
+        food("aquaculturedelight:large_fish_with_vegetables", s("grain", 0.2033f), s("protein", 0.4014f), s("vegetable", 0.3954f));
         food("aquaculturedelight:poor_fisher_chowder", s("protein", 0.8f), s("vegetable", 0.2f));
         food("aquaculturedelight:raw_fish_fillet_roll", s("grain", 0.4761f), s("protein", 0.5239f));
-        food("aquaculturedelight:rollmops", s("grain", 0.3333f), s("protein", 0.2211f), s("vegetable", 0.4456f));
+        food("aquaculturedelight:rollmops", s("grain", 0.3333f), s("protein", 0.2201f), s("vegetable", 0.4466f));
         food("aquaculturedelight:small_turtle_meat", s("protein", 1.0f));
         food("aquaculturedelight:tuna_spaghetti", s("grain", 0.2925f), s("protein", 0.4406f), s("vegetable", 0.2669f));
         food("aquaculturedelight:turtle_meat_dish", s("protein", 0.578f), s("vegetable", 0.422f));
@@ -171,7 +171,7 @@ final class CompatDelightAddons {
         food("casualnessdelight:cheese_wheel_slice", s("dairy", 1.0f));
         food("casualnessdelight:chicken_bobo_chicken", s("protein", 1.0f));
         food("casualnessdelight:cooked_donkey_meat", s("protein", 1.0f));
-        food("casualnessdelight:donkey_burger", s("grain", 0.2416f), s("protein", 0.4929f), s("vegetable", 0.2654f));
+        food("casualnessdelight:donkey_burger", s("grain", 0.2418f), s("protein", 0.4921f), s("vegetable", 0.2661f));
         food("casualnessdelight:fish_and_chips", s("grain", 0.1679f), s("protein", 0.4132f), s("vegetable", 0.4189f));
         food("casualnessdelight:fried_cake", s("grain", 0.7381f), s("protein", 0.1579f), s("vegetable", 0.104f));
         food("casualnessdelight:fried_chicken_chip", s("protein", 1.0f));
@@ -179,7 +179,7 @@ final class CompatDelightAddons {
         food("casualnessdelight:fried_mushroom", s("protein", 0.4444f), s("vegetable", 0.5556f));
         food("casualnessdelight:fried_strange_mushroom", s("vegetable", 1.0f));
         food("casualnessdelight:paper_wrapped_fish", s("protein", 0.3333f), s("vegetable", 0.6667f));
-        food("casualnessdelight:phantom_dumplings", s("grain", 0.3333f), s("protein", 0.2471f), s("vegetable", 0.4195f));
+        food("casualnessdelight:phantom_dumplings", s("grain", 0.3333f), s("protein", 0.2461f), s("vegetable", 0.4206f));
         food("casualnessdelight:phantom_puff", s("dairy", 0.5763f), s("protein", 0.4237f));
         food("casualnessdelight:potato_bobo_chicken", s("protein", 0.5f), s("vegetable", 0.5f));
         food("casualnessdelight:potato_chip", s("vegetable", 1.0f));
@@ -193,7 +193,7 @@ final class CompatDelightAddons {
         food("casualnessdelight:raw_potato_bobo_chicken", s("protein", 0.5f), s("vegetable", 0.5f));
         food("casualnessdelight:raw_spring_roll", s("grain", 0.4902f), s("protein", 0.3004f), s("vegetable", 0.2094f));
         food("casualnessdelight:roast_gluten", s("grain", 0.3333f), s("protein", 0.6667f));
-        food("casualnessdelight:spicy_strips", s("protein", 0.7406f), s("vegetable", 0.2594f));
+        food("casualnessdelight:spicy_strips", s("protein", 0.7396f), s("vegetable", 0.2604f));
         food("casualnessdelight:spring_roll", s("grain", 0.6601f), s("protein", 0.2003f), s("vegetable", 0.1396f));
         food("casualnessdelight:spring_roll_medley", s("grain", 0.7734f), s("protein", 0.1335f), s("vegetable", 0.0931f));
         food("casualnessdelight:stargazy_pie", s("grain", 1.0f));
@@ -247,9 +247,9 @@ final class CompatDelightAddons {
         food("crabbersdelight:seafood_gumbo", s("grain", 0.1276f), s("protein", 0.6781f), s("vegetable", 0.1943f));
         food("crabbersdelight:shrimp", s("protein", 1.0f));
         food("crabbersdelight:shrimp_fried_rice", s("grain", 0.3996f), s("protein", 0.3012f), s("vegetable", 0.2992f));
-        food("crabbersdelight:shrimp_skewer", s("protein", 0.789f), s("vegetable", 0.211f));
-        food("crabbersdelight:squid_kebab", s("protein", 0.5659f), s("vegetable", 0.4341f));
-        food("crabbersdelight:stuffed_nautilus_shell", s("protein", 0.461f), s("vegetable", 0.539f));
+        food("crabbersdelight:shrimp_skewer", s("protein", 0.7896f), s("vegetable", 0.2104f));
+        food("crabbersdelight:squid_kebab", s("protein", 0.5648f), s("vegetable", 0.4352f));
+        food("crabbersdelight:stuffed_nautilus_shell", s("protein", 0.4601f), s("vegetable", 0.5399f));
         food("crabbersdelight:tropical_fish_slice", s("protein", 1.0f));
     }
 
@@ -386,7 +386,7 @@ final class CompatDelightAddons {
         food("ends_delight:dried_chorus_flower", s("fruit", 1.0f));
         food("ends_delight:dried_endermite_meat", s("protein", 1.0f));
         food("ends_delight:end_mixed_salad", s("fruit", 0.0871f), s("grain", 0.0871f), s("vegetable", 0.8259f));
-        food("ends_delight:ender_bamboo_rice", s("grain", 0.305f), s("protein", 0.2294f), s("vegetable", 0.4655f));
+        food("ends_delight:ender_bamboo_rice", s("grain", 0.3046f), s("protein", 0.2288f), s("vegetable", 0.4665f));
         food("ends_delight:ender_congee", s("grain", 0.7057f), s("protein", 0.2943f));
         food("ends_delight:ender_noodle", s("fruit", 0.291f), s("grain", 0.3333f), s("protein", 0.3757f));
         food("ends_delight:ender_pearl_grain", s("grain", 1.0f));
@@ -413,7 +413,7 @@ final class CompatDelightAddons {
         food("eternal_starlight_delight:aurora_deer_dice_steak_pasta", s("grain", 0.2596f), s("protein", 0.7404f));
         food("eternal_starlight_delight:aurora_deer_jerky", s("protein", 1.0f));
         food("eternal_starlight_delight:aurora_deer_steak_cuts", s("protein", 1.0f));
-        food("eternal_starlight_delight:aurora_deer_steak_special_lunch", s("grain", 0.3702f), s("protein", 0.4918f), s("vegetable", 0.138f));
+        food("eternal_starlight_delight:aurora_deer_steak_special_lunch", s("grain", 0.3692f), s("protein", 0.4913f), s("vegetable", 0.1395f));
         food("eternal_starlight_delight:cooked_aurora_deer_steak_cuts", s("protein", 1.0f));
         food("eternal_starlight_delight:cooked_luminaris_slice", s("protein", 1.0f));
         food("eternal_starlight_delight:cooked_luminofish_slice", s("protein", 1.0f));
@@ -462,24 +462,24 @@ final class CompatDelightAddons {
     private static void fungidelight() {
         food("fungidelight:cleaned_cap", s("vegetable", 1.0f));
         food("fungidelight:cooked_cleaned_cap", s("vegetable", 1.0f));
-        food("fungidelight:creamy_morel_soup", s("dairy", 0.0996f), s("protein", 0.1697f), s("vegetable", 0.7307f));
+        food("fungidelight:creamy_morel_soup", s("dairy", 0.0992f), s("protein", 0.1695f), s("vegetable", 0.7313f));
         food("fungidelight:inky_cap_mushroom", s("vegetable", 1.0f));
         food("fungidelight:inky_cap_scrambled_eggs", s("protein", 0.7385f), s("vegetable", 0.2615f));
         food("fungidelight:inky_caps_salad", s("vegetable", 1.0f));
         food("fungidelight:morel_mushroom", s("vegetable", 1.0f));
-        food("fungidelight:mutton_chops_with_truffle", s("protein", 0.3231f), s("vegetable", 0.6769f));
-        food("fungidelight:pork_marsala_with_mushrooms", s("protein", 0.4498f), s("vegetable", 0.5502f));
-        food("fungidelight:rabbit_with_morels", s("protein", 0.485f), s("vegetable", 0.515f));
-        food("fungidelight:steak_with_mushrooms", s("dairy", 0.1014f), s("protein", 0.5254f), s("vegetable", 0.3732f));
+        food("fungidelight:mutton_chops_with_truffle", s("protein", 0.3226f), s("vegetable", 0.6774f));
+        food("fungidelight:pork_marsala_with_mushrooms", s("protein", 0.4491f), s("vegetable", 0.5509f));
+        food("fungidelight:rabbit_with_morels", s("protein", 0.4846f), s("vegetable", 0.5154f));
+        food("fungidelight:steak_with_mushrooms", s("dairy", 0.101f), s("protein", 0.5242f), s("vegetable", 0.3748f));
         food("fungidelight:stuffed_morels", s("grain", 0.1245f), s("protein", 0.1686f), s("vegetable", 0.7069f));
         food("fungidelight:truffle", s("vegetable", 1.0f));
         food("fungidelight:truffle_ice_cream", s("dairy", 0.4428f), s("vegetable", 0.5572f));
-        food("fungidelight:truffle_pasta", s("dairy", 0.0914f), s("grain", 0.2358f), s("protein", 0.1625f), s("vegetable", 0.5103f));
+        food("fungidelight:truffle_pasta", s("dairy", 0.0911f), s("grain", 0.2356f), s("protein", 0.162f), s("vegetable", 0.5113f));
         food("fungidelight:truffle_slice", s("vegetable", 1.0f));
     }
 
     private static void gobberdelight() {
-        food("gobberdelight:ender_gobburger", s("grain", 0.233f), s("protein", 0.378f), s("vegetable", 0.389f));
+        food("gobberdelight:ender_gobburger", s("grain", 0.2327f), s("protein", 0.3776f), s("vegetable", 0.3897f));
         food("gobberdelight:ender_goo", s("protein", 1.0f));
         food("gobberdelight:ender_gooey_apple", s("fruit", 1.0f));
         food("gobberdelight:ender_gooey_apple_cider", s("fruit", 1.0f));
@@ -492,7 +492,7 @@ final class CompatDelightAddons {
         food("gobberdelight:ender_gooey_pie_2", s("grain", 1.0f));
         food("gobberdelight:ender_gooey_pie_3", s("grain", 1.0f));
         food("gobberdelight:ender_gooey_pie_slice", s("grain", 1.0f));
-        food("gobberdelight:gobburger", s("grain", 0.233f), s("protein", 0.378f), s("vegetable", 0.389f));
+        food("gobberdelight:gobburger", s("grain", 0.2327f), s("protein", 0.3776f), s("vegetable", 0.3897f));
         food("gobberdelight:gooey_apple_cider", s("fruit", 1.0f));
         food("gobberdelight:gooey_beef_slice", s("protein", 1.0f));
         food("gobberdelight:gooey_fruit_salad", s("fruit", 0.8333f), s("vegetable", 0.1667f));
@@ -501,7 +501,7 @@ final class CompatDelightAddons {
         food("gobberdelight:gooey_pie_2", s("grain", 1.0f));
         food("gobberdelight:gooey_pie_3", s("grain", 1.0f));
         food("gobberdelight:gooey_pie_slice", s("grain", 1.0f));
-        food("gobberdelight:nether_gobburger", s("grain", 0.233f), s("protein", 0.378f), s("vegetable", 0.389f));
+        food("gobberdelight:nether_gobburger", s("grain", 0.2327f), s("protein", 0.3776f), s("vegetable", 0.3897f));
         food("gobberdelight:nether_gooey_apple_cider", s("fruit", 1.0f));
         food("gobberdelight:nether_gooey_beef_slice", s("protein", 1.0f));
         food("gobberdelight:nether_gooey_pie", s("grain", 1.0f));
@@ -519,8 +519,8 @@ final class CompatDelightAddons {
         food("minersdelight:spicy_hoglin_stew_cup", s("protein", 0.5f), s("vegetable", 0.5f));
         food("minersdelight:spicy_noodle_soup_cup", s("grain", 0.5714f), s("protein", 0.1429f), s("vegetable", 0.2857f));
         food("minersdelight:strider_stew_cup", s("protein", 0.5f), s("vegetable", 0.5f));
-        food("minersdelight:stuffed_squid", s("grain", 0.3312f), s("protein", 0.5228f), s("vegetable", 0.146f));
-        food("minersdelight:takoyaki", s("grain", 0.2558f), s("protein", 0.5983f), s("vegetable", 0.146f));
+        food("minersdelight:stuffed_squid", s("grain", 0.3302f), s("protein", 0.5222f), s("vegetable", 0.1476f));
+        food("minersdelight:takoyaki", s("grain", 0.2553f), s("protein", 0.5971f), s("vegetable", 0.1475f));
     }
 
     private static void mynethersdelight() {
@@ -551,21 +551,21 @@ final class CompatDelightAddons {
         food("mynethersdelight:hoglin_sausage", s("protein", 1.0f));
         food("mynethersdelight:hot_cream", s("dairy", 1.0f));
         food("mynethersdelight:hot_cream_cone", s("dairy", 1.0f));
-        food("mynethersdelight:hot_wings", s("protein", 0.547f), s("vegetable", 0.453f));
-        food("mynethersdelight:hotdog", s("grain", 0.3785f), s("protein", 0.6215f));
-        food("mynethersdelight:hotdog_with_mixed_salad", s("grain", 0.2427f), s("protein", 0.4225f), s("vegetable", 0.3348f));
-        food("mynethersdelight:hotdog_with_nether_salad", s("grain", 0.2475f), s("protein", 0.4303f), s("vegetable", 0.3222f));
+        food("mynethersdelight:hot_wings", s("protein", 0.546f), s("vegetable", 0.454f));
+        food("mynethersdelight:hotdog", s("grain", 0.3794f), s("protein", 0.6206f));
+        food("mynethersdelight:hotdog_with_mixed_salad", s("grain", 0.2432f), s("protein", 0.4221f), s("vegetable", 0.3348f));
+        food("mynethersdelight:hotdog_with_nether_salad", s("grain", 0.2479f), s("protein", 0.4299f), s("vegetable", 0.3222f));
         food("mynethersdelight:magma_cake_block", s("grain", 1.0f));
         food("mynethersdelight:magma_cake_slice", s("grain", 1.0f));
         food("mynethersdelight:minced_strider", s("protein", 1.0f));
-        food("mynethersdelight:nether_burger", s("grain", 0.3374f), s("protein", 0.6626f));
+        food("mynethersdelight:nether_burger", s("grain", 0.3381f), s("protein", 0.6619f));
         food("mynethersdelight:pepper_powder", s("vegetable", 1.0f));
         food("mynethersdelight:roast_ear", s("vegetable", 1.0f));
         food("mynethersdelight:roast_stuffed_hoglin", s("protein", 0.3333f), s("vegetable", 0.6667f));
         food("mynethersdelight:roasted_sausage", s("protein", 1.0f));
         food("mynethersdelight:rock_soup", s("protein", 0.7778f), s("vegetable", 0.2222f));
         food("mynethersdelight:sausage_and_potatoes", s("protein", 0.6401f), s("vegetable", 0.3599f));
-        food("mynethersdelight:scotch_eggs", s("grain", 0.1688f), s("protein", 0.8312f));
+        food("mynethersdelight:scotch_eggs", s("grain", 0.1694f), s("protein", 0.8306f));
         food("mynethersdelight:sizzling_pudding", s("dairy", 0.3445f), s("grain", 0.2912f), s("protein", 0.1911f), s("vegetable", 0.1732f));
         food("mynethersdelight:slices_of_bread", s("grain", 1.0f));
         food("mynethersdelight:spicy_curry", s("dairy", 0.092f), s("grain", 0.1821f), s("protein", 0.3071f), s("vegetable", 0.4189f));
@@ -607,26 +607,26 @@ final class CompatDelightAddons {
     private static void oceansdelight() {
         food("oceansdelight:bowl_of_guardian_soup", s("protein", 0.3333f), s("vegetable", 0.6667f));
         food("oceansdelight:braised_sea_pickle", s("protein", 0.2603f), s("vegetable", 0.7397f));
-        food("oceansdelight:cabbage_wrapped_elder_guardian", s("protein", 0.2028f), s("vegetable", 0.7972f));
+        food("oceansdelight:cabbage_wrapped_elder_guardian", s("protein", 0.2021f), s("vegetable", 0.7979f));
         food("oceansdelight:cooked_elder_guardian_slice", s("protein", 1.0f));
         food("oceansdelight:cooked_guardian_tail", s("protein", 1.0f));
-        food("oceansdelight:cooked_stuffed_cod", s("protein", 0.7059f), s("vegetable", 0.2941f));
+        food("oceansdelight:cooked_stuffed_cod", s("protein", 0.7054f), s("vegetable", 0.2946f));
         food("oceansdelight:cooked_stuffed_squid", s("grain", 0.2603f), s("protein", 0.5556f), s("vegetable", 0.1841f));
         food("oceansdelight:elder_guardian_roll", s("grain", 0.7003f), s("protein", 0.2997f));
         food("oceansdelight:elder_guardian_slice", s("protein", 1.0f));
         food("oceansdelight:fugu_roll", s("grain", 0.5337f), s("protein", 0.4663f));
         food("oceansdelight:fugu_slice", s("protein", 1.0f));
-        food("oceansdelight:guardian_soup", s("protein", 0.3963f), s("vegetable", 0.6037f));
+        food("oceansdelight:guardian_soup", s("protein", 0.3956f), s("vegetable", 0.6044f));
         food("oceansdelight:honey_fried_kelp", s("fruit", 0.5845f), s("vegetable", 0.4155f));
         food("oceansdelight:kelp_encrusted_cod", s("grain", 0.1146f), s("protein", 0.5865f), s("vegetable", 0.2989f));
         food("oceansdelight:seagrass_salad", s("vegetable", 1.0f));
         food("oceansdelight:squid_rings", s("grain", 0.4047f), s("protein", 0.4912f), s("vegetable", 0.104f));
-        food("oceansdelight:stuffed_cod", s("protein", 0.5589f), s("vegetable", 0.4411f));
+        food("oceansdelight:stuffed_cod", s("protein", 0.5582f), s("vegetable", 0.4418f));
         food("oceansdelight:stuffed_squid", s("grain", 0.3905f), s("protein", 0.3333f), s("vegetable", 0.2761f));
     }
 
     private static void ramadandelight() {
-        food("ramadandelight:bourek", s("grain", 0.4246f), s("protein", 0.3457f), s("vegetable", 0.2297f));
+        food("ramadandelight:bourek", s("grain", 0.4246f), s("protein", 0.3454f), s("vegetable", 0.23f));
         food("ramadandelight:chickpea", s("protein", 0.6667f), s("vegetable", 0.3333f));
         food("ramadandelight:chickpea_and_rice", s("grain", 0.4118f), s("protein", 0.2405f), s("vegetable", 0.3477f));
         food("ramadandelight:chorba", s("protein", 0.3802f), s("vegetable", 0.6198f));
@@ -641,11 +641,11 @@ final class CompatDelightAddons {
         food("ramadandelight:luqaimat", s("fruit", 0.1194f), s("grain", 0.7675f), s("protein", 0.1131f));
         food("ramadandelight:mahalabia", s("dairy", 0.5337f), s("fruit", 0.3485f), s("protein", 0.1178f));
         food("ramadandelight:parsley", s("vegetable", 1.0f));
-        food("ramadandelight:samosa", s("grain", 0.4755f), s("protein", 0.2053f), s("vegetable", 0.3192f));
-        food("ramadandelight:savory_filling", s("protein", 0.467f), s("vegetable", 0.533f));
+        food("ramadandelight:samosa", s("grain", 0.4755f), s("protein", 0.2049f), s("vegetable", 0.3196f));
+        food("ramadandelight:savory_filling", s("protein", 0.4659f), s("vegetable", 0.5341f));
         food("ramadandelight:sayadieh", s("grain", 0.3776f), s("protein", 0.3504f), s("vegetable", 0.272f));
         food("ramadandelight:small_dough", s("grain", 0.7381f), s("protein", 0.1579f), s("vegetable", 0.104f));
-        food("ramadandelight:sweet_tagine", s("fruit", 0.5585f), s("protein", 0.2193f), s("vegetable", 0.2222f));
+        food("ramadandelight:sweet_tagine", s("fruit", 0.5582f), s("protein", 0.2196f), s("vegetable", 0.2222f));
         food("ramadandelight:tagine", s("protein", 0.4348f), s("vegetable", 0.5652f));
         food("ramadandelight:zalabiyeh", s("fruit", 0.1111f), s("grain", 0.627f), s("protein", 0.1579f), s("vegetable", 0.104f));
     }
@@ -770,10 +770,10 @@ final class CompatDelightAddons {
         food("rusticdelight:fried_calamari", s("grain", 0.1867f), s("protein", 0.6248f), s("vegetable", 0.1885f));
         food("rusticdelight:fried_chicken", s("grain", 0.1644f), s("protein", 0.6009f), s("vegetable", 0.2347f));
         food("rusticdelight:fried_dough", s("grain", 0.7381f), s("protein", 0.1579f), s("vegetable", 0.104f));
-        food("rusticdelight:fried_dumplings", s("grain", 0.6502f), s("protein", 0.1717f), s("vegetable", 0.1781f));
+        food("rusticdelight:fried_dumplings", s("grain", 0.6502f), s("protein", 0.1714f), s("vegetable", 0.1784f));
         food("rusticdelight:fried_fish", s("grain", 0.2484f), s("protein", 0.7516f));
         food("rusticdelight:fried_mushrooms", s("protein", 0.2603f), s("vegetable", 0.7397f));
-        food("rusticdelight:fruit_beignet", s("fruit", 0.6907f), s("grain", 0.2225f), s("protein", 0.0868f));
+        food("rusticdelight:fruit_beignet", s("fruit", 0.6908f), s("grain", 0.2224f), s("protein", 0.0868f));
         food("rusticdelight:golden_coffee_beans", s("fruit", 0.25f), s("protein", 0.5f), s("vegetable", 0.25f));
         food("rusticdelight:honey_coffee", s("fruit", 1.0f));
         food("rusticdelight:honey_pancake", s("fruit", 0.3333f), s("grain", 0.6667f));
@@ -807,7 +807,7 @@ final class CompatDelightAddons {
         food("rusticdelight:roasted_bell_pepper_white", s("vegetable", 1.0f));
         food("rusticdelight:roasted_bell_pepper_yellow", s("vegetable", 1.0f));
         food("rusticdelight:roasted_coffee_beans", s("fruit", 0.25f), s("protein", 0.5f), s("vegetable", 0.25f));
-        food("rusticdelight:spring_rolls", s("grain", 0.4816f), s("protein", 0.1534f), s("vegetable", 0.365f));
+        food("rusticdelight:spring_rolls", s("grain", 0.4816f), s("protein", 0.1477f), s("vegetable", 0.3707f));
         food("rusticdelight:stuffed_bell_pepper_black", s("grain", 0.2227f), s("protein", 0.1683f), s("vegetable", 0.609f));
         food("rusticdelight:stuffed_bell_pepper_blue", s("grain", 0.2227f), s("protein", 0.1683f), s("vegetable", 0.609f));
         food("rusticdelight:stuffed_bell_pepper_green", s("grain", 0.2227f), s("protein", 0.1683f), s("vegetable", 0.609f));
@@ -817,7 +817,7 @@ final class CompatDelightAddons {
         food("rusticdelight:stuffed_bell_pepper_red", s("grain", 0.2227f), s("protein", 0.1683f), s("vegetable", 0.609f));
         food("rusticdelight:stuffed_bell_pepper_white", s("grain", 0.2227f), s("protein", 0.1683f), s("vegetable", 0.609f));
         food("rusticdelight:stuffed_bell_pepper_yellow", s("grain", 0.2227f), s("protein", 0.1683f), s("vegetable", 0.609f));
-        food("rusticdelight:sweet_salad", s("fruit", 0.3895f), s("vegetable", 0.6105f));
+        food("rusticdelight:sweet_salad", s("fruit", 0.3928f), s("vegetable", 0.6072f));
         food("rusticdelight:syrup", s("fruit", 0.6667f), s("vegetable", 0.3333f));
     }
 
@@ -826,7 +826,7 @@ final class CompatDelightAddons {
         food("rusticdelight:syrup_cheesecake_slice", s("dairy", 0.6667f), s("grain", 0.3333f));
         food("rusticdelight:syrup_coffee", s("dairy", 0.1031f), s("fruit", 0.6564f), s("protein", 0.0862f), s("vegetable", 0.1542f));
         food("rusticdelight:syrup_cookie", s("fruit", 0.16f), s("grain", 0.84f));
-        food("rusticdelight:syrup_sandwich", s("fruit", 0.2092f), s("grain", 0.6559f), s("vegetable", 0.1349f));
+        food("rusticdelight:syrup_sandwich", s("fruit", 0.2097f), s("grain", 0.657f), s("vegetable", 0.1333f));
         food("rusticdelight:vegetable_pancake", s("dairy", 0.0844f), s("grain", 0.3868f), s("vegetable", 0.5288f));
         food("rusticdelight:vegetable_pancakes", s("dairy", 0.1266f), s("grain", 0.3302f), s("vegetable", 0.5431f));
     }
@@ -842,17 +842,17 @@ final class CompatDelightAddons {
         food("twilightdelight:cooked_venison_rib", s("protein", 1.0f));
         food("twilightdelight:fried_insect", s("protein", 0.3333f), s("vegetable", 0.6667f));
         food("twilightdelight:ghast_brain_salad", s("protein", 0.1667f), s("vegetable", 0.8333f));
-        food("twilightdelight:ghast_burger", s("grain", 0.402f), s("protein", 0.2328f), s("vegetable", 0.3653f));
+        food("twilightdelight:ghast_burger", s("grain", 0.4028f), s("protein", 0.2321f), s("vegetable", 0.365f));
         food("twilightdelight:glacier_ice_tea", s("fruit", 1.0f));
         food("twilightdelight:glow_venison_rib_with_pasta", s("fruit", 0.1199f), s("grain", 0.3065f), s("protein", 0.4164f), s("vegetable", 0.1571f));
         food("twilightdelight:glowstew", s("fruit", 0.6667f), s("protein", 0.1667f), s("vegetable", 0.1667f));
         food("twilightdelight:grilled_ghast", s("grain", 0.3905f), s("protein", 0.3333f), s("vegetable", 0.2761f));
         food("twilightdelight:grilled_tomahawk_smeak", s("dairy", 0.1805f), s("fruit", 0.1289f), s("protein", 0.3991f), s("vegetable", 0.2915f));
-        food("twilightdelight:hydra_burger", s("grain", 0.2516f), s("protein", 0.373f), s("vegetable", 0.3754f));
+        food("twilightdelight:hydra_burger", s("grain", 0.2522f), s("protein", 0.3727f), s("vegetable", 0.3752f));
         food("twilightdelight:hydra_piece", s("protein", 1.0f));
         food("twilightdelight:liveroot_pork_fried_rice", s("grain", 0.3204f), s("protein", 0.6796f));
         food("twilightdelight:liveroot_venison_noodle_soup", s("grain", 0.1968f), s("protein", 0.5309f), s("vegetable", 0.2723f));
-        food("twilightdelight:meef_wrap", s("grain", 0.4997f), s("protein", 0.176f), s("vegetable", 0.3243f));
+        food("twilightdelight:meef_wrap", s("grain", 0.5003f), s("protein", 0.1757f), s("vegetable", 0.324f));
         food("twilightdelight:mushgloom_meef_pasta", s("grain", 0.5062f), s("protein", 0.3125f), s("vegetable", 0.1813f));
         food("twilightdelight:mushgloom_sauce", s("protein", 0.1841f), s("vegetable", 0.8159f));
         food("twilightdelight:phytochemical_juice", s("fruit", 1.0f));
@@ -863,11 +863,11 @@ final class CompatDelightAddons {
         food("twilightdelight:torchberry_juice", s("fruit", 1.0f));
         food("twilightdelight:torchberry_pie", s("fruit", 0.5f), s("grain", 0.5f));
         food("twilightdelight:torchberry_pie_slice", s("fruit", 0.5f), s("grain", 0.5f));
-        food("twilightdelight:torchberry_venison_sandwich", s("fruit", 0.277f), s("grain", 0.2762f), s("protein", 0.2877f), s("vegetable", 0.1591f));
+        food("twilightdelight:torchberry_venison_sandwich", s("fruit", 0.2773f), s("grain", 0.2769f), s("protein", 0.2874f), s("vegetable", 0.1584f));
     }
 
     private static void undergardendelight() {
-        food("undergardendelight:baked_gwibling_and_vegetables", s("protein", 0.3031f), s("vegetable", 0.6969f));
+        food("undergardendelight:baked_gwibling_and_vegetables", s("protein", 0.3035f), s("vegetable", 0.6965f));
         food("undergardendelight:blisterberry_juice", s("fruit", 1.0f));
         food("undergardendelight:blisterberry_pie", s("fruit", 0.5f), s("grain", 0.5f));
         food("undergardendelight:blisterberry_pie_slice", s("fruit", 0.5f), s("grain", 0.5f));
@@ -895,7 +895,7 @@ final class CompatDelightAddons {
         food("undergardendelight:glitterdish", s("fruit", 0.367f), s("protein", 0.1111f), s("vegetable", 0.5219f));
         food("undergardendelight:glitterkelp_roll", s("grain", 0.5239f), s("vegetable", 0.4761f));
         food("undergardendelight:glitterkelp_roll_slice", s("grain", 0.5f), s("vegetable", 0.5f));
-        food("undergardendelight:glitterwrap", s("grain", 0.3386f), s("protein", 0.178f), s("vegetable", 0.4834f));
+        food("undergardendelight:glitterwrap", s("grain", 0.3398f), s("protein", 0.1779f), s("vegetable", 0.4823f));
         food("undergardendelight:gloomgourd_juice", s("vegetable", 1.0f));
         food("undergardendelight:gloomgourd_pie_slice", s("grain", 0.5f), s("vegetable", 0.5f));
         food("undergardendelight:gloomper_and_gloomgourd_stew", s("protein", 0.6554f), s("vegetable", 0.3446f));
@@ -912,7 +912,7 @@ final class CompatDelightAddons {
         food("undergardendelight:raw_gwibsteak", s("protein", 1.0f));
         food("undergardendelight:scintling_stew", s("fruit", 0.2532f), s("protein", 0.3734f), s("vegetable", 0.3734f));
         food("undergardendelight:smoked_greater_dweller_hamleg", s("protein", 1.0f));
-        food("undergardendelight:stuffed_gloomgourd", s("fruit", 0.1623f), s("protein", 0.2841f), s("vegetable", 0.5536f));
+        food("undergardendelight:stuffed_gloomgourd", s("fruit", 0.1617f), s("protein", 0.2844f), s("vegetable", 0.5538f));
         food("undergardendelight:underbean_hotpot", s("protein", 0.6667f), s("vegetable", 0.3333f));
         food("undergardendelight:underbean_salad", s("protein", 0.4444f), s("vegetable", 0.5556f));
         food("undergardendelight:underdumplings", s("grain", 0.3333f), s("protein", 0.238f), s("vegetable", 0.4287f));
@@ -954,46 +954,46 @@ final class CompatDelightAddons {
         food("veggiesdelight:bellpepper", s("vegetable", 1.0f));
         food("veggiesdelight:broccoli", s("vegetable", 1.0f));
         food("veggiesdelight:broccoli_salad", s("vegetable", 1.0f));
-        food("veggiesdelight:broccoli_soup", s("dairy", 0.1303f), s("vegetable", 0.8697f));
+        food("veggiesdelight:broccoli_soup", s("dairy", 0.1208f), s("fruit", 0.0863f), s("vegetable", 0.7929f));
         food("veggiesdelight:cacciatore", s("protein", 0.4256f), s("vegetable", 0.5744f));
         food("veggiesdelight:carrot_cake", s("grain", 0.5f), s("vegetable", 0.5f));
         food("veggiesdelight:carrot_cake_slice", s("grain", 0.5f), s("vegetable", 0.5f));
         food("veggiesdelight:carrot_juice", s("vegetable", 1.0f));
         food("veggiesdelight:cauliflower", s("vegetable", 1.0f));
-        food("veggiesdelight:cauliflower_bread", s("grain", 0.3727f), s("vegetable", 0.6273f));
+        food("veggiesdelight:cauliflower_bread", s("grain", 0.3756f), s("vegetable", 0.6244f));
         food("veggiesdelight:cauliflower_floret", s("vegetable", 1.0f));
-        food("veggiesdelight:cauliflower_kuku", s("dairy", 0.0877f), s("vegetable", 0.9123f));
-        food("veggiesdelight:cauliflower_soup", s("dairy", 0.1269f), s("vegetable", 0.8731f));
-        food("veggiesdelight:cesar_salad", s("grain", 0.1663f), s("vegetable", 0.8337f));
-        food("veggiesdelight:chicken_fajitas_wrap", s("grain", 0.3136f), s("protein", 0.3686f), s("vegetable", 0.3178f));
-        food("veggiesdelight:cooked_vegetarian_patty", s("protein", 0.6515f), s("vegetable", 0.3485f));
+        food("veggiesdelight:cauliflower_kuku", s("dairy", 0.0874f), s("vegetable", 0.9126f));
+        food("veggiesdelight:cauliflower_soup", s("dairy", 0.1289f), s("vegetable", 0.8711f));
+        food("veggiesdelight:cesar_salad", s("grain", 0.167f), s("vegetable", 0.833f));
+        food("veggiesdelight:chicken_fajitas_wrap", s("grain", 0.3132f), s("protein", 0.368f), s("vegetable", 0.3188f));
+        food("veggiesdelight:cooked_vegetarian_patty", s("protein", 0.6518f), s("vegetable", 0.3482f));
         food("veggiesdelight:dandelion_and_eggs", s("protein", 0.8267f), s("vegetable", 0.1733f));
         food("veggiesdelight:dandelion_juice", s("fruit", 0.3333f), s("vegetable", 0.6667f));
         food("veggiesdelight:dandelion_leaf", s("vegetable", 1.0f));
         food("veggiesdelight:fermented_garlic_honey", s("fruit", 0.3643f), s("vegetable", 0.6357f));
         food("veggiesdelight:fish_and_chips", s("protein", 0.6394f), s("vegetable", 0.3606f));
         food("veggiesdelight:garlic", s("vegetable", 1.0f));
-        food("veggiesdelight:garlic_baked_cod", s("protein", 0.3578f), s("vegetable", 0.6422f));
-        food("veggiesdelight:garlic_bread", s("grain", 0.2983f), s("vegetable", 0.7017f));
+        food("veggiesdelight:garlic_baked_cod", s("protein", 0.3572f), s("vegetable", 0.6428f));
+        food("veggiesdelight:garlic_bread", s("grain", 0.2986f), s("vegetable", 0.7014f));
         food("veggiesdelight:garlic_chicken_stew", s("dairy", 0.1184f), s("protein", 0.498f), s("vegetable", 0.3837f));
         food("veggiesdelight:garlic_clove", s("vegetable", 1.0f));
         food("veggiesdelight:garlic_rice_with_cauliflower", s("grain", 0.4107f), s("vegetable", 0.5893f));
         food("veggiesdelight:garlic_stuffed_mushrooms", s("protein", 0.1916f), s("vegetable", 0.8084f));
         food("veggiesdelight:lasagna_pan", s("grain", 0.6685f), s("vegetable", 0.3315f));
         food("veggiesdelight:mashed_potatoes", s("dairy", 0.1321f), s("fruit", 0.0944f), s("vegetable", 0.7735f));
-        food("veggiesdelight:mhadjeb", s("grain", 0.3642f), s("protein", 0.2575f), s("vegetable", 0.3783f));
-        food("veggiesdelight:pasta_with_broccoli", s("dairy", 0.1193f), s("grain", 0.2835f), s("protein", 0.1613f), s("vegetable", 0.4359f));
+        food("veggiesdelight:mhadjeb", s("grain", 0.3642f), s("protein", 0.2571f), s("vegetable", 0.3788f));
+        food("veggiesdelight:pasta_with_broccoli", s("dairy", 0.1201f), s("grain", 0.2843f), s("protein", 0.1624f), s("vegetable", 0.4331f));
         food("veggiesdelight:potato_noodle", s("grain", 0.1667f), s("vegetable", 0.8333f));
         food("veggiesdelight:potato_noodles", s("grain", 0.2778f), s("vegetable", 0.7222f));
-        food("veggiesdelight:raw_vegetarian_patty", s("grain", 0.1092f), s("protein", 0.4061f), s("vegetable", 0.4847f));
-        food("veggiesdelight:rice_and_vegetables", s("grain", 0.2977f), s("vegetable", 0.7023f));
+        food("veggiesdelight:raw_vegetarian_patty", s("grain", 0.1095f), s("protein", 0.4063f), s("vegetable", 0.4842f));
+        food("veggiesdelight:rice_and_vegetables", s("grain", 0.2983f), s("vegetable", 0.7017f));
         food("veggiesdelight:roasted_cauliflower_floret", s("vegetable", 1.0f));
         food("veggiesdelight:roasted_garlic_clove", s("vegetable", 1.0f));
         food("veggiesdelight:roasted_vegetables", s("vegetable", 1.0f));
         food("veggiesdelight:roasted_zucchini", s("vegetable", 1.0f));
-        food("veggiesdelight:shakshouka", s("protein", 0.3468f), s("vegetable", 0.6532f));
+        food("veggiesdelight:shakshouka", s("protein", 0.3462f), s("vegetable", 0.6538f));
         food("veggiesdelight:smoked_bellpepper", s("vegetable", 1.0f));
-        food("veggiesdelight:steak_and_broccoli", s("grain", 0.24f), s("protein", 0.4437f), s("vegetable", 0.3163f));
+        food("veggiesdelight:steak_and_broccoli", s("grain", 0.2409f), s("protein", 0.4449f), s("vegetable", 0.3142f));
         food("veggiesdelight:stuffed_bellpepper", s("vegetable", 1.0f));
         food("veggiesdelight:stuffed_zucchinis", s("vegetable", 1.0f));
         food("veggiesdelight:sweet_potato", s("vegetable", 1.0f));
@@ -1003,19 +1003,19 @@ final class CompatDelightAddons {
         food("veggiesdelight:sweet_potato_pie", s("grain", 0.5f), s("vegetable", 0.5f));
         food("veggiesdelight:sweet_potato_pie_slice", s("grain", 0.5f), s("vegetable", 0.5f));
         food("veggiesdelight:turnip", s("vegetable", 1.0f));
-        food("veggiesdelight:turnip_beef_stew", s("protein", 0.3905f), s("vegetable", 0.6095f));
-        food("veggiesdelight:turnip_cake", s("grain", 0.3869f), s("vegetable", 0.6131f));
-        food("veggiesdelight:turnip_mutton_skewer", s("protein", 0.5649f), s("vegetable", 0.4351f));
+        food("veggiesdelight:turnip_beef_stew", s("protein", 0.3889f), s("vegetable", 0.6111f));
+        food("veggiesdelight:turnip_cake", s("grain", 0.3851f), s("vegetable", 0.6149f));
+        food("veggiesdelight:turnip_mutton_skewer", s("protein", 0.5609f), s("vegetable", 0.4391f));
         food("veggiesdelight:turnip_salad", s("vegetable", 1.0f));
         food("veggiesdelight:turnip_water", s("vegetable", 1.0f));
         food("veggiesdelight:vegan_pizza", s("dairy", 0.3333f), s("grain", 0.6667f));
         food("veggiesdelight:vegan_pizza_slice", s("dairy", 0.3333f), s("grain", 0.6667f));
-        food("veggiesdelight:vegetables_wrap", s("grain", 0.6573f), s("vegetable", 0.3427f));
-        food("veggiesdelight:vegetarian_burger", s("grain", 0.247f), s("protein", 0.3856f), s("vegetable", 0.3674f));
+        food("veggiesdelight:vegetables_wrap", s("grain", 0.6558f), s("vegetable", 0.3442f));
+        food("veggiesdelight:vegetarian_burger", s("grain", 0.2476f), s("protein", 0.3853f), s("vegetable", 0.3671f));
         food("veggiesdelight:zucchini", s("vegetable", 1.0f));
         food("veggiesdelight:zucchini_quiche", s("dairy", 0.2f), s("protein", 0.4f), s("vegetable", 0.4f));
         food("veggiesdelight:zucchini_quiche_slice", s("dairy", 0.2f), s("protein", 0.4f), s("vegetable", 0.4f));
-        food("veggiesdelight:zucchini_sandwich", s("grain", 0.3308f), s("vegetable", 0.6692f));
+        food("veggiesdelight:zucchini_sandwich", s("grain", 0.3313f), s("vegetable", 0.6687f));
         food("veggiesdelight:zucchini_slice", s("vegetable", 1.0f));
     }
 }

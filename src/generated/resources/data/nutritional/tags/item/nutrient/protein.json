@@ -5667,6 +5667,86 @@
     {
       "id": "vinery:chenet_wine",
       "required": false
+    },
+    {
+      "id": "pantryforblockheads:bacon",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:burger",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:burrito",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chicken_nuggets",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:dumpling",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:falafel",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:fish_fillet",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:fried_egg",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:hotdog",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:inari_sushi",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:maki_sushi",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:nigiri_sushi",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:peanut",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pepperoni_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pepperoni_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:sausage",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:soy_milk",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:soybean",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:taco",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:tofu",
+      "required": false
     }
   ]
 }

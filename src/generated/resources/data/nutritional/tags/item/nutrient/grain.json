@@ -4591,6 +4591,162 @@
     {
       "id": "undergarden:gloomgourd_pie",
       "required": false
+    },
+    {
+      "id": "pantryforblockheads:bagel",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:berry_muffin",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:breadstick",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:burger",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:burrito",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cheese_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cheese_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chicken_nuggets",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate_cupcake",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate_doughnut",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chocolate_icecream",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:corn",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:croissant",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cupcake",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:dumpling",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:flatbread",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:fortune_cookie",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:hotdog",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:icecream",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:inari_sushi",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:maki_sushi",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:muffin",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:nigiri_sushi",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:onion_rings",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pancakes",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pepperoni_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pepperoni_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pink_doughnut",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pink_doughnut_sprinkles",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:popcorn",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pretzel",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:rice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:rice_ball",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:rice_cracker",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:sandwich",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:taco",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:vegetable_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:vegetable_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:waffle",
+      "required": false
     }
   ]
 }

@@ -4795,6 +4795,110 @@
     {
       "id": "vinery:kelp_cider",
       "required": false
+    },
+    {
+      "id": "pantryforblockheads:bell_pepper",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:broccoli",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:burger",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:burrito",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cauliflower",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cheese_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:cheese_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:chili_pepper",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:corn",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:eggplant",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:falafel",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:lettuce",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:maki_sushi",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:mashed_produce",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:onion",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:onion_rings",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pepperoni_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:pepperoni_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:popcorn",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:rice_ball",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:sandwich",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:taco",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:tomato",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:turnip",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:vegetable_pizza",
+      "required": false
+    },
+    {
+      "id": "pantryforblockheads:vegetable_pizza_slice",
+      "required": false
     }
   ]
 }

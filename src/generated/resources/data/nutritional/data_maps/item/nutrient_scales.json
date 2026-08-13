@@ -1219,9 +1219,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1412,
-        "nutritional:protein": 0.3329,
-        "nutritional:vegetable": 0.5259
+        "nutritional:grain": 0.1403,
+        "nutritional:protein": 0.3315,
+        "nutritional:vegetable": 0.5282
       }
     },
     "alexsdelight:bison_burger": {
@@ -1232,9 +1232,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2363,
-        "nutritional:protein": 0.4293,
-        "nutritional:vegetable": 0.3344
+        "nutritional:grain": 0.2368,
+        "nutritional:protein": 0.4291,
+        "nutritional:vegetable": 0.3341
       }
     },
     "alexsdelight:bison_patty": {
@@ -1256,8 +1256,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.6,
-        "nutritional:vegetable": 0.4
+        "nutritional:grain": 0.6012,
+        "nutritional:vegetable": 0.3988
       }
     },
     "alexsdelight:cooked_bison": {
@@ -2247,8 +2247,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.4737,
-        "nutritional:vegetable": 0.5263
+        "nutritional:protein": 0.4734,
+        "nutritional:vegetable": 0.5266
       }
     },
     "aquaculturedelight:fish_roll_medley": {
@@ -2367,9 +2367,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2546,
-        "nutritional:protein": 0.439,
-        "nutritional:vegetable": 0.3064
+        "nutritional:grain": 0.2552,
+        "nutritional:protein": 0.4395,
+        "nutritional:vegetable": 0.3053
       }
     },
     "aquaculturedelight:halibut_with_tartar_sauce": {
@@ -2380,8 +2380,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.6654,
-        "nutritional:vegetable": 0.3346
+        "nutritional:protein": 0.6643,
+        "nutritional:vegetable": 0.3357
       }
     },
     "aquaculturedelight:jellyfish_jelly": {
@@ -2405,9 +2405,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2037,
-        "nutritional:protein": 0.4019,
-        "nutritional:vegetable": 0.3943
+        "nutritional:grain": 0.2033,
+        "nutritional:protein": 0.4014,
+        "nutritional:vegetable": 0.3954
       }
     },
     "aquaculturedelight:poor_fisher_chowder": {
@@ -2443,8 +2443,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.3333,
-        "nutritional:protein": 0.2211,
-        "nutritional:vegetable": 0.4456
+        "nutritional:protein": 0.2201,
+        "nutritional:vegetable": 0.4466
       }
     },
     "aquaculturedelight:small_turtle_meat": {
@@ -2971,9 +2971,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2416,
-        "nutritional:protein": 0.4929,
-        "nutritional:vegetable": 0.2654
+        "nutritional:grain": 0.2418,
+        "nutritional:protein": 0.4921,
+        "nutritional:vegetable": 0.2661
       }
     },
     "casualnessdelight:fish_and_chips": {
@@ -3068,8 +3068,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.3333,
-        "nutritional:protein": 0.2471,
-        "nutritional:vegetable": 0.4195
+        "nutritional:protein": 0.2461,
+        "nutritional:vegetable": 0.4206
       }
     },
     "casualnessdelight:phantom_puff": {
@@ -3233,8 +3233,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.7406,
-        "nutritional:vegetable": 0.2594
+        "nutritional:protein": 0.7396,
+        "nutritional:vegetable": 0.2604
       }
     },
     "casualnessdelight:spring_roll": {
@@ -3794,8 +3794,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.789,
-        "nutritional:vegetable": 0.211
+        "nutritional:protein": 0.7896,
+        "nutritional:vegetable": 0.2104
       }
     },
     "crabbersdelight:squid_kebab": {
@@ -3806,8 +3806,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5659,
-        "nutritional:vegetable": 0.4341
+        "nutritional:protein": 0.5648,
+        "nutritional:vegetable": 0.4352
       }
     },
     "crabbersdelight:stuffed_nautilus_shell": {
@@ -3818,8 +3818,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.461,
-        "nutritional:vegetable": 0.539
+        "nutritional:protein": 0.4601,
+        "nutritional:vegetable": 0.5399
       }
     },
     "crabbersdelight:tropical_fish_slice": {
@@ -3885,8 +3885,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1328,
-        "nutritional:vegetable": 0.8672
+        "nutritional:fruit": 0.1332,
+        "nutritional:vegetable": 0.8668
       }
     },
     "croptopia:ajvar_toast": {
@@ -3897,8 +3897,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.6975,
-        "nutritional:vegetable": 0.3025
+        "nutritional:grain": 0.6976,
+        "nutritional:vegetable": 0.3024
       }
     },
     "croptopia:almond": {
@@ -3943,10 +3943,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1792,
-        "nutritional:grain": 0.2898,
-        "nutritional:protein": 0.3689,
-        "nutritional:vegetable": 0.162
+        "nutritional:dairy": 0.1794,
+        "nutritional:grain": 0.29,
+        "nutritional:protein": 0.3692,
+        "nutritional:vegetable": 0.1615
       }
     },
     "croptopia:apple_juice": {
@@ -4216,9 +4216,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1039,
-        "nutritional:protein": 0.4534,
-        "nutritional:vegetable": 0.4427
+        "nutritional:fruit": 0.1041,
+        "nutritional:protein": 0.4538,
+        "nutritional:vegetable": 0.4421
       }
     },
     "croptopia:beef_wellington": {
@@ -4229,9 +4229,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1881,
-        "nutritional:protein": 0.4901,
-        "nutritional:vegetable": 0.3218
+        "nutritional:grain": 0.1879,
+        "nutritional:protein": 0.4896,
+        "nutritional:vegetable": 0.3225
       }
     },
     "croptopia:beer": {
@@ -4311,9 +4311,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3306,
-        "nutritional:protein": 0.3013,
-        "nutritional:vegetable": 0.3681
+        "nutritional:grain": 0.3314,
+        "nutritional:protein": 0.302,
+        "nutritional:vegetable": 0.3666
       }
     },
     "croptopia:blueberry": {
@@ -4382,9 +4382,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.6792,
-        "nutritional:protein": 0.0963,
-        "nutritional:vegetable": 0.2245
+        "nutritional:grain": 0.6795,
+        "nutritional:protein": 0.0964,
+        "nutritional:vegetable": 0.2241
       }
     },
     "croptopia:butter": {
@@ -4443,9 +4443,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2572,
-        "nutritional:protein": 0.2164,
-        "nutritional:vegetable": 0.5264
+        "nutritional:grain": 0.257,
+        "nutritional:protein": 0.216,
+        "nutritional:vegetable": 0.5269
       }
     },
     "croptopia:caesar_salad": {
@@ -4537,9 +4537,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1971,
-        "nutritional:protein": 0.5064,
-        "nutritional:vegetable": 0.2966
+        "nutritional:grain": 0.1965,
+        "nutritional:protein": 0.5059,
+        "nutritional:vegetable": 0.2975
       }
     },
     "croptopia:cashew": {
@@ -4619,10 +4619,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.3805,
-        "nutritional:grain": 0.3153,
-        "nutritional:protein": 0.1503,
-        "nutritional:vegetable": 0.1539
+        "nutritional:dairy": 0.3807,
+        "nutritional:grain": 0.3155,
+        "nutritional:protein": 0.1504,
+        "nutritional:vegetable": 0.1534
       }
     },
     "croptopia:cheeseburger": {
@@ -4760,9 +4760,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.6894,
+        "nutritional:grain": 0.6895,
         "nutritional:protein": 0.1988,
-        "nutritional:vegetable": 0.1119
+        "nutritional:vegetable": 0.1117
       }
     },
     "croptopia:chocolate": {
@@ -4987,9 +4987,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2585,
-        "nutritional:protein": 0.2312,
-        "nutritional:vegetable": 0.5102
+        "nutritional:grain": 0.2583,
+        "nutritional:protein": 0.2309,
+        "nutritional:vegetable": 0.5108
       }
     },
     "croptopia:crab": {
@@ -5201,9 +5201,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3267,
-        "nutritional:protein": 0.498,
-        "nutritional:vegetable": 0.1753
+        "nutritional:grain": 0.3273,
+        "nutritional:protein": 0.4993,
+        "nutritional:vegetable": 0.1735
       }
     },
     "croptopia:eggplant": {
@@ -5262,10 +5262,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.0976,
-        "nutritional:grain": 0.356,
-        "nutritional:protein": 0.3806,
-        "nutritional:vegetable": 0.1658
+        "nutritional:dairy": 0.0977,
+        "nutritional:grain": 0.3561,
+        "nutritional:protein": 0.3808,
+        "nutritional:vegetable": 0.1653
       }
     },
     "croptopia:eton_mess": {
@@ -5289,10 +5289,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.0913,
+        "nutritional:dairy": 0.0912,
         "nutritional:grain": 0.1333,
-        "nutritional:protein": 0.3335,
-        "nutritional:vegetable": 0.4418
+        "nutritional:protein": 0.3332,
+        "nutritional:vegetable": 0.4423
       }
     },
     "croptopia:fig": {
@@ -5485,8 +5485,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.545,
-        "nutritional:vegetable": 0.455
+        "nutritional:protein": 0.5446,
+        "nutritional:vegetable": 0.4554
       }
     },
     "croptopia:grape": {
@@ -5577,8 +5577,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1338,
-        "nutritional:vegetable": 0.8662
+        "nutritional:fruit": 0.1342,
+        "nutritional:vegetable": 0.8658
       }
     },
     "croptopia:grilled_oysters": {
@@ -6337,11 +6337,11 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1177,
-        "nutritional:fruit": 0.2901,
-        "nutritional:grain": 0.1927,
-        "nutritional:protein": 0.2514,
-        "nutritional:vegetable": 0.148
+        "nutritional:dairy": 0.1178,
+        "nutritional:fruit": 0.2903,
+        "nutritional:grain": 0.1928,
+        "nutritional:protein": 0.2515,
+        "nutritional:vegetable": 0.1477
       }
     },
     "croptopia:pizza": {
@@ -6352,10 +6352,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.2582,
-        "nutritional:grain": 0.4267,
-        "nutritional:protein": 0.1034,
-        "nutritional:vegetable": 0.2117
+        "nutritional:dairy": 0.2584,
+        "nutritional:grain": 0.427,
+        "nutritional:protein": 0.1035,
+        "nutritional:vegetable": 0.2111
       }
     },
     "croptopia:plum": {
@@ -6490,10 +6490,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.2244,
-        "nutritional:grain": 0.1039,
-        "nutritional:protein": 0.388,
-        "nutritional:vegetable": 0.2837
+        "nutritional:dairy": 0.2241,
+        "nutritional:grain": 0.1036,
+        "nutritional:protein": 0.3876,
+        "nutritional:vegetable": 0.2847
       }
     },
     "croptopia:radish": {
@@ -6727,8 +6727,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1755,
-        "nutritional:vegetable": 0.8245
+        "nutritional:fruit": 0.1749,
+        "nutritional:vegetable": 0.8251
       }
     },
     "croptopia:roe": {
@@ -6807,8 +6807,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1614,
-        "nutritional:vegetable": 0.8386
+        "nutritional:fruit": 0.1616,
+        "nutritional:vegetable": 0.8384
       }
     },
     "croptopia:saucy_chips": {
@@ -6880,8 +6880,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.3669,
-        "nutritional:protein": 0.1111,
-        "nutritional:vegetable": 0.522
+        "nutritional:protein": 0.111,
+        "nutritional:vegetable": 0.5221
       }
     },
     "croptopia:shrimp": {
@@ -7056,9 +7056,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.107,
+        "nutritional:fruit": 0.1072,
         "nutritional:protein": 0.1111,
-        "nutritional:vegetable": 0.7819
+        "nutritional:vegetable": 0.7817
       }
     },
     "croptopia:strawberry": {
@@ -7154,11 +7154,11 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1864,
-        "nutritional:fruit": 0.1047,
-        "nutritional:grain": 0.3269,
-        "nutritional:protein": 0.165,
-        "nutritional:vegetable": 0.217
+        "nutritional:dairy": 0.1865,
+        "nutritional:fruit": 0.1048,
+        "nutritional:grain": 0.327,
+        "nutritional:protein": 0.1651,
+        "nutritional:vegetable": 0.2167
       }
     },
     "croptopia:sushi": {
@@ -7233,9 +7233,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3573,
-        "nutritional:protein": 0.29,
-        "nutritional:vegetable": 0.3527
+        "nutritional:grain": 0.3569,
+        "nutritional:protein": 0.2894,
+        "nutritional:vegetable": 0.3537
       }
     },
     "croptopia:tea": {
@@ -7329,9 +7329,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2919,
-        "nutritional:protein": 0.4516,
-        "nutritional:vegetable": 0.2565
+        "nutritional:grain": 0.292,
+        "nutritional:protein": 0.4517,
+        "nutritional:vegetable": 0.2563
       }
     },
     "croptopia:tomatillo": {
@@ -7387,9 +7387,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.385,
-        "nutritional:protein": 0.1556,
-        "nutritional:vegetable": 0.4593
+        "nutritional:grain": 0.3856,
+        "nutritional:protein": 0.1562,
+        "nutritional:vegetable": 0.4582
       }
     },
     "croptopia:trail_mix": {
@@ -7463,9 +7463,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3524,
-        "nutritional:protein": 0.3524,
-        "nutritional:vegetable": 0.2952
+        "nutritional:grain": 0.3518,
+        "nutritional:protein": 0.3518,
+        "nutritional:vegetable": 0.2965
       }
     },
     "croptopia:tuna_sandwich": {
@@ -9294,9 +9294,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.305,
-        "nutritional:protein": 0.2294,
-        "nutritional:vegetable": 0.4655
+        "nutritional:grain": 0.3046,
+        "nutritional:protein": 0.2288,
+        "nutritional:vegetable": 0.4665
       }
     },
     "ends_delight:ender_congee": {
@@ -9976,9 +9976,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3702,
-        "nutritional:protein": 0.4918,
-        "nutritional:vegetable": 0.138
+        "nutritional:grain": 0.3692,
+        "nutritional:protein": 0.4913,
+        "nutritional:vegetable": 0.1395
       }
     },
     "eternal_starlight_delight:cooked_aurora_deer_steak_cuts": {
@@ -10560,8 +10560,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1694,
-        "nutritional:vegetable": 0.8306
+        "nutritional:fruit": 0.1688,
+        "nutritional:vegetable": 0.8312
       }
     },
     "farm_and_charm:farmers_bread": {
@@ -10583,9 +10583,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3637,
-        "nutritional:protein": 0.4211,
-        "nutritional:vegetable": 0.2152
+        "nutritional:grain": 0.3645,
+        "nutritional:protein": 0.4209,
+        "nutritional:vegetable": 0.2145
       }
     },
     "farm_and_charm:flour": {
@@ -10608,8 +10608,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.2785,
-        "nutritional:vegetable": 0.7215
+        "nutritional:protein": 0.2783,
+        "nutritional:vegetable": 0.7217
       }
     },
     "farm_and_charm:grandmothers_strawberry_cake": {
@@ -10748,9 +10748,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2252,
-        "nutritional:protein": 0.0825,
-        "nutritional:vegetable": 0.6923
+        "nutritional:grain": 0.224,
+        "nutritional:protein": 0.0816,
+        "nutritional:vegetable": 0.6944
       }
     },
     "farm_and_charm:pasta_with_onion_sauce": {
@@ -10761,8 +10761,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3898,
-        "nutritional:vegetable": 0.6102
+        "nutritional:grain": 0.3877,
+        "nutritional:vegetable": 0.6123
       }
     },
     "farm_and_charm:potato_soup": {
@@ -10925,8 +10925,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5443,
-        "nutritional:vegetable": 0.4557
+        "nutritional:protein": 0.5434,
+        "nutritional:vegetable": 0.4566
       }
     },
     "farm_and_charm:stuffed_rabbit": {
@@ -10937,8 +10937,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5746,
-        "nutritional:vegetable": 0.4254
+        "nutritional:protein": 0.5736,
+        "nutritional:vegetable": 0.4264
       }
     },
     "farm_and_charm:tomato": {
@@ -11463,9 +11463,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3167,
-        "nutritional:protein": 0.3892,
-        "nutritional:vegetable": 0.2941
+        "nutritional:grain": 0.3173,
+        "nutritional:protein": 0.3889,
+        "nutritional:vegetable": 0.2938
       }
     },
     "farmersdelight:baked_cod_stew": {
@@ -11578,9 +11578,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3113,
-        "nutritional:protein": 0.3726,
-        "nutritional:vegetable": 0.3161
+        "nutritional:grain": 0.3119,
+        "nutritional:protein": 0.3723,
+        "nutritional:vegetable": 0.3158
       }
     },
     "farmersdelight:chicken_soup": {
@@ -11729,8 +11729,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.4753,
-        "nutritional:protein": 0.2575,
-        "nutritional:vegetable": 0.2672
+        "nutritional:protein": 0.2571,
+        "nutritional:vegetable": 0.2677
       }
     },
     "farmersdelight:egg_sandwich": {
@@ -11741,8 +11741,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3457,
-        "nutritional:protein": 0.6543
+        "nutritional:grain": 0.3461,
+        "nutritional:protein": 0.6539
       }
     },
     "farmersdelight:fish_stew": {
@@ -11753,8 +11753,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.4131,
-        "nutritional:vegetable": 0.5869
+        "nutritional:protein": 0.4123,
+        "nutritional:vegetable": 0.5877
       }
     },
     "farmersdelight:fried_egg": {
@@ -11824,9 +11824,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1554,
-        "nutritional:protein": 0.5352,
-        "nutritional:vegetable": 0.3094
+        "nutritional:fruit": 0.1549,
+        "nutritional:protein": 0.5345,
+        "nutritional:vegetable": 0.3105
       }
     },
     "farmersdelight:ham": {
@@ -11848,9 +11848,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2348,
-        "nutritional:protein": 0.4063,
-        "nutritional:vegetable": 0.3589
+        "nutritional:grain": 0.235,
+        "nutritional:protein": 0.4056,
+        "nutritional:vegetable": 0.3594
       }
     },
     "farmersdelight:honey_cookie": {
@@ -11897,8 +11897,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.5211,
-        "nutritional:vegetable": 0.4789
+        "nutritional:grain": 0.5221,
+        "nutritional:vegetable": 0.4779
       }
     },
     "farmersdelight:kelp_roll_slice": {
@@ -12000,9 +12000,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.321,
-        "nutritional:protein": 0.3863,
-        "nutritional:vegetable": 0.2927
+        "nutritional:grain": 0.3212,
+        "nutritional:protein": 0.3854,
+        "nutritional:vegetable": 0.2934
       }
     },
     "farmersdelight:nether_salad": {
@@ -12048,9 +12048,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1061,
-        "nutritional:grain": 0.1963,
-        "nutritional:vegetable": 0.6976
+        "nutritional:dairy": 0.1051,
+        "nutritional:grain": 0.1957,
+        "nutritional:vegetable": 0.6991
       }
     },
     "farmersdelight:pasta_with_meatballs": {
@@ -12250,8 +12250,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.3538,
-        "nutritional:protein": 0.2886,
-        "nutritional:vegetable": 0.3576
+        "nutritional:protein": 0.2878,
+        "nutritional:vegetable": 0.3584
       }
     },
     "farmersdelight:smoked_ham": {
@@ -12286,9 +12286,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1848,
-        "nutritional:protein": 0.38,
-        "nutritional:vegetable": 0.4352
+        "nutritional:grain": 0.1844,
+        "nutritional:protein": 0.3796,
+        "nutritional:vegetable": 0.436
       }
     },
     "farmersdelight:stuffed_potato": {
@@ -12299,8 +12299,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.1206,
-        "nutritional:vegetable": 0.8794
+        "nutritional:protein": 0.1203,
+        "nutritional:vegetable": 0.8797
       }
     },
     "farmersdelight:stuffed_pumpkin": {
@@ -12546,9 +12546,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.0996,
-        "nutritional:protein": 0.1697,
-        "nutritional:vegetable": 0.7307
+        "nutritional:dairy": 0.0992,
+        "nutritional:protein": 0.1695,
+        "nutritional:vegetable": 0.7313
       }
     },
     "fungidelight:inky_cap_mushroom": {
@@ -12604,8 +12604,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.3231,
-        "nutritional:vegetable": 0.6769
+        "nutritional:protein": 0.3226,
+        "nutritional:vegetable": 0.6774
       }
     },
     "fungidelight:pork_marsala_with_mushrooms": {
@@ -12616,8 +12616,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.4498,
-        "nutritional:vegetable": 0.5502
+        "nutritional:protein": 0.4491,
+        "nutritional:vegetable": 0.5509
       }
     },
     "fungidelight:rabbit_with_morels": {
@@ -12628,8 +12628,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.485,
-        "nutritional:vegetable": 0.515
+        "nutritional:protein": 0.4846,
+        "nutritional:vegetable": 0.5154
       }
     },
     "fungidelight:steak_with_mushrooms": {
@@ -12640,9 +12640,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1014,
-        "nutritional:protein": 0.5254,
-        "nutritional:vegetable": 0.3732
+        "nutritional:dairy": 0.101,
+        "nutritional:protein": 0.5242,
+        "nutritional:vegetable": 0.3748
       }
     },
     "fungidelight:stuffed_morels": {
@@ -12689,10 +12689,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.0914,
-        "nutritional:grain": 0.2358,
-        "nutritional:protein": 0.1625,
-        "nutritional:vegetable": 0.5103
+        "nutritional:dairy": 0.0911,
+        "nutritional:grain": 0.2356,
+        "nutritional:protein": 0.162,
+        "nutritional:vegetable": 0.5113
       }
     },
     "fungidelight:truffle_slice": {
@@ -12828,9 +12828,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.233,
-        "nutritional:protein": 0.378,
-        "nutritional:vegetable": 0.389
+        "nutritional:grain": 0.2327,
+        "nutritional:protein": 0.3776,
+        "nutritional:vegetable": 0.3897
       }
     },
     "gobberdelight:ender_goo": {
@@ -12975,9 +12975,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.233,
-        "nutritional:protein": 0.378,
-        "nutritional:vegetable": 0.389
+        "nutritional:grain": 0.2327,
+        "nutritional:protein": 0.3776,
+        "nutritional:vegetable": 0.3897
       }
     },
     "gobberdelight:gooey_apple_cider": {
@@ -13077,9 +13077,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.233,
-        "nutritional:protein": 0.378,
-        "nutritional:vegetable": 0.389
+        "nutritional:grain": 0.2327,
+        "nutritional:protein": 0.3776,
+        "nutritional:vegetable": 0.3897
       }
     },
     "gobberdelight:nether_gooey_apple_cider": {
@@ -14266,9 +14266,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3312,
-        "nutritional:protein": 0.5228,
-        "nutritional:vegetable": 0.146
+        "nutritional:grain": 0.3302,
+        "nutritional:protein": 0.5222,
+        "nutritional:vegetable": 0.1476
       }
     },
     "minersdelight:takoyaki": {
@@ -14279,9 +14279,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2558,
-        "nutritional:protein": 0.5983,
-        "nutritional:vegetable": 0.146
+        "nutritional:grain": 0.2553,
+        "nutritional:protein": 0.5971,
+        "nutritional:vegetable": 0.1475
       }
     },
     "mynethersdelight:blue_tenderloin_steak": {
@@ -14610,8 +14610,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.547,
-        "nutritional:vegetable": 0.453
+        "nutritional:protein": 0.546,
+        "nutritional:vegetable": 0.454
       }
     },
     "mynethersdelight:hotdog": {
@@ -14622,8 +14622,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3785,
-        "nutritional:protein": 0.6215
+        "nutritional:grain": 0.3794,
+        "nutritional:protein": 0.6206
       }
     },
     "mynethersdelight:hotdog_with_mixed_salad": {
@@ -14634,8 +14634,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2427,
-        "nutritional:protein": 0.4225,
+        "nutritional:grain": 0.2432,
+        "nutritional:protein": 0.4221,
         "nutritional:vegetable": 0.3348
       }
     },
@@ -14647,8 +14647,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2475,
-        "nutritional:protein": 0.4303,
+        "nutritional:grain": 0.2479,
+        "nutritional:protein": 0.4299,
         "nutritional:vegetable": 0.3222
       }
     },
@@ -14693,8 +14693,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3374,
-        "nutritional:protein": 0.6626
+        "nutritional:grain": 0.3381,
+        "nutritional:protein": 0.6619
       }
     },
     "mynethersdelight:pepper_powder": {
@@ -14774,8 +14774,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1688,
-        "nutritional:protein": 0.8312
+        "nutritional:grain": 0.1694,
+        "nutritional:protein": 0.8306
       }
     },
     "mynethersdelight:sizzling_pudding": {
@@ -15300,8 +15300,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.2028,
-        "nutritional:vegetable": 0.7972
+        "nutritional:protein": 0.2021,
+        "nutritional:vegetable": 0.7979
       }
     },
     "oceansdelight:cooked_elder_guardian_slice": {
@@ -15334,8 +15334,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.7059,
-        "nutritional:vegetable": 0.2941
+        "nutritional:protein": 0.7054,
+        "nutritional:vegetable": 0.2946
       }
     },
     "oceansdelight:cooked_stuffed_squid": {
@@ -15405,8 +15405,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.3963,
-        "nutritional:vegetable": 0.6037
+        "nutritional:protein": 0.3956,
+        "nutritional:vegetable": 0.6044
       }
     },
     "oceansdelight:honey_fried_kelp": {
@@ -15466,8 +15466,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5589,
-        "nutritional:vegetable": 0.4411
+        "nutritional:protein": 0.5582,
+        "nutritional:vegetable": 0.4418
       }
     },
     "oceansdelight:stuffed_squid": {
@@ -16758,8 +16758,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodcore:applejuiceitem": {
@@ -16861,10 +16861,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.144,
-        "nutritional:grain": 0.2157,
-        "nutritional:protein": 0.5254,
-        "nutritional:vegetable": 0.1149
+        "nutritional:dairy": 0.1439,
+        "nutritional:grain": 0.2161,
+        "nutritional:protein": 0.5255,
+        "nutritional:vegetable": 0.1146
       }
     },
     "pamhc2foodcore:bakedvegetablemedlyitem": {
@@ -16886,10 +16886,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1589,
-        "nutritional:grain": 0.2301,
+        "nutritional:dairy": 0.1588,
+        "nutritional:grain": 0.2305,
         "nutritional:protein": 0.4679,
-        "nutritional:vegetable": 0.1432
+        "nutritional:vegetable": 0.1428
       }
     },
     "pamhc2foodcore:basicchickensandwichitem": {
@@ -16900,9 +16900,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.4026,
-        "nutritional:protein": 0.424,
-        "nutritional:vegetable": 0.1734
+        "nutritional:grain": 0.4033,
+        "nutritional:protein": 0.4239,
+        "nutritional:vegetable": 0.1728
       }
     },
     "pamhc2foodcore:basicfishsandwichitem": {
@@ -16913,9 +16913,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3877,
-        "nutritional:protein": 0.4273,
-        "nutritional:vegetable": 0.1851
+        "nutritional:grain": 0.3884,
+        "nutritional:protein": 0.4271,
+        "nutritional:vegetable": 0.1845
       }
     },
     "pamhc2foodcore:basichamburgeritem": {
@@ -16926,9 +16926,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3073,
-        "nutritional:protein": 0.5018,
-        "nutritional:vegetable": 0.1908
+        "nutritional:grain": 0.3079,
+        "nutritional:protein": 0.5017,
+        "nutritional:vegetable": 0.1903
       }
     },
     "pamhc2foodcore:basicmuttonsandwichitem": {
@@ -16939,9 +16939,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3737,
-        "nutritional:protein": 0.429,
-        "nutritional:vegetable": 0.1973
+        "nutritional:grain": 0.3743,
+        "nutritional:protein": 0.4289,
+        "nutritional:vegetable": 0.1968
       }
     },
     "pamhc2foodcore:basicporksandwichitem": {
@@ -16952,9 +16952,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3632,
-        "nutritional:protein": 0.4723,
-        "nutritional:vegetable": 0.1646
+        "nutritional:grain": 0.3638,
+        "nutritional:protein": 0.4722,
+        "nutritional:vegetable": 0.164
       }
     },
     "pamhc2foodcore:basicrabbitsandwichitem": {
@@ -16965,9 +16965,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3737,
-        "nutritional:protein": 0.453,
-        "nutritional:vegetable": 0.1734
+        "nutritional:grain": 0.3743,
+        "nutritional:protein": 0.4529,
+        "nutritional:vegetable": 0.1728
       }
     },
     "pamhc2foodcore:basicveggieburgeritem": {
@@ -16978,9 +16978,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2304,
-        "nutritional:protein": 0.1778,
-        "nutritional:vegetable": 0.5918
+        "nutritional:grain": 0.2311,
+        "nutritional:protein": 0.1774,
+        "nutritional:vegetable": 0.5916
       }
     },
     "pamhc2foodcore:beefjerkyitem": {
@@ -17003,9 +17003,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2748,
-        "nutritional:protein": 0.4813,
-        "nutritional:vegetable": 0.2439
+        "nutritional:grain": 0.2749,
+        "nutritional:protein": 0.4815,
+        "nutritional:vegetable": 0.2437
       }
     },
     "pamhc2foodcore:beefpotpieitem": {
@@ -17274,8 +17274,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.4784,
-        "nutritional:vegetable": 0.5216
+        "nutritional:protein": 0.4785,
+        "nutritional:vegetable": 0.5215
       }
     },
     "pamhc2foodcore:chickenjerkyitem": {
@@ -17299,8 +17299,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.297,
-        "nutritional:protein": 0.4808,
-        "nutritional:vegetable": 0.2222
+        "nutritional:protein": 0.481,
+        "nutritional:vegetable": 0.222
       }
     },
     "pamhc2foodcore:chickennuggetitem": {
@@ -17519,8 +17519,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodcore:chorusjuiceitem": {
@@ -17774,9 +17774,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2759,
-        "nutritional:protein": 0.4891,
-        "nutritional:vegetable": 0.2349
+        "nutritional:grain": 0.276,
+        "nutritional:protein": 0.4893,
+        "nutritional:vegetable": 0.2347
       }
     },
     "pamhc2foodcore:fishpotpieitem": {
@@ -17921,8 +17921,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5248,
-        "nutritional:grain": 0.4752
+        "nutritional:fruit": 0.5247,
+        "nutritional:grain": 0.4753
       }
     },
     "pamhc2foodcore:glowberryjuiceitem": {
@@ -18002,8 +18002,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5321,
-        "nutritional:vegetable": 0.4679
+        "nutritional:protein": 0.5324,
+        "nutritional:vegetable": 0.4676
       }
     },
     "pamhc2foodcore:grilledcheeseandhamitem": {
@@ -18014,9 +18014,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.3352,
-        "nutritional:grain": 0.1677,
-        "nutritional:protein": 0.4971
+        "nutritional:dairy": 0.335,
+        "nutritional:grain": 0.1681,
+        "nutritional:protein": 0.4969
       }
     },
     "pamhc2foodcore:grilledcheeseitem": {
@@ -18027,9 +18027,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.566,
-        "nutritional:grain": 0.2017,
-        "nutritional:protein": 0.2323
+        "nutritional:dairy": 0.5657,
+        "nutritional:grain": 0.2023,
+        "nutritional:protein": 0.232
       }
     },
     "pamhc2foodcore:grilledchickenskeweritem": {
@@ -18040,8 +18040,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5417,
-        "nutritional:vegetable": 0.4583
+        "nutritional:protein": 0.542,
+        "nutritional:vegetable": 0.458
       }
     },
     "pamhc2foodcore:grilledfishskeweritem": {
@@ -18052,8 +18052,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5286,
-        "nutritional:vegetable": 0.4714
+        "nutritional:protein": 0.5289,
+        "nutritional:vegetable": 0.4711
       }
     },
     "pamhc2foodcore:grilledmuttonskeweritem": {
@@ -18064,8 +18064,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5206,
-        "nutritional:vegetable": 0.4794
+        "nutritional:protein": 0.5209,
+        "nutritional:vegetable": 0.4791
       }
     },
     "pamhc2foodcore:grilledporkskeweritem": {
@@ -18076,8 +18076,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5636,
-        "nutritional:vegetable": 0.4364
+        "nutritional:protein": 0.5639,
+        "nutritional:vegetable": 0.4361
       }
     },
     "pamhc2foodcore:grilledrabbitskeweritem": {
@@ -18088,8 +18088,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5636,
-        "nutritional:vegetable": 0.4364
+        "nutritional:protein": 0.5639,
+        "nutritional:vegetable": 0.4361
       }
     },
     "pamhc2foodcore:grilledveggieskeweritem": {
@@ -18304,8 +18304,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3121,
-        "nutritional:protein": 0.6879
+        "nutritional:grain": 0.313,
+        "nutritional:protein": 0.687
       }
     },
     "pamhc2foodcore:melondonutitem": {
@@ -18340,8 +18340,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodcore:melonjuiceitem": {
@@ -18433,9 +18433,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.277,
-        "nutritional:protein": 0.4773,
-        "nutritional:vegetable": 0.2456
+        "nutritional:grain": 0.2771,
+        "nutritional:protein": 0.4775,
+        "nutritional:vegetable": 0.2454
       }
     },
     "pamhc2foodcore:muttonpotpieitem": {
@@ -18472,8 +18472,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.545,
-        "nutritional:vegetable": 0.455
+        "nutritional:fruit": 0.5453,
+        "nutritional:vegetable": 0.4547
       }
     },
     "pamhc2foodcore:pastaitem": {
@@ -18529,9 +18529,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2831,
-        "nutritional:protein": 0.498,
-        "nutritional:vegetable": 0.2188
+        "nutritional:grain": 0.2832,
+        "nutritional:protein": 0.4982,
+        "nutritional:vegetable": 0.2186
       }
     },
     "pamhc2foodcore:porkpotpieitem": {
@@ -18687,9 +18687,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2831,
-        "nutritional:protein": 0.498,
-        "nutritional:vegetable": 0.2188
+        "nutritional:grain": 0.2832,
+        "nutritional:protein": 0.4982,
+        "nutritional:vegetable": 0.2186
       }
     },
     "pamhc2foodcore:rabbitpotpieitem": {
@@ -18759,9 +18759,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1377,
-        "nutritional:protein": 0.3237,
-        "nutritional:vegetable": 0.5386
+        "nutritional:grain": 0.1378,
+        "nutritional:protein": 0.3239,
+        "nutritional:vegetable": 0.5383
       }
     },
     "pamhc2foodcore:sweetberrydonutitem": {
@@ -18796,8 +18796,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5248,
-        "nutritional:grain": 0.4752
+        "nutritional:fruit": 0.5247,
+        "nutritional:grain": 0.4753
       }
     },
     "pamhc2foodcore:sweetberryjuiceitem": {
@@ -18878,8 +18878,8 @@
       ],
       "scales": {
         "nutritional:dairy": 0.1902,
-        "nutritional:grain": 0.6593,
-        "nutritional:protein": 0.1505
+        "nutritional:grain": 0.66,
+        "nutritional:protein": 0.1498
       }
     },
     "pamhc2foodcore:vegetablenoodlesoupitem": {
@@ -18890,9 +18890,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2835,
-        "nutritional:protein": 0.2599,
-        "nutritional:vegetable": 0.4566
+        "nutritional:grain": 0.2837,
+        "nutritional:protein": 0.2601,
+        "nutritional:vegetable": 0.4562
       }
     },
     "pamhc2foodcore:veggiepotpieitem": {
@@ -18903,8 +18903,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2846,
-        "nutritional:vegetable": 0.7154
+        "nutritional:grain": 0.2847,
+        "nutritional:vegetable": 0.7153
       }
     },
     "pamhc2foodcore:yogurtitem": {
@@ -18977,9 +18977,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:applesnowitem": {
@@ -19026,9 +19026,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:apricotjellytoastitem": {
@@ -19039,8 +19039,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:apricotjuiceitem": {
@@ -19097,9 +19097,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.15,
-        "nutritional:protein": 0.3967,
-        "nutritional:vegetable": 0.4533
+        "nutritional:dairy": 0.1497,
+        "nutritional:protein": 0.3959,
+        "nutritional:vegetable": 0.4544
       }
     },
     "pamhc2foodextended:avocadoburritoitem": {
@@ -19124,9 +19124,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.3444,
-        "nutritional:grain": 0.3513,
-        "nutritional:vegetable": 0.3043
+        "nutritional:fruit": 0.3443,
+        "nutritional:grain": 0.3514,
+        "nutritional:vegetable": 0.3042
       }
     },
     "pamhc2foodextended:baconmushroomburgeritem": {
@@ -19137,9 +19137,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2039,
-        "nutritional:protein": 0.4393,
-        "nutritional:vegetable": 0.3568
+        "nutritional:grain": 0.2042,
+        "nutritional:protein": 0.4392,
+        "nutritional:vegetable": 0.3565
       }
     },
     "pamhc2foodextended:baconpancakesitem": {
@@ -19236,9 +19236,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:bananajellytoastitem": {
@@ -19249,8 +19249,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:bananajuiceitem": {
@@ -19360,10 +19360,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1275,
-        "nutritional:grain": 0.259,
-        "nutritional:protein": 0.3249,
-        "nutritional:vegetable": 0.2886
+        "nutritional:dairy": 0.1274,
+        "nutritional:grain": 0.2587,
+        "nutritional:protein": 0.3245,
+        "nutritional:vegetable": 0.2894
       }
     },
     "pamhc2foodextended:bbqjackfruititem": {
@@ -19410,9 +19410,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1667,
-        "nutritional:protein": 0.2096,
-        "nutritional:vegetable": 0.6238
+        "nutritional:grain": 0.1635,
+        "nutritional:protein": 0.2098,
+        "nutritional:vegetable": 0.6268
       }
     },
     "pamhc2foodextended:beansandriceitem": {
@@ -19437,8 +19437,8 @@
       ],
       "scales": {
         "nutritional:dairy": 0.1222,
-        "nutritional:grain": 0.2776,
-        "nutritional:protein": 0.392,
+        "nutritional:grain": 0.2778,
+        "nutritional:protein": 0.3919,
         "nutritional:vegetable": 0.2082
       }
     },
@@ -19464,8 +19464,8 @@
       ],
       "scales": {
         "nutritional:fruit": 0.0986,
-        "nutritional:grain": 0.1922,
-        "nutritional:protein": 0.4841,
+        "nutritional:grain": 0.1923,
+        "nutritional:protein": 0.484,
         "nutritional:vegetable": 0.2251
       }
     },
@@ -19490,8 +19490,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4503,
-        "nutritional:vegetable": 0.5497
+        "nutritional:fruit": 0.4505,
+        "nutritional:vegetable": 0.5495
       }
     },
     "pamhc2foodextended:biscuititem": {
@@ -19550,9 +19550,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:blackberryjellytoastitem": {
@@ -19563,8 +19563,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:blackberryjuiceitem": {
@@ -19643,9 +19643,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:blueberryjellytoastitem": {
@@ -19656,8 +19656,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:blueberryjuiceitem": {
@@ -19714,9 +19714,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.4507,
-        "nutritional:protein": 0.1758,
-        "nutritional:vegetable": 0.3736
+        "nutritional:grain": 0.4517,
+        "nutritional:protein": 0.1763,
+        "nutritional:vegetable": 0.3721
       }
     },
     "pamhc2foodextended:braisedonionsitem": {
@@ -19727,9 +19727,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1103,
-        "nutritional:protein": 0.379,
-        "nutritional:vegetable": 0.5107
+        "nutritional:dairy": 0.1099,
+        "nutritional:protein": 0.3776,
+        "nutritional:vegetable": 0.5125
       }
     },
     "pamhc2foodextended:breadedporkchopitem": {
@@ -19764,9 +19764,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:breadfruitjellytoastitem": {
@@ -19777,8 +19777,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:breadfruitjuiceitem": {
@@ -19863,10 +19863,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1078,
-        "nutritional:grain": 0.1938,
-        "nutritional:protein": 0.1392,
-        "nutritional:vegetable": 0.5591
+        "nutritional:dairy": 0.1085,
+        "nutritional:grain": 0.1949,
+        "nutritional:protein": 0.14,
+        "nutritional:vegetable": 0.5565
       }
     },
     "pamhc2foodextended:broccolindipitem": {
@@ -19877,9 +19877,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.0965,
-        "nutritional:protein": 0.1246,
-        "nutritional:vegetable": 0.7789
+        "nutritional:dairy": 0.0967,
+        "nutritional:protein": 0.1248,
+        "nutritional:vegetable": 0.7785
       }
     },
     "pamhc2foodextended:buttertartitem": {
@@ -19916,10 +19916,10 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.2566,
-        "nutritional:grain": 0.3178,
-        "nutritional:protein": 0.1517,
-        "nutritional:vegetable": 0.2738
+        "nutritional:fruit": 0.2569,
+        "nutritional:grain": 0.3185,
+        "nutritional:protein": 0.1514,
+        "nutritional:vegetable": 0.2732
       }
     },
     "pamhc2foodextended:cactusfruitjellytoastitem": {
@@ -19930,9 +19930,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.3051,
-        "nutritional:grain": 0.3899,
-        "nutritional:vegetable": 0.3051
+        "nutritional:fruit": 0.305,
+        "nutritional:grain": 0.39,
+        "nutritional:vegetable": 0.305
       }
     },
     "pamhc2foodextended:cactusfruitjuiceitem": {
@@ -20078,9 +20078,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:cantaloupejellytoastitem": {
@@ -20091,8 +20091,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:cantaloupejuiceitem": {
@@ -20212,10 +20212,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.082,
-        "nutritional:grain": 0.1024,
-        "nutritional:protein": 0.0911,
-        "nutritional:vegetable": 0.7245
+        "nutritional:dairy": 0.0825,
+        "nutritional:grain": 0.103,
+        "nutritional:protein": 0.0915,
+        "nutritional:vegetable": 0.723
       }
     },
     "pamhc2foodextended:celeryandpeanutbutteritem": {
@@ -20278,8 +20278,8 @@
       ],
       "scales": {
         "nutritional:dairy": 0.3651,
-        "nutritional:grain": 0.4143,
-        "nutritional:protein": 0.2205
+        "nutritional:grain": 0.4146,
+        "nutritional:protein": 0.2202
       }
     },
     "pamhc2foodextended:cheesesteakitem": {
@@ -20290,10 +20290,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.2588,
-        "nutritional:grain": 0.1232,
-        "nutritional:protein": 0.3756,
-        "nutritional:vegetable": 0.2425
+        "nutritional:dairy": 0.2586,
+        "nutritional:grain": 0.1231,
+        "nutritional:protein": 0.375,
+        "nutritional:vegetable": 0.2434
       }
     },
     "pamhc2foodextended:cheesytacotortillachipsitem": {
@@ -20352,9 +20352,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:cherryjellytoastitem": {
@@ -20365,8 +20365,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:cherryjuiceitem": {
@@ -20496,9 +20496,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.112,
-        "nutritional:protein": 0.5711,
-        "nutritional:vegetable": 0.317
+        "nutritional:grain": 0.1117,
+        "nutritional:protein": 0.5706,
+        "nutritional:vegetable": 0.3176
       }
     },
     "pamhc2foodextended:chickencordonbleuitem": {
@@ -20536,8 +20536,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.4809,
-        "nutritional:vegetable": 0.5191
+        "nutritional:protein": 0.4806,
+        "nutritional:vegetable": 0.5194
       }
     },
     "pamhc2foodextended:chickenkatsuitem": {
@@ -20612,9 +20612,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.468,
-        "nutritional:protein": 0.0927,
-        "nutritional:vegetable": 0.4393
+        "nutritional:grain": 0.4677,
+        "nutritional:protein": 0.0926,
+        "nutritional:vegetable": 0.4397
       }
     },
     "pamhc2foodextended:chilichocolateitem": {
@@ -20722,8 +20722,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4684,
-        "nutritional:protein": 0.5316
+        "nutritional:fruit": 0.4596,
+        "nutritional:protein": 0.5404
       }
     },
     "pamhc2foodextended:chocolatesprinklecakeitem": {
@@ -20808,10 +20808,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1297,
-        "nutritional:fruit": 0.2119,
-        "nutritional:grain": 0.5557,
-        "nutritional:protein": 0.1027
+        "nutritional:dairy": 0.1296,
+        "nutritional:fruit": 0.2123,
+        "nutritional:grain": 0.556,
+        "nutritional:protein": 0.1021
       }
     },
     "pamhc2foodextended:citrussaladitem": {
@@ -20859,9 +20859,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1654,
+        "nutritional:grain": 0.1656,
         "nutritional:protein": 0.2946,
-        "nutritional:vegetable": 0.5399
+        "nutritional:vegetable": 0.5398
       }
     },
     "pamhc2foodextended:cookedtofabbititem": {
@@ -20948,9 +20948,9 @@
       ],
       "scales": {
         "nutritional:fruit": 0.1248,
-        "nutritional:grain": 0.2643,
-        "nutritional:protein": 0.3489,
-        "nutritional:vegetable": 0.262
+        "nutritional:grain": 0.2647,
+        "nutritional:protein": 0.3488,
+        "nutritional:vegetable": 0.2617
       }
     },
     "pamhc2foodextended:cornbreaditem": {
@@ -21011,9 +21011,9 @@
       ],
       "scales": {
         "nutritional:dairy": 0.1304,
-        "nutritional:grain": 0.1575,
-        "nutritional:protein": 0.4045,
-        "nutritional:vegetable": 0.3076
+        "nutritional:grain": 0.1576,
+        "nutritional:protein": 0.4042,
+        "nutritional:vegetable": 0.3077
       }
     },
     "pamhc2foodextended:cornedbeefhashitem": {
@@ -21024,9 +21024,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.094,
-        "nutritional:protein": 0.381,
-        "nutritional:vegetable": 0.5249
+        "nutritional:dairy": 0.0939,
+        "nutritional:protein": 0.3807,
+        "nutritional:vegetable": 0.5255
       }
     },
     "pamhc2foodextended:cornedbeefitem": {
@@ -21139,9 +21139,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:cranberryjellytoastitem": {
@@ -21152,8 +21152,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:cranberryjuiceitem": {
@@ -21222,9 +21222,9 @@
       ],
       "scales": {
         "nutritional:dairy": 0.1481,
-        "nutritional:grain": 0.0891,
-        "nutritional:protein": 0.2208,
-        "nutritional:vegetable": 0.5419
+        "nutritional:grain": 0.0894,
+        "nutritional:protein": 0.2214,
+        "nutritional:vegetable": 0.541
       }
     },
     "pamhc2foodextended:creamedcornitem": {
@@ -21235,10 +21235,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.2325,
-        "nutritional:grain": 0.1424,
-        "nutritional:protein": 0.128,
-        "nutritional:vegetable": 0.4972
+        "nutritional:dairy": 0.232,
+        "nutritional:grain": 0.142,
+        "nutritional:protein": 0.1274,
+        "nutritional:vegetable": 0.4985
       }
     },
     "pamhc2foodextended:creamofavocadosoupitem": {
@@ -21325,9 +21325,9 @@
       ],
       "scales": {
         "nutritional:dairy": 0.1468,
-        "nutritional:grain": 0.3162,
-        "nutritional:protein": 0.1935,
-        "nutritional:vegetable": 0.3435
+        "nutritional:grain": 0.3167,
+        "nutritional:protein": 0.1934,
+        "nutritional:vegetable": 0.3431
       }
     },
     "pamhc2foodextended:curryitem": {
@@ -21400,9 +21400,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:datejellytoastitem": {
@@ -21413,8 +21413,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:datejuiceitem": {
@@ -21472,9 +21472,9 @@
       ],
       "scales": {
         "nutritional:fruit": 0.1271,
-        "nutritional:grain": 0.2082,
-        "nutritional:protein": 0.1977,
-        "nutritional:vegetable": 0.4669
+        "nutritional:grain": 0.2086,
+        "nutritional:protein": 0.198,
+        "nutritional:vegetable": 0.4662
       }
     },
     "pamhc2foodextended:deluxecheeseburgeritem": {
@@ -21485,10 +21485,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1368,
-        "nutritional:grain": 0.1873,
-        "nutritional:protein": 0.38,
-        "nutritional:vegetable": 0.2959
+        "nutritional:dairy": 0.1369,
+        "nutritional:grain": 0.1879,
+        "nutritional:protein": 0.3807,
+        "nutritional:vegetable": 0.2945
       }
     },
     "pamhc2foodextended:deluxechickencurryitem": {
@@ -21537,9 +21537,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:dragonfruitjellytoastitem": {
@@ -21550,8 +21550,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:dragonfruitjuiceitem": {
@@ -21631,9 +21631,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4398,
-        "nutritional:grain": 0.3965,
-        "nutritional:protein": 0.1637
+        "nutritional:fruit": 0.44,
+        "nutritional:grain": 0.3969,
+        "nutritional:protein": 0.1631
       }
     },
     "pamhc2foodextended:durianjellytoastitem": {
@@ -21644,8 +21644,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5248,
-        "nutritional:grain": 0.4752
+        "nutritional:fruit": 0.5247,
+        "nutritional:grain": 0.4753
       }
     },
     "pamhc2foodextended:durianjuiceitem": {
@@ -21725,10 +21725,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.0821,
-        "nutritional:grain": 0.1475,
-        "nutritional:protein": 0.1059,
-        "nutritional:vegetable": 0.6645
+        "nutritional:dairy": 0.0828,
+        "nutritional:grain": 0.1488,
+        "nutritional:protein": 0.1069,
+        "nutritional:vegetable": 0.6616
       }
     },
     "pamhc2foodextended:eggrollitem": {
@@ -21802,9 +21802,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:elderberryjellytoastitem": {
@@ -21815,8 +21815,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:elderberryjuiceitem": {
@@ -21874,8 +21874,8 @@
       ],
       "scales": {
         "nutritional:dairy": 0.1902,
-        "nutritional:grain": 0.6593,
-        "nutritional:protein": 0.1505
+        "nutritional:grain": 0.66,
+        "nutritional:protein": 0.1498
       }
     },
     "pamhc2foodextended:fajitaburritoitem": {
@@ -21886,9 +21886,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3911,
-        "nutritional:protein": 0.0983,
-        "nutritional:vegetable": 0.5106
+        "nutritional:grain": 0.391,
+        "nutritional:protein": 0.0981,
+        "nutritional:vegetable": 0.5109
       }
     },
     "pamhc2foodextended:festivalbreaditem": {
@@ -21911,10 +21911,10 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.0949,
+        "nutritional:fruit": 0.0947,
         "nutritional:grain": 0.1427,
-        "nutritional:protein": 0.0949,
-        "nutritional:vegetable": 0.6675
+        "nutritional:protein": 0.0947,
+        "nutritional:vegetable": 0.6679
       }
     },
     "pamhc2foodextended:figbaritem": {
@@ -21948,9 +21948,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:figjellytoastitem": {
@@ -21961,8 +21961,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:figjuiceitem": {
@@ -22031,8 +22031,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3449,
-        "nutritional:protein": 0.5398,
+        "nutritional:grain": 0.345,
+        "nutritional:protein": 0.5396,
         "nutritional:vegetable": 0.1153
       }
     },
@@ -22071,9 +22071,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1222,
-        "nutritional:protein": 0.3956,
-        "nutritional:vegetable": 0.4822
+        "nutritional:grain": 0.1224,
+        "nutritional:protein": 0.4008,
+        "nutritional:vegetable": 0.4768
       }
     },
     "pamhc2foodextended:fishtacoitem": {
@@ -22084,9 +22084,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2569,
-        "nutritional:protein": 0.4216,
-        "nutritional:vegetable": 0.3214
+        "nutritional:grain": 0.2577,
+        "nutritional:protein": 0.4238,
+        "nutritional:vegetable": 0.3184
       }
     },
     "pamhc2foodextended:fortunecookieitem": {
@@ -22108,10 +22108,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1384,
-        "nutritional:fruit": 0.1595,
-        "nutritional:grain": 0.5006,
-        "nutritional:protein": 0.2015
+        "nutritional:dairy": 0.1383,
+        "nutritional:fruit": 0.1597,
+        "nutritional:grain": 0.5008,
+        "nutritional:protein": 0.2012
       }
     },
     "pamhc2foodextended:friedbolognasandwichitem": {
@@ -22122,9 +22122,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.5083,
-        "nutritional:protein": 0.3235,
-        "nutritional:vegetable": 0.1682
+        "nutritional:grain": 0.5087,
+        "nutritional:protein": 0.3229,
+        "nutritional:vegetable": 0.1684
       }
     },
     "pamhc2foodextended:friedfeastitem": {
@@ -22161,9 +22161,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.2005,
-        "nutritional:protein": 0.144,
-        "nutritional:vegetable": 0.6555
+        "nutritional:dairy": 0.1991,
+        "nutritional:protein": 0.143,
+        "nutritional:vegetable": 0.6579
       }
     },
     "pamhc2foodextended:friedpecanokraitem": {
@@ -22186,9 +22186,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.4571,
-        "nutritional:protein": 0.1743,
-        "nutritional:vegetable": 0.3685
+        "nutritional:grain": 0.4568,
+        "nutritional:protein": 0.1739,
+        "nutritional:vegetable": 0.3693
       }
     },
     "pamhc2foodextended:frosteddonutitem": {
@@ -22240,8 +22240,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.3937,
-        "nutritional:vegetable": 0.6063
+        "nutritional:protein": 0.394,
+        "nutritional:vegetable": 0.606
       }
     },
     "pamhc2foodextended:garlicbreaditem": {
@@ -22253,8 +22253,8 @@
       ],
       "scales": {
         "nutritional:dairy": 0.1707,
-        "nutritional:grain": 0.3683,
-        "nutritional:protein": 0.1269,
+        "nutritional:grain": 0.3685,
+        "nutritional:protein": 0.1266,
         "nutritional:vegetable": 0.3342
       }
     },
@@ -22304,9 +22304,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2456,
-        "nutritional:protein": 0.4499,
-        "nutritional:vegetable": 0.3045
+        "nutritional:grain": 0.2465,
+        "nutritional:protein": 0.4504,
+        "nutritional:vegetable": 0.3032
       }
     },
     "pamhc2foodextended:gingerchickenitem": {
@@ -22317,9 +22317,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.2515,
-        "nutritional:protein": 0.3035,
-        "nutritional:vegetable": 0.445
+        "nutritional:fruit": 0.2508,
+        "nutritional:protein": 0.3031,
+        "nutritional:vegetable": 0.4461
       }
     },
     "pamhc2foodextended:gingeredrhubarbtartitem": {
@@ -22379,9 +22379,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:gooseberryjellytoastitem": {
@@ -22392,8 +22392,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:gooseberryjuiceitem": {
@@ -22503,8 +22503,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.2206,
-        "nutritional:protein": 0.4408,
-        "nutritional:vegetable": 0.3385
+        "nutritional:protein": 0.4406,
+        "nutritional:vegetable": 0.3388
       }
     },
     "pamhc2foodextended:gourmetporkpattyitem": {
@@ -22538,9 +22538,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:grapefruitjellytoastitem": {
@@ -22551,8 +22551,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:grapefruitjuiceitem": {
@@ -22631,9 +22631,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:grapejellytoastitem": {
@@ -22644,8 +22644,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:grapejuiceitem": {
@@ -22713,9 +22713,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.0991,
-        "nutritional:protein": 0.3905,
-        "nutritional:vegetable": 0.5104
+        "nutritional:dairy": 0.0987,
+        "nutritional:protein": 0.3892,
+        "nutritional:vegetable": 0.5121
       }
     },
     "pamhc2foodextended:greeneggsandhamitem": {
@@ -22748,9 +22748,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:greengrapejellytoastitem": {
@@ -22761,8 +22761,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:greengrapejuiceitem": {
@@ -22831,9 +22831,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.3913,
-        "nutritional:grain": 0.3816,
-        "nutritional:protein": 0.0922,
+        "nutritional:dairy": 0.3912,
+        "nutritional:grain": 0.3818,
+        "nutritional:protein": 0.0921,
         "nutritional:vegetable": 0.1348
       }
     },
@@ -22845,10 +22845,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.2396,
-        "nutritional:grain": 0.454,
-        "nutritional:protein": 0.0977,
-        "nutritional:vegetable": 0.2087
+        "nutritional:dairy": 0.2395,
+        "nutritional:grain": 0.4547,
+        "nutritional:protein": 0.0974,
+        "nutritional:vegetable": 0.2084
       }
     },
     "pamhc2foodextended:groundnutmegitem": {
@@ -22881,9 +22881,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:guavajellytoastitem": {
@@ -22894,8 +22894,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:guavajuiceitem": {
@@ -22953,9 +22953,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.2176,
-        "nutritional:grain": 0.3273,
-        "nutritional:protein": 0.4551
+        "nutritional:dairy": 0.2174,
+        "nutritional:grain": 0.3277,
+        "nutritional:protein": 0.4549
       }
     },
     "pamhc2foodextended:hamandpineapplepizzaitem": {
@@ -22981,9 +22981,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2775,
-        "nutritional:protein": 0.2774,
-        "nutritional:vegetable": 0.4451
+        "nutritional:grain": 0.2779,
+        "nutritional:protein": 0.2771,
+        "nutritional:vegetable": 0.445
       }
     },
     "pamhc2foodextended:hazelnutbutteritem": {
@@ -23132,9 +23132,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4346,
-        "nutritional:grain": 0.4244,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4349,
+        "nutritional:grain": 0.4246,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:honeysoyribsitem": {
@@ -23171,8 +23171,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.0981,
-        "nutritional:protein": 0.3057,
-        "nutritional:vegetable": 0.5963
+        "nutritional:protein": 0.3059,
+        "nutritional:vegetable": 0.596
       }
     },
     "pamhc2foodextended:huckleberryjellyitem": {
@@ -23194,9 +23194,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:huckleberryjellytoastitem": {
@@ -23207,8 +23207,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:huckleberryjuiceitem": {
@@ -23265,9 +23265,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.409,
-        "nutritional:protein": 0.2271,
-        "nutritional:vegetable": 0.3639
+        "nutritional:grain": 0.4087,
+        "nutritional:protein": 0.2261,
+        "nutritional:vegetable": 0.3652
       }
     },
     "pamhc2foodextended:imitationcrabsticksitem": {
@@ -23278,8 +23278,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1704,
-        "nutritional:protein": 0.8296
+        "nutritional:grain": 0.1643,
+        "nutritional:protein": 0.8357
       }
     },
     "pamhc2foodextended:jackfruitjellyitem": {
@@ -23301,9 +23301,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:jackfruitjellytoastitem": {
@@ -23314,8 +23314,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:jackfruitjuiceitem": {
@@ -23373,9 +23373,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2051,
+        "nutritional:grain": 0.2053,
         "nutritional:protein": 0.3593,
-        "nutritional:vegetable": 0.4356
+        "nutritional:vegetable": 0.4354
       }
     },
     "pamhc2foodextended:jambalayaitem": {
@@ -23387,8 +23387,8 @@
       ],
       "scales": {
         "nutritional:fruit": 0.3384,
-        "nutritional:protein": 0.2596,
-        "nutritional:vegetable": 0.402
+        "nutritional:protein": 0.2592,
+        "nutritional:vegetable": 0.4024
       }
     },
     "pamhc2foodextended:jellyrollitem": {
@@ -23422,9 +23422,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:juniperberryjellytoastitem": {
@@ -23435,8 +23435,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:juniperberryjuiceitem": {
@@ -23528,9 +23528,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:kiwijellytoastitem": {
@@ -23541,8 +23541,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:kiwijuiceitem": {
@@ -23599,9 +23599,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1028,
-        "nutritional:protein": 0.5345,
-        "nutritional:vegetable": 0.3627
+        "nutritional:fruit": 0.1021,
+        "nutritional:protein": 0.5378,
+        "nutritional:vegetable": 0.3601
       }
     },
     "pamhc2foodextended:lambbarleysoupitem": {
@@ -23612,9 +23612,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2549,
-        "nutritional:protein": 0.4136,
-        "nutritional:vegetable": 0.3315
+        "nutritional:grain": 0.2546,
+        "nutritional:protein": 0.413,
+        "nutritional:vegetable": 0.3324
       }
     },
     "pamhc2foodextended:lambkebabitem": {
@@ -23625,8 +23625,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5287,
-        "nutritional:vegetable": 0.4713
+        "nutritional:protein": 0.5279,
+        "nutritional:vegetable": 0.4721
       }
     },
     "pamhc2foodextended:lambwithmintsauceitem": {
@@ -23660,9 +23660,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3471,
-        "nutritional:protein": 0.3567,
-        "nutritional:vegetable": 0.2963
+        "nutritional:grain": 0.3474,
+        "nutritional:protein": 0.3566,
+        "nutritional:vegetable": 0.296
       }
     },
     "pamhc2foodextended:leafyfishsandwichitem": {
@@ -23673,9 +23673,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3404,
-        "nutritional:protein": 0.3581,
-        "nutritional:vegetable": 0.3015
+        "nutritional:grain": 0.3407,
+        "nutritional:protein": 0.358,
+        "nutritional:vegetable": 0.3013
       }
     },
     "pamhc2foodextended:leekbaconsoupitem": {
@@ -23747,9 +23747,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4398,
-        "nutritional:grain": 0.3965,
-        "nutritional:protein": 0.1637
+        "nutritional:fruit": 0.44,
+        "nutritional:grain": 0.3969,
+        "nutritional:protein": 0.1631
       }
     },
     "pamhc2foodextended:lemonjellytoastitem": {
@@ -23760,8 +23760,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5248,
-        "nutritional:grain": 0.4752
+        "nutritional:fruit": 0.5247,
+        "nutritional:grain": 0.4753
       }
     },
     "pamhc2foodextended:lemonjuiceitem": {
@@ -23853,9 +23853,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4398,
-        "nutritional:grain": 0.3965,
-        "nutritional:protein": 0.1637
+        "nutritional:fruit": 0.44,
+        "nutritional:grain": 0.3969,
+        "nutritional:protein": 0.1631
       }
     },
     "pamhc2foodextended:limejellytoastitem": {
@@ -23866,8 +23866,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5248,
-        "nutritional:grain": 0.4752
+        "nutritional:fruit": 0.5247,
+        "nutritional:grain": 0.4753
       }
     },
     "pamhc2foodextended:limejuiceitem": {
@@ -23924,8 +23924,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.2753,
-        "nutritional:vegetable": 0.7247
+        "nutritional:protein": 0.2744,
+        "nutritional:vegetable": 0.7256
       }
     },
     "pamhc2foodextended:loadedbakedpotatoitem": {
@@ -23936,9 +23936,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.0968,
-        "nutritional:protein": 0.3243,
-        "nutritional:vegetable": 0.5789
+        "nutritional:dairy": 0.0966,
+        "nutritional:protein": 0.3237,
+        "nutritional:vegetable": 0.5796
       }
     },
     "pamhc2foodextended:loxbagelsandwichitem": {
@@ -23950,8 +23950,8 @@
       ],
       "scales": {
         "nutritional:dairy": 0.1146,
-        "nutritional:grain": 0.5009,
-        "nutritional:protein": 0.2651,
+        "nutritional:grain": 0.5011,
+        "nutritional:protein": 0.2649,
         "nutritional:vegetable": 0.1194
       }
     },
@@ -23974,9 +23974,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:lycheejellytoastitem": {
@@ -23987,8 +23987,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:lycheejuiceitem": {
@@ -24069,9 +24069,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:mangojellytoastitem": {
@@ -24082,8 +24082,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:mangojuiceitem": {
@@ -24243,8 +24243,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.5112,
-        "nutritional:protein": 0.4888
+        "nutritional:grain": 0.5121,
+        "nutritional:protein": 0.4879
       }
     },
     "pamhc2foodextended:meatpieitem": {
@@ -24255,9 +24255,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2681,
-        "nutritional:protein": 0.4363,
-        "nutritional:vegetable": 0.2956
+        "nutritional:grain": 0.2679,
+        "nutritional:protein": 0.4358,
+        "nutritional:vegetable": 0.2964
       }
     },
     "pamhc2foodextended:meatystirfryitem": {
@@ -24268,9 +24268,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1362,
-        "nutritional:protein": 0.3423,
-        "nutritional:vegetable": 0.5215
+        "nutritional:grain": 0.1358,
+        "nutritional:protein": 0.342,
+        "nutritional:vegetable": 0.5222
       }
     },
     "pamhc2foodextended:melonjellysandwichitem": {
@@ -24281,9 +24281,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:meringuecookieitem": {
@@ -24393,8 +24393,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5678,
-        "nutritional:vegetable": 0.4322
+        "nutritional:protein": 0.5667,
+        "nutritional:vegetable": 0.4333
       }
     },
     "pamhc2foodextended:mulberryjellyitem": {
@@ -24416,9 +24416,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:mulberryjellytoastitem": {
@@ -24429,8 +24429,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:mulberryjuiceitem": {
@@ -24510,9 +24510,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2893,
-        "nutritional:protein": 0.0922,
-        "nutritional:vegetable": 0.6185
+        "nutritional:grain": 0.2891,
+        "nutritional:protein": 0.092,
+        "nutritional:vegetable": 0.619
       }
     },
     "pamhc2foodextended:mushroomoilitem": {
@@ -24535,10 +24535,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.085,
-        "nutritional:grain": 0.3256,
-        "nutritional:protein": 0.1253,
-        "nutritional:vegetable": 0.4641
+        "nutritional:dairy": 0.0847,
+        "nutritional:grain": 0.3251,
+        "nutritional:protein": 0.1249,
+        "nutritional:vegetable": 0.4653
       }
     },
     "pamhc2foodextended:mushroomsteakitem": {
@@ -24574,8 +24574,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1292,
-        "nutritional:vegetable": 0.8708
+        "nutritional:fruit": 0.1289,
+        "nutritional:vegetable": 0.8711
       }
     },
     "pamhc2foodextended:nuttoppedicecreamitem": {
@@ -24633,9 +24633,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1406,
-        "nutritional:protein": 0.3464,
-        "nutritional:vegetable": 0.513
+        "nutritional:grain": 0.1402,
+        "nutritional:protein": 0.3456,
+        "nutritional:vegetable": 0.5142
       }
     },
     "pamhc2foodextended:omuriceitem": {
@@ -24646,9 +24646,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.451,
-        "nutritional:protein": 0.2152,
-        "nutritional:vegetable": 0.3339
+        "nutritional:grain": 0.4507,
+        "nutritional:protein": 0.2147,
+        "nutritional:vegetable": 0.3346
       }
     },
     "pamhc2foodextended:onionhamburgeritem": {
@@ -24659,9 +24659,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2035,
-        "nutritional:protein": 0.3969,
-        "nutritional:vegetable": 0.3996
+        "nutritional:grain": 0.2037,
+        "nutritional:protein": 0.3964,
+        "nutritional:vegetable": 0.3999
       }
     },
     "pamhc2foodextended:onionringsitem": {
@@ -24672,8 +24672,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1166,
-        "nutritional:vegetable": 0.8834
+        "nutritional:grain": 0.1158,
+        "nutritional:vegetable": 0.8842
       }
     },
     "pamhc2foodextended:orangechickenitem": {
@@ -24684,10 +24684,10 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.3255,
-        "nutritional:grain": 0.1923,
-        "nutritional:protein": 0.3107,
-        "nutritional:vegetable": 0.1715
+        "nutritional:fruit": 0.3262,
+        "nutritional:grain": 0.1932,
+        "nutritional:protein": 0.3114,
+        "nutritional:vegetable": 0.1692
       }
     },
     "pamhc2foodextended:orangegingerbeefitem": {
@@ -24722,9 +24722,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:orangejellytoastitem": {
@@ -24735,8 +24735,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:orangejuiceitem": {
@@ -24804,8 +24804,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1774,
-        "nutritional:vegetable": 0.8226
+        "nutritional:fruit": 0.1785,
+        "nutritional:vegetable": 0.8215
       }
     },
     "pamhc2foodextended:oystersauceitem": {
@@ -24852,9 +24852,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:papayajellytoastitem": {
@@ -24865,8 +24865,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:papayajuiceitem": {
@@ -24924,9 +24924,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2356,
-        "nutritional:protein": 0.4316,
-        "nutritional:vegetable": 0.3329
+        "nutritional:grain": 0.2358,
+        "nutritional:protein": 0.4314,
+        "nutritional:vegetable": 0.3328
       }
     },
     "pamhc2foodextended:passionfruitjellyitem": {
@@ -24948,9 +24948,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:passionfruitjellytoastitem": {
@@ -24961,8 +24961,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:passionfruitjuiceitem": {
@@ -25044,9 +25044,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:pawpawjellytoastitem": {
@@ -25057,8 +25057,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:pawpawjuiceitem": {
@@ -25114,8 +25114,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.3193,
-        "nutritional:vegetable": 0.6807
+        "nutritional:protein": 0.319,
+        "nutritional:vegetable": 0.681
       }
     },
     "pamhc2foodextended:peachcobbleritem": {
@@ -25163,9 +25163,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:peachjellytoastitem": {
@@ -25176,8 +25176,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:peachjuiceitem": {
@@ -25249,10 +25249,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1531,
-        "nutritional:fruit": 0.2968,
-        "nutritional:grain": 0.301,
-        "nutritional:protein": 0.2491
+        "nutritional:dairy": 0.1528,
+        "nutritional:fruit": 0.2971,
+        "nutritional:grain": 0.3016,
+        "nutritional:protein": 0.2485
       }
     },
     "pamhc2foodextended:peanutbuttercookiesitem": {
@@ -25301,9 +25301,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.3731,
-        "nutritional:protein": 0.4599,
-        "nutritional:vegetable": 0.167
+        "nutritional:fruit": 0.3685,
+        "nutritional:protein": 0.4674,
+        "nutritional:vegetable": 0.1641
       }
     },
     "pamhc2foodextended:pearjellyitem": {
@@ -25325,9 +25325,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:pearjellytoastitem": {
@@ -25338,8 +25338,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:pearjuiceitem": {
@@ -25493,9 +25493,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:persimmonjellytoastitem": {
@@ -25506,8 +25506,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:persimmonjuiceitem": {
@@ -25598,9 +25598,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:pineapplejellytoastitem": {
@@ -25611,8 +25611,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:pineapplejuiceitem": {
@@ -25710,8 +25710,8 @@
       "scales": {
         "nutritional:dairy": 0.1231,
         "nutritional:grain": 0.1481,
-        "nutritional:protein": 0.2019,
-        "nutritional:vegetable": 0.5268
+        "nutritional:protein": 0.2016,
+        "nutritional:vegetable": 0.5272
       }
     },
     "pamhc2foodextended:plumjellyitem": {
@@ -25733,9 +25733,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:plumjellytoastitem": {
@@ -25746,8 +25746,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:plumjuiceitem": {
@@ -25826,9 +25826,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:pomegranatejellytoastitem": {
@@ -25839,8 +25839,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:pomegranatejuiceitem": {
@@ -25912,9 +25912,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1498,
-        "nutritional:protein": 0.4209,
-        "nutritional:vegetable": 0.4293
+        "nutritional:grain": 0.1505,
+        "nutritional:protein": 0.426,
+        "nutritional:vegetable": 0.4235
       }
     },
     "pamhc2foodextended:porklomeinitem": {
@@ -25925,9 +25925,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.117,
-        "nutritional:protein": 0.4494,
-        "nutritional:vegetable": 0.4336
+        "nutritional:grain": 0.1167,
+        "nutritional:protein": 0.4492,
+        "nutritional:vegetable": 0.4341
       }
     },
     "pamhc2foodextended:porkrindsitem": {
@@ -25977,10 +25977,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.141,
+        "nutritional:dairy": 0.1403,
         "nutritional:grain": 0.1667,
-        "nutritional:protein": 0.1013,
-        "nutritional:vegetable": 0.5911
+        "nutritional:protein": 0.1008,
+        "nutritional:vegetable": 0.5922
       }
     },
     "pamhc2foodextended:potatoesobrienitem": {
@@ -26002,8 +26002,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.1803,
-        "nutritional:vegetable": 0.8197
+        "nutritional:protein": 0.1796,
+        "nutritional:vegetable": 0.8204
       }
     },
     "pamhc2foodextended:potatoskinsitem": {
@@ -26014,9 +26014,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1381,
-        "nutritional:protein": 0.1783,
-        "nutritional:vegetable": 0.6836
+        "nutritional:dairy": 0.1377,
+        "nutritional:protein": 0.1778,
+        "nutritional:vegetable": 0.6845
       }
     },
     "pamhc2foodextended:powdereddonutitem": {
@@ -26091,9 +26091,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:rambutanjellytoastitem": {
@@ -26104,8 +26104,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:rambutanjuiceitem": {
@@ -26185,9 +26185,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:raspberryjellytoastitem": {
@@ -26198,8 +26198,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:raspberryjuiceitem": {
@@ -26358,9 +26358,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1322,
-        "nutritional:protein": 0.4686,
-        "nutritional:vegetable": 0.3993
+        "nutritional:dairy": 0.1316,
+        "nutritional:protein": 0.4675,
+        "nutritional:vegetable": 0.401
       }
     },
     "pamhc2foodextended:ricecakeitem": {
@@ -26516,8 +26516,8 @@
       ],
       "scales": {
         "nutritional:dairy": 0.221,
-        "nutritional:protein": 0.5841,
-        "nutritional:vegetable": 0.1949
+        "nutritional:protein": 0.5837,
+        "nutritional:vegetable": 0.1952
       }
     },
     "pamhc2foodextended:sausagebeanmeltitem": {
@@ -26542,8 +26542,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.344,
-        "nutritional:protein": 0.3756,
-        "nutritional:vegetable": 0.2803
+        "nutritional:protein": 0.3746,
+        "nutritional:vegetable": 0.2814
       }
     },
     "pamhc2foodextended:sausageitem": {
@@ -26628,9 +26628,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.2599,
-        "nutritional:protein": 0.1065,
-        "nutritional:vegetable": 0.6336
+        "nutritional:dairy": 0.2595,
+        "nutritional:protein": 0.1061,
+        "nutritional:vegetable": 0.6344
       }
     },
     "pamhc2foodextended:soursopjellyitem": {
@@ -26652,9 +26652,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:soursopjellytoastitem": {
@@ -26665,8 +26665,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:soursopjuiceitem": {
@@ -26811,10 +26811,10 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1163,
-        "nutritional:grain": 0.4496,
-        "nutritional:protein": 0.1007,
-        "nutritional:vegetable": 0.3333
+        "nutritional:fruit": 0.1154,
+        "nutritional:grain": 0.4487,
+        "nutritional:protein": 0.1053,
+        "nutritional:vegetable": 0.3306
       }
     },
     "pamhc2foodextended:springsaladitem": {
@@ -26860,9 +26860,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:starfruitjellytoastitem": {
@@ -26873,8 +26873,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:starfruitjuiceitem": {
@@ -26944,8 +26944,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.4508,
-        "nutritional:vegetable": 0.5492
+        "nutritional:protein": 0.4506,
+        "nutritional:vegetable": 0.5494
       }
     },
     "pamhc2foodextended:steaktartareitem": {
@@ -26956,9 +26956,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1787,
-        "nutritional:protein": 0.4818,
-        "nutritional:vegetable": 0.3396
+        "nutritional:grain": 0.1786,
+        "nutritional:protein": 0.4808,
+        "nutritional:vegetable": 0.3406
       }
     },
     "pamhc2foodextended:strawberryjellyitem": {
@@ -26980,9 +26980,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4621,
-        "nutritional:grain": 0.3835,
-        "nutritional:protein": 0.1544
+        "nutritional:fruit": 0.4623,
+        "nutritional:grain": 0.3838,
+        "nutritional:protein": 0.1539
       }
     },
     "pamhc2foodextended:strawberryjellytoastitem": {
@@ -26993,8 +26993,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.547,
-        "nutritional:grain": 0.453
+        "nutritional:fruit": 0.5468,
+        "nutritional:grain": 0.4532
       }
     },
     "pamhc2foodextended:strawberryjuiceitem": {
@@ -27087,8 +27087,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.2168,
-        "nutritional:vegetable": 0.7832
+        "nutritional:protein": 0.2163,
+        "nutritional:vegetable": 0.7837
       }
     },
     "pamhc2foodextended:stuffedeggplantitem": {
@@ -27099,8 +27099,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.1613,
-        "nutritional:vegetable": 0.8387
+        "nutritional:protein": 0.1622,
+        "nutritional:vegetable": 0.8378
       }
     },
     "pamhc2foodextended:stuffedmushroomitem": {
@@ -27112,8 +27112,8 @@
       ],
       "scales": {
         "nutritional:dairy": 0.145,
-        "nutritional:grain": 0.1809,
-        "nutritional:protein": 0.1782,
+        "nutritional:grain": 0.1811,
+        "nutritional:protein": 0.178,
         "nutritional:vegetable": 0.4959
       }
     },
@@ -27162,8 +27162,8 @@
       ],
       "scales": {
         "nutritional:fruit": 0.7029,
-        "nutritional:grain": 0.1424,
-        "nutritional:vegetable": 0.1547
+        "nutritional:grain": 0.1426,
+        "nutritional:vegetable": 0.1545
       }
     },
     "pamhc2foodextended:sunflowerbroccolisaladitem": {
@@ -27174,8 +27174,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.3278,
-        "nutritional:vegetable": 0.6722
+        "nutritional:protein": 0.3307,
+        "nutritional:vegetable": 0.6693
       }
     },
     "pamhc2foodextended:sunflowerseedsbutteritem": {
@@ -27209,10 +27209,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1567,
-        "nutritional:grain": 0.2984,
-        "nutritional:protein": 0.1597,
-        "nutritional:vegetable": 0.3852
+        "nutritional:dairy": 0.1566,
+        "nutritional:grain": 0.2983,
+        "nutritional:protein": 0.1595,
+        "nutritional:vegetable": 0.3857
       }
     },
     "pamhc2foodextended:swedishmeatballsitem": {
@@ -27223,8 +27223,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.712,
-        "nutritional:vegetable": 0.288
+        "nutritional:protein": 0.7114,
+        "nutritional:vegetable": 0.2886
       }
     },
     "pamhc2foodextended:sweetandsourchickenitem": {
@@ -27235,10 +27235,10 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1299,
-        "nutritional:grain": 0.1296,
-        "nutritional:protein": 0.4565,
-        "nutritional:vegetable": 0.2841
+        "nutritional:fruit": 0.1295,
+        "nutritional:grain": 0.1292,
+        "nutritional:protein": 0.4562,
+        "nutritional:vegetable": 0.285
       }
     },
     "pamhc2foodextended:sweetandsourmeatballsitem": {
@@ -27260,9 +27260,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4398,
-        "nutritional:grain": 0.3965,
-        "nutritional:protein": 0.1637
+        "nutritional:fruit": 0.44,
+        "nutritional:grain": 0.3969,
+        "nutritional:protein": 0.1631
       }
     },
     "pamhc2foodextended:sweetpickleitem": {
@@ -27322,8 +27322,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.169,
-        "nutritional:vegetable": 0.831
+        "nutritional:grain": 0.17,
+        "nutritional:vegetable": 0.83
       }
     },
     "pamhc2foodextended:tacoitem": {
@@ -27334,9 +27334,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.4378,
-        "nutritional:protein": 0.2388,
-        "nutritional:vegetable": 0.3235
+        "nutritional:grain": 0.4386,
+        "nutritional:protein": 0.2407,
+        "nutritional:vegetable": 0.3207
       }
     },
     "pamhc2foodextended:tamarindjellyitem": {
@@ -27358,9 +27358,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.4943,
-        "nutritional:grain": 0.3647,
-        "nutritional:protein": 0.141
+        "nutritional:fruit": 0.4945,
+        "nutritional:grain": 0.365,
+        "nutritional:protein": 0.1405
       }
     },
     "pamhc2foodextended:tamarindjellytoastitem": {
@@ -27371,8 +27371,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5778,
-        "nutritional:grain": 0.4222
+        "nutritional:fruit": 0.5777,
+        "nutritional:grain": 0.4223
       }
     },
     "pamhc2foodextended:tamarindjuiceitem": {
@@ -27442,8 +27442,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.4284,
-        "nutritional:vegetable": 0.5716
+        "nutritional:protein": 0.428,
+        "nutritional:vegetable": 0.572
       }
     },
     "pamhc2foodextended:toastsandwichitem": {
@@ -27454,9 +27454,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1043,
-        "nutritional:grain": 0.7223,
-        "nutritional:vegetable": 0.1734
+        "nutritional:dairy": 0.1042,
+        "nutritional:grain": 0.7224,
+        "nutritional:vegetable": 0.1733
       }
     },
     "pamhc2foodextended:tomatoherbchickenitem": {
@@ -27551,8 +27551,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1344,
-        "nutritional:vegetable": 0.8656
+        "nutritional:grain": 0.1341,
+        "nutritional:vegetable": 0.8659
       }
     },
     "pamhc2foodextended:veggiestripsitem": {
@@ -27653,8 +27653,8 @@
       ],
       "scales": {
         "nutritional:dairy": 0.094,
-        "nutritional:grain": 0.1548,
-        "nutritional:protein": 0.1044,
+        "nutritional:grain": 0.155,
+        "nutritional:protein": 0.1043,
         "nutritional:vegetable": 0.6467
       }
     },
@@ -27667,9 +27667,775 @@
       ],
       "scales": {
         "nutritional:dairy": 0.1131,
-        "nutritional:grain": 0.1411,
-        "nutritional:protein": 0.2611,
+        "nutritional:grain": 0.1413,
+        "nutritional:protein": 0.2609,
         "nutritional:vegetable": 0.4847
+      }
+    },
+    "pantryforblockheads:bacon": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:protein": 1.0
+      }
+    },
+    "pantryforblockheads:bagel": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 1.0
+      }
+    },
+    "pantryforblockheads:bell_pepper": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:berry_muffin": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.1741,
+        "nutritional:fruit": 0.4129,
+        "nutritional:grain": 0.4129
+      }
+    },
+    "pantryforblockheads:blueberries": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:fruit": 1.0
+      }
+    },
+    "pantryforblockheads:breadstick": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 1.0
+      }
+    },
+    "pantryforblockheads:broccoli": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:burger": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.0952,
+        "nutritional:grain": 0.2063,
+        "nutritional:protein": 0.4127,
+        "nutritional:vegetable": 0.2857
+      }
+    },
+    "pantryforblockheads:burrito": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.5926,
+        "nutritional:protein": 0.1111,
+        "nutritional:vegetable": 0.2963
+      }
+    },
+    "pantryforblockheads:cauliflower": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:cheese": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 1.0
+      }
+    },
+    "pantryforblockheads:cheese_pizza": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.3889,
+        "nutritional:grain": 0.3889,
+        "nutritional:vegetable": 0.2222
+      }
+    },
+    "pantryforblockheads:cheese_pizza_slice": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.4259,
+        "nutritional:grain": 0.4259,
+        "nutritional:vegetable": 0.1481
+      }
+    },
+    "pantryforblockheads:chicken_nuggets": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.244,
+        "nutritional:protein": 0.756
+      }
+    },
+    "pantryforblockheads:chili_pepper": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:chocolate": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:fruit": 1.0
+      }
+    },
+    "pantryforblockheads:chocolate_cupcake": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.1741,
+        "nutritional:fruit": 0.3574,
+        "nutritional:grain": 0.4685
+      }
+    },
+    "pantryforblockheads:chocolate_doughnut": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.1741,
+        "nutritional:fruit": 0.3574,
+        "nutritional:grain": 0.4685
+      }
+    },
+    "pantryforblockheads:chocolate_icecream": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2222,
+        "nutritional:fruit": 0.4444,
+        "nutritional:grain": 0.3333
+      }
+    },
+    "pantryforblockheads:corn": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.3333,
+        "nutritional:vegetable": 0.6667
+      }
+    },
+    "pantryforblockheads:croissant": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 1.0
+      }
+    },
+    "pantryforblockheads:cupcake": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2761,
+        "nutritional:grain": 0.7239
+      }
+    },
+    "pantryforblockheads:dumpling": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.7139,
+        "nutritional:protein": 0.2861
+      }
+    },
+    "pantryforblockheads:eggplant": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:falafel": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:protein": 0.4444,
+        "nutritional:vegetable": 0.5556
+      }
+    },
+    "pantryforblockheads:fish_fillet": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:protein": 1.0
+      }
+    },
+    "pantryforblockheads:flatbread": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 1.0
+      }
+    },
+    "pantryforblockheads:fortune_cookie": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 1.0
+      }
+    },
+    "pantryforblockheads:fried_egg": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:protein": 1.0
+      }
+    },
+    "pantryforblockheads:grapes": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:fruit": 1.0
+      }
+    },
+    "pantryforblockheads:hotdog": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.4712,
+        "nutritional:protein": 0.5288
+      }
+    },
+    "pantryforblockheads:icecream": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.3333,
+        "nutritional:grain": 0.6667
+      }
+    },
+    "pantryforblockheads:inari_sushi": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.5556,
+        "nutritional:protein": 0.4444
+      }
+    },
+    "pantryforblockheads:lemon": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:fruit": 1.0
+      }
+    },
+    "pantryforblockheads:lettuce": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:maki_sushi": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.4564,
+        "nutritional:protein": 0.3781,
+        "nutritional:vegetable": 0.1656
+      }
+    },
+    "pantryforblockheads:mashed_produce": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:muffin": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2761,
+        "nutritional:grain": 0.7239
+      }
+    },
+    "pantryforblockheads:nigiri_sushi": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.5337,
+        "nutritional:protein": 0.4663
+      }
+    },
+    "pantryforblockheads:onion": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:onion_rings": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.3333,
+        "nutritional:vegetable": 0.6667
+      }
+    },
+    "pantryforblockheads:pancakes": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2761,
+        "nutritional:grain": 0.7239
+      }
+    },
+    "pantryforblockheads:peach": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:fruit": 1.0
+      }
+    },
+    "pantryforblockheads:peanut": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:protein": 1.0
+      }
+    },
+    "pantryforblockheads:pepperoni_pizza": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2333,
+        "nutritional:grain": 0.3,
+        "nutritional:protein": 0.3,
+        "nutritional:vegetable": 0.1667
+      }
+    },
+    "pantryforblockheads:pepperoni_pizza_slice": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2222,
+        "nutritional:grain": 0.3333,
+        "nutritional:protein": 0.3333,
+        "nutritional:vegetable": 0.1111
+      }
+    },
+    "pantryforblockheads:pink_doughnut": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2761,
+        "nutritional:grain": 0.7239
+      }
+    },
+    "pantryforblockheads:pink_doughnut_sprinkles": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.1841,
+        "nutritional:grain": 0.8159
+      }
+    },
+    "pantryforblockheads:popcorn": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.4444,
+        "nutritional:vegetable": 0.5556
+      }
+    },
+    "pantryforblockheads:pretzel": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 1.0
+      }
+    },
+    "pantryforblockheads:rice": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 1.0
+      }
+    },
+    "pantryforblockheads:rice_ball": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.7239,
+        "nutritional:vegetable": 0.2761
+      }
+    },
+    "pantryforblockheads:rice_cracker": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 1.0
+      }
+    },
+    "pantryforblockheads:sandwich": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.1496,
+        "nutritional:grain": 0.5512,
+        "nutritional:vegetable": 0.2992
+      }
+    },
+    "pantryforblockheads:sausage": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:protein": 1.0
+      }
+    },
+    "pantryforblockheads:soy_milk": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.3333,
+        "nutritional:protein": 0.6667
+      }
+    },
+    "pantryforblockheads:soybean": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:protein": 1.0
+      }
+    },
+    "pantryforblockheads:strawberry": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:fruit": 1.0
+      }
+    },
+    "pantryforblockheads:taco": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:grain": 0.5556,
+        "nutritional:protein": 0.1667,
+        "nutritional:vegetable": 0.2778
+      }
+    },
+    "pantryforblockheads:tofu": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:protein": 1.0
+      }
+    },
+    "pantryforblockheads:tomato": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:turnip": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:vegetable": 1.0
+      }
+    },
+    "pantryforblockheads:vegetable_pizza": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2333,
+        "nutritional:grain": 0.3,
+        "nutritional:vegetable": 0.4667
+      }
+    },
+    "pantryforblockheads:vegetable_pizza_slice": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2222,
+        "nutritional:grain": 0.3333,
+        "nutritional:vegetable": 0.4444
+      }
+    },
+    "pantryforblockheads:waffle": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "pantryforblockheads"
+        }
+      ],
+      "scales": {
+        "nutritional:dairy": 0.2761,
+        "nutritional:grain": 0.7239
       }
     },
     "pickletweaks:diamond_apple": {
@@ -27749,8 +28515,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.4246,
-        "nutritional:protein": 0.3457,
-        "nutritional:vegetable": 0.2297
+        "nutritional:protein": 0.3454,
+        "nutritional:vegetable": 0.23
       }
     },
     "ramadandelight:chickpea": {
@@ -27931,8 +28697,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.4755,
-        "nutritional:protein": 0.2053,
-        "nutritional:vegetable": 0.3192
+        "nutritional:protein": 0.2049,
+        "nutritional:vegetable": 0.3196
       }
     },
     "ramadandelight:savory_filling": {
@@ -27943,8 +28709,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.467,
-        "nutritional:vegetable": 0.533
+        "nutritional:protein": 0.4659,
+        "nutritional:vegetable": 0.5341
       }
     },
     "ramadandelight:sayadieh": {
@@ -27981,8 +28747,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.5585,
-        "nutritional:protein": 0.2193,
+        "nutritional:fruit": 0.5582,
+        "nutritional:protein": 0.2196,
         "nutritional:vegetable": 0.2222
       }
     },
@@ -29365,8 +30131,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.6502,
-        "nutritional:protein": 0.1717,
-        "nutritional:vegetable": 0.1781
+        "nutritional:protein": 0.1714,
+        "nutritional:vegetable": 0.1784
       }
     },
     "rusticdelight:fried_fish": {
@@ -29401,8 +30167,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.6907,
-        "nutritional:grain": 0.2225,
+        "nutritional:fruit": 0.6908,
+        "nutritional:grain": 0.2224,
         "nutritional:protein": 0.0868
       }
     },
@@ -29796,8 +30562,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.4816,
-        "nutritional:protein": 0.1534,
-        "nutritional:vegetable": 0.365
+        "nutritional:protein": 0.1477,
+        "nutritional:vegetable": 0.3707
       }
     },
     "rusticdelight:stuffed_bell_pepper_black": {
@@ -29925,8 +30691,8 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.3895,
-        "nutritional:vegetable": 0.6105
+        "nutritional:fruit": 0.3928,
+        "nutritional:vegetable": 0.6072
       }
     },
     "rusticdelight:syrup": {
@@ -29999,9 +30765,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.2092,
-        "nutritional:grain": 0.6559,
-        "nutritional:vegetable": 0.1349
+        "nutritional:fruit": 0.2097,
+        "nutritional:grain": 0.657,
+        "nutritional:vegetable": 0.1333
       }
     },
     "rusticdelight:vegetable_pancake": {
@@ -30152,9 +30918,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.402,
-        "nutritional:protein": 0.2328,
-        "nutritional:vegetable": 0.3653
+        "nutritional:grain": 0.4028,
+        "nutritional:protein": 0.2321,
+        "nutritional:vegetable": 0.365
       }
     },
     "twilightdelight:glacier_ice_tea": {
@@ -30230,9 +30996,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2516,
-        "nutritional:protein": 0.373,
-        "nutritional:vegetable": 0.3754
+        "nutritional:grain": 0.2522,
+        "nutritional:protein": 0.3727,
+        "nutritional:vegetable": 0.3752
       }
     },
     "twilightdelight:hydra_piece": {
@@ -30279,9 +31045,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.4997,
-        "nutritional:protein": 0.176,
-        "nutritional:vegetable": 0.3243
+        "nutritional:grain": 0.5003,
+        "nutritional:protein": 0.1757,
+        "nutritional:vegetable": 0.324
       }
     },
     "twilightdelight:mushgloom_meef_pasta": {
@@ -30409,10 +31175,10 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.277,
-        "nutritional:grain": 0.2762,
-        "nutritional:protein": 0.2877,
-        "nutritional:vegetable": 0.1591
+        "nutritional:fruit": 0.2773,
+        "nutritional:grain": 0.2769,
+        "nutritional:protein": 0.2874,
+        "nutritional:vegetable": 0.1584
       }
     },
     "twilightforest:beef_jerky": {
@@ -31097,8 +31863,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.3031,
-        "nutritional:vegetable": 0.6969
+        "nutritional:protein": 0.3035,
+        "nutritional:vegetable": 0.6965
       }
     },
     "undergardendelight:blisterberry_juice": {
@@ -31428,9 +32194,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3386,
-        "nutritional:protein": 0.178,
-        "nutritional:vegetable": 0.4834
+        "nutritional:grain": 0.3398,
+        "nutritional:protein": 0.1779,
+        "nutritional:vegetable": 0.4823
       }
     },
     "undergardendelight:gloomgourd_juice": {
@@ -31628,9 +32394,9 @@
         }
       ],
       "scales": {
-        "nutritional:fruit": 0.1623,
-        "nutritional:protein": 0.2841,
-        "nutritional:vegetable": 0.5536
+        "nutritional:fruit": 0.1617,
+        "nutritional:protein": 0.2844,
+        "nutritional:vegetable": 0.5538
       }
     },
     "undergardendelight:underbean_hotpot": {
@@ -32049,8 +32815,9 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1303,
-        "nutritional:vegetable": 0.8697
+        "nutritional:dairy": 0.1208,
+        "nutritional:fruit": 0.0863,
+        "nutritional:vegetable": 0.7929
       }
     },
     "veggiesdelight:cacciatore": {
@@ -32119,8 +32886,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3727,
-        "nutritional:vegetable": 0.6273
+        "nutritional:grain": 0.3756,
+        "nutritional:vegetable": 0.6244
       }
     },
     "veggiesdelight:cauliflower_floret": {
@@ -32142,8 +32909,8 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.0877,
-        "nutritional:vegetable": 0.9123
+        "nutritional:dairy": 0.0874,
+        "nutritional:vegetable": 0.9126
       }
     },
     "veggiesdelight:cauliflower_soup": {
@@ -32154,8 +32921,8 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1269,
-        "nutritional:vegetable": 0.8731
+        "nutritional:dairy": 0.1289,
+        "nutritional:vegetable": 0.8711
       }
     },
     "veggiesdelight:cesar_salad": {
@@ -32166,8 +32933,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1663,
-        "nutritional:vegetable": 0.8337
+        "nutritional:grain": 0.167,
+        "nutritional:vegetable": 0.833
       }
     },
     "veggiesdelight:chicken_fajitas_wrap": {
@@ -32178,9 +32945,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3136,
-        "nutritional:protein": 0.3686,
-        "nutritional:vegetable": 0.3178
+        "nutritional:grain": 0.3132,
+        "nutritional:protein": 0.368,
+        "nutritional:vegetable": 0.3188
       }
     },
     "veggiesdelight:cooked_vegetarian_patty": {
@@ -32191,8 +32958,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.6515,
-        "nutritional:vegetable": 0.3485
+        "nutritional:protein": 0.6518,
+        "nutritional:vegetable": 0.3482
       }
     },
     "veggiesdelight:dandelion_and_eggs": {
@@ -32273,8 +33040,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.3578,
-        "nutritional:vegetable": 0.6422
+        "nutritional:protein": 0.3572,
+        "nutritional:vegetable": 0.6428
       }
     },
     "veggiesdelight:garlic_bread": {
@@ -32285,8 +33052,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2983,
-        "nutritional:vegetable": 0.7017
+        "nutritional:grain": 0.2986,
+        "nutritional:vegetable": 0.7014
       }
     },
     "veggiesdelight:garlic_chicken_stew": {
@@ -32371,8 +33138,8 @@
       ],
       "scales": {
         "nutritional:grain": 0.3642,
-        "nutritional:protein": 0.2575,
-        "nutritional:vegetable": 0.3783
+        "nutritional:protein": 0.2571,
+        "nutritional:vegetable": 0.3788
       }
     },
     "veggiesdelight:pasta_with_broccoli": {
@@ -32383,10 +33150,10 @@
         }
       ],
       "scales": {
-        "nutritional:dairy": 0.1193,
-        "nutritional:grain": 0.2835,
-        "nutritional:protein": 0.1613,
-        "nutritional:vegetable": 0.4359
+        "nutritional:dairy": 0.1201,
+        "nutritional:grain": 0.2843,
+        "nutritional:protein": 0.1624,
+        "nutritional:vegetable": 0.4331
       }
     },
     "veggiesdelight:potato_noodle": {
@@ -32421,9 +33188,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.1092,
-        "nutritional:protein": 0.4061,
-        "nutritional:vegetable": 0.4847
+        "nutritional:grain": 0.1095,
+        "nutritional:protein": 0.4063,
+        "nutritional:vegetable": 0.4842
       }
     },
     "veggiesdelight:rice_and_vegetables": {
@@ -32434,8 +33201,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.2977,
-        "nutritional:vegetable": 0.7023
+        "nutritional:grain": 0.2983,
+        "nutritional:vegetable": 0.7017
       }
     },
     "veggiesdelight:roasted_cauliflower_floret": {
@@ -32490,8 +33257,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.3468,
-        "nutritional:vegetable": 0.6532
+        "nutritional:protein": 0.3462,
+        "nutritional:vegetable": 0.6538
       }
     },
     "veggiesdelight:smoked_bellpepper": {
@@ -32513,9 +33280,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.24,
-        "nutritional:protein": 0.4437,
-        "nutritional:vegetable": 0.3163
+        "nutritional:grain": 0.2409,
+        "nutritional:protein": 0.4449,
+        "nutritional:vegetable": 0.3142
       }
     },
     "veggiesdelight:stuffed_bellpepper": {
@@ -32635,8 +33402,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.3905,
-        "nutritional:vegetable": 0.6095
+        "nutritional:protein": 0.3889,
+        "nutritional:vegetable": 0.6111
       }
     },
     "veggiesdelight:turnip_cake": {
@@ -32647,8 +33414,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3869,
-        "nutritional:vegetable": 0.6131
+        "nutritional:grain": 0.3851,
+        "nutritional:vegetable": 0.6149
       }
     },
     "veggiesdelight:turnip_mutton_skewer": {
@@ -32659,8 +33426,8 @@
         }
       ],
       "scales": {
-        "nutritional:protein": 0.5649,
-        "nutritional:vegetable": 0.4351
+        "nutritional:protein": 0.5609,
+        "nutritional:vegetable": 0.4391
       }
     },
     "veggiesdelight:turnip_salad": {
@@ -32717,8 +33484,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.6573,
-        "nutritional:vegetable": 0.3427
+        "nutritional:grain": 0.6558,
+        "nutritional:vegetable": 0.3442
       }
     },
     "veggiesdelight:vegetarian_burger": {
@@ -32729,9 +33496,9 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.247,
-        "nutritional:protein": 0.3856,
-        "nutritional:vegetable": 0.3674
+        "nutritional:grain": 0.2476,
+        "nutritional:protein": 0.3853,
+        "nutritional:vegetable": 0.3671
       }
     },
     "veggiesdelight:zucchini": {
@@ -32779,8 +33546,8 @@
         }
       ],
       "scales": {
-        "nutritional:grain": 0.3308,
-        "nutritional:vegetable": 0.6692
+        "nutritional:grain": 0.3313,
+        "nutritional:vegetable": 0.6687
       }
     },
     "veggiesdelight:zucchini_slice": {

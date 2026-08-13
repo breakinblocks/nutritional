@@ -14,12 +14,12 @@ final class CompatCroptopia {
     }
 
     private static void croptopia1() {
-        food("croptopia:ajvar", s("fruit", 0.1328f), s("vegetable", 0.8672f));
-        food("croptopia:ajvar_toast", s("grain", 0.6975f), s("vegetable", 0.3025f));
+        food("croptopia:ajvar", s("fruit", 0.1332f), s("vegetable", 0.8668f));
+        food("croptopia:ajvar_toast", s("grain", 0.6976f), s("vegetable", 0.3024f));
         food("croptopia:almond", s("protein", 1.0f));
         food("croptopia:almond_brittle", s("dairy", 0.3262f), s("protein", 0.6738f));
         food("croptopia:anchovy", s("protein", 1.0f));
-        food("croptopia:anchovy_pizza", s("dairy", 0.1792f), s("grain", 0.2898f), s("protein", 0.3689f), s("vegetable", 0.162f));
+        food("croptopia:anchovy_pizza", s("dairy", 0.1794f), s("grain", 0.29f), s("protein", 0.3692f), s("vegetable", 0.1615f));
         food("croptopia:apple_juice", s("fruit", 1.0f));
         food("croptopia:apple_pie", s("fruit", 0.3904f), s("grain", 0.4481f), s("protein", 0.1615f));
         food("croptopia:apricot", s("fruit", 1.0f));
@@ -42,26 +42,26 @@ final class CompatCroptopia {
         food("croptopia:basil", s("vegetable", 1.0f));
         food("croptopia:beef_jerky", s("protein", 1.0f));
         food("croptopia:beef_stew", s("grain", 0.0975f), s("protein", 0.3791f), s("vegetable", 0.5235f));
-        food("croptopia:beef_stir_fry", s("fruit", 0.1039f), s("protein", 0.4534f), s("vegetable", 0.4427f));
-        food("croptopia:beef_wellington", s("grain", 0.1881f), s("protein", 0.4901f), s("vegetable", 0.3218f));
+        food("croptopia:beef_stir_fry", s("fruit", 0.1041f), s("protein", 0.4538f), s("vegetable", 0.4421f));
+        food("croptopia:beef_wellington", s("grain", 0.1879f), s("protein", 0.4896f), s("vegetable", 0.3225f));
         food("croptopia:beer", s("grain", 1.0f));
         food("croptopia:beetroot_salad", s("dairy", 0.1381f), s("fruit", 0.1269f), s("vegetable", 0.735f));
         food("croptopia:bellpepper", s("vegetable", 1.0f));
         food("croptopia:blackbean", s("protein", 0.6667f), s("vegetable", 0.3333f));
         food("croptopia:blackberry", s("fruit", 1.0f));
         food("croptopia:blackberry_jam", s("fruit", 1.0f));
-        food("croptopia:blt", s("grain", 0.3306f), s("protein", 0.3013f), s("vegetable", 0.3681f));
+        food("croptopia:blt", s("grain", 0.3314f), s("protein", 0.302f), s("vegetable", 0.3666f));
         food("croptopia:blueberry", s("fruit", 1.0f));
         food("croptopia:blueberry_jam", s("fruit", 1.0f));
         food("croptopia:borscht", s("vegetable", 1.0f));
         food("croptopia:broccoli", s("vegetable", 1.0f));
         food("croptopia:brownies", s("dairy", 0.2176f), s("fruit", 0.1407f), s("grain", 0.4573f), s("protein", 0.1845f));
-        food("croptopia:burrito", s("grain", 0.6792f), s("protein", 0.0963f), s("vegetable", 0.2245f));
+        food("croptopia:burrito", s("grain", 0.6795f), s("protein", 0.0964f), s("vegetable", 0.2241f));
         food("croptopia:butter", s("dairy", 0.8889f), s("protein", 0.1111f));
         food("croptopia:buttered_green_beans", s("dairy", 0.3051f), s("protein", 0.1407f), s("vegetable", 0.5541f));
         food("croptopia:buttered_toast", s("dairy", 0.5138f), s("grain", 0.4862f));
         food("croptopia:cabbage", s("vegetable", 1.0f));
-        food("croptopia:cabbage_roll", s("grain", 0.2572f), s("protein", 0.2164f), s("vegetable", 0.5264f));
+        food("croptopia:cabbage_roll", s("grain", 0.257f), s("protein", 0.216f), s("vegetable", 0.5269f));
         food("croptopia:caesar_salad", s("fruit", 0.1667f), s("grain", 0.1667f), s("vegetable", 0.6667f));
         food("croptopia:calamari", s("protein", 1.0f));
         food("croptopia:candied_kumquats", s("fruit", 1.0f));
@@ -69,14 +69,14 @@ final class CompatCroptopia {
         food("croptopia:candy_corn", s("fruit", 0.0833f), s("grain", 0.3056f), s("vegetable", 0.6111f));
         food("croptopia:cantaloupe", s("fruit", 1.0f));
         food("croptopia:caramel", s("fruit", 1.0f));
-        food("croptopia:carnitas", s("grain", 0.1971f), s("protein", 0.5064f), s("vegetable", 0.2966f));
+        food("croptopia:carnitas", s("grain", 0.1965f), s("protein", 0.5059f), s("vegetable", 0.2975f));
         food("croptopia:cashew", s("protein", 1.0f));
         food("croptopia:cashew_chicken", s("protein", 0.7489f), s("vegetable", 0.2511f));
         food("croptopia:cauliflower", s("vegetable", 1.0f));
         food("croptopia:celery", s("vegetable", 1.0f));
         food("croptopia:cheese", s("dairy", 0.8889f), s("protein", 0.1111f));
         food("croptopia:cheese_cake", s("dairy", 0.5f), s("grain", 0.5f));
-        food("croptopia:cheese_pizza", s("dairy", 0.3805f), s("grain", 0.3153f), s("protein", 0.1503f), s("vegetable", 0.1539f));
+        food("croptopia:cheese_pizza", s("dairy", 0.3807f), s("grain", 0.3155f), s("protein", 0.1504f), s("vegetable", 0.1534f));
         food("croptopia:cheeseburger", s("dairy", 0.2032f), s("grain", 0.3156f), s("protein", 0.4812f));
         food("croptopia:cheesy_asparagus", s("dairy", 0.1204f), s("fruit", 0.1674f), s("vegetable", 0.7122f));
         food("croptopia:cherry", s("fruit", 1.0f));
@@ -87,7 +87,7 @@ final class CompatCroptopia {
         food("croptopia:chicken_and_rice", s("fruit", 0.1638f), s("grain", 0.3305f), s("protein", 0.3418f), s("vegetable", 0.1638f));
         food("croptopia:chile_pepper", s("vegetable", 1.0f));
         food("croptopia:chili_relleno", s("fruit", 0.1667f), s("grain", 0.1481f), s("protein", 0.1667f), s("vegetable", 0.5185f));
-        food("croptopia:chimichanga", s("grain", 0.6894f), s("protein", 0.1988f), s("vegetable", 0.1119f));
+        food("croptopia:chimichanga", s("grain", 0.6895f), s("protein", 0.1988f), s("vegetable", 0.1117f));
         food("croptopia:chocolate", s("dairy", 0.3942f), s("fruit", 0.6058f));
         food("croptopia:chocolate_ice_cream", s("dairy", 0.5244f), s("fruit", 0.2894f), s("protein", 0.1862f));
         food("croptopia:chocolate_milkshake", s("dairy", 0.5961f), s("fruit", 0.3228f), s("protein", 0.0811f));
@@ -106,7 +106,7 @@ final class CompatCroptopia {
         food("croptopia:cooked_tuna", s("protein", 1.0f));
         food("croptopia:corn", s("grain", 0.3333f), s("vegetable", 0.6667f));
         food("croptopia:corn_bread", s("grain", 0.3889f), s("vegetable", 0.6111f));
-        food("croptopia:cornish_pasty", s("grain", 0.2585f), s("protein", 0.2312f), s("vegetable", 0.5102f));
+        food("croptopia:cornish_pasty", s("grain", 0.2583f), s("protein", 0.2309f), s("vegetable", 0.5108f));
         food("croptopia:crab", s("protein", 1.0f));
         food("croptopia:crab_legs", s("dairy", 0.142f), s("protein", 0.612f), s("vegetable", 0.2461f));
         food("croptopia:cranberry", s("fruit", 1.0f));
@@ -127,14 +127,14 @@ final class CompatCroptopia {
     }
 
     private static void croptopia2() {
-        food("croptopia:egg_roll", s("grain", 0.3267f), s("protein", 0.498f), s("vegetable", 0.1753f));
+        food("croptopia:egg_roll", s("grain", 0.3273f), s("protein", 0.4993f), s("vegetable", 0.1735f));
         food("croptopia:eggplant", s("vegetable", 1.0f));
         food("croptopia:eggplant_parmesan", s("dairy", 0.2733f), s("fruit", 0.098f), s("grain", 0.1365f), s("protein", 0.1296f), s("vegetable", 0.3626f));
         food("croptopia:elderberry", s("fruit", 1.0f));
         food("croptopia:elderberry_jam", s("fruit", 1.0f));
-        food("croptopia:enchilada", s("dairy", 0.0976f), s("grain", 0.356f), s("protein", 0.3806f), s("vegetable", 0.1658f));
+        food("croptopia:enchilada", s("dairy", 0.0977f), s("grain", 0.3561f), s("protein", 0.3808f), s("vegetable", 0.1653f));
         food("croptopia:eton_mess", s("dairy", 0.2554f), s("fruit", 0.4779f), s("protein", 0.2667f));
-        food("croptopia:fajitas", s("dairy", 0.0913f), s("grain", 0.1333f), s("protein", 0.3335f), s("vegetable", 0.4418f));
+        food("croptopia:fajitas", s("dairy", 0.0912f), s("grain", 0.1333f), s("protein", 0.3332f), s("vegetable", 0.4423f));
         food("croptopia:fig", s("fruit", 1.0f));
         food("croptopia:figgy_pudding", s("dairy", 0.3332f), s("fruit", 0.3891f), s("grain", 0.1111f), s("protein", 0.1667f));
         food("croptopia:fish_and_chips", s("grain", 0.1417f), s("protein", 0.3531f), s("vegetable", 0.5051f));
@@ -150,7 +150,7 @@ final class CompatCroptopia {
         food("croptopia:garlic", s("vegetable", 1.0f));
         food("croptopia:ginger", s("vegetable", 1.0f));
         food("croptopia:glowing_calamari", s("protein", 1.0f));
-        food("croptopia:goulash", s("protein", 0.545f), s("vegetable", 0.455f));
+        food("croptopia:goulash", s("protein", 0.5446f), s("vegetable", 0.4554f));
         food("croptopia:grape", s("fruit", 1.0f));
         food("croptopia:grape_jam", s("fruit", 1.0f));
         food("croptopia:grape_juice", s("fruit", 1.0f));
@@ -158,7 +158,7 @@ final class CompatCroptopia {
         food("croptopia:greenbean", s("protein", 0.3333f), s("vegetable", 0.6667f));
         food("croptopia:greenonion", s("vegetable", 1.0f));
         food("croptopia:grilled_cheese", s("dairy", 0.5042f), s("grain", 0.3312f), s("protein", 0.1646f));
-        food("croptopia:grilled_eggplant", s("fruit", 0.1338f), s("vegetable", 0.8662f));
+        food("croptopia:grilled_eggplant", s("fruit", 0.1342f), s("vegetable", 0.8658f));
         food("croptopia:grilled_oysters", s("dairy", 0.0938f), s("fruit", 0.1304f), s("protein", 0.6601f), s("vegetable", 0.1156f));
         food("croptopia:ground_pork", s("protein", 1.0f));
         food("croptopia:ham_sandwich", s("dairy", 0.0998f), s("grain", 0.36f), s("protein", 0.5402f));
@@ -223,8 +223,8 @@ final class CompatCroptopia {
         food("croptopia:persimmon", s("fruit", 1.0f));
         food("croptopia:pineapple", s("fruit", 1.0f));
         food("croptopia:pineapple_juice", s("fruit", 1.0f));
-        food("croptopia:pineapple_pepperoni_pizza", s("dairy", 0.1177f), s("fruit", 0.2901f), s("grain", 0.1927f), s("protein", 0.2514f), s("vegetable", 0.148f));
-        food("croptopia:pizza", s("dairy", 0.2582f), s("grain", 0.4267f), s("protein", 0.1034f), s("vegetable", 0.2117f));
+        food("croptopia:pineapple_pepperoni_pizza", s("dairy", 0.1178f), s("fruit", 0.2903f), s("grain", 0.1928f), s("protein", 0.2515f), s("vegetable", 0.1477f));
+        food("croptopia:pizza", s("dairy", 0.2584f), s("grain", 0.427f), s("protein", 0.1035f), s("vegetable", 0.2111f));
         food("croptopia:plum", s("fruit", 1.0f));
         food("croptopia:popcorn", s("grain", 0.4444f), s("vegetable", 0.5556f));
         food("croptopia:pork_and_beans", s("protein", 0.789f), s("vegetable", 0.211f));
@@ -235,7 +235,7 @@ final class CompatCroptopia {
         food("croptopia:pumpkin_soup", s("vegetable", 1.0f));
         food("croptopia:pumpkin_spice_latte", s("dairy", 0.2978f), s("fruit", 0.1209f), s("protein", 0.1134f), s("vegetable", 0.4679f));
         food("croptopia:quesadilla", s("dairy", 0.1928f), s("fruit", 0.1074f), s("grain", 0.5307f), s("protein", 0.1691f));
-        food("croptopia:quiche", s("dairy", 0.2244f), s("grain", 0.1039f), s("protein", 0.388f), s("vegetable", 0.2837f));
+        food("croptopia:quiche", s("dairy", 0.2241f), s("grain", 0.1036f), s("protein", 0.3876f), s("vegetable", 0.2847f));
         food("croptopia:radish", s("vegetable", 1.0f));
     }
 
@@ -258,20 +258,20 @@ final class CompatCroptopia {
         food("croptopia:roasted_radishes", s("fruit", 0.1763f), s("vegetable", 0.8237f));
         food("croptopia:roasted_squash", s("fruit", 0.1715f), s("vegetable", 0.8285f));
         food("croptopia:roasted_sunflower_seeds", s("protein", 0.3333f), s("vegetable", 0.6667f));
-        food("croptopia:roasted_turnips", s("fruit", 0.1755f), s("vegetable", 0.8245f));
+        food("croptopia:roasted_turnips", s("fruit", 0.1749f), s("vegetable", 0.8251f));
         food("croptopia:roe", s("protein", 1.0f));
         food("croptopia:rum", s("fruit", 1.0f));
         food("croptopia:rum_raisin_ice_cream", s("dairy", 0.2824f), s("fruit", 0.5538f), s("protein", 0.1638f));
         food("croptopia:rutabaga", s("vegetable", 1.0f));
         food("croptopia:saguaro", s("fruit", 1.0f));
         food("croptopia:saguaro_juice", s("fruit", 1.0f));
-        food("croptopia:salsa", s("fruit", 0.1614f), s("vegetable", 0.8386f));
+        food("croptopia:salsa", s("fruit", 0.1616f), s("vegetable", 0.8384f));
         food("croptopia:saucy_chips", s("fruit", 0.1442f), s("vegetable", 0.8558f));
         food("croptopia:sausage", s("protein", 0.6667f), s("vegetable", 0.3333f));
         food("croptopia:scones", s("fruit", 0.3432f), s("grain", 0.4781f), s("protein", 0.1787f));
         food("croptopia:scrambled_eggs", s("dairy", 0.2155f), s("protein", 0.7845f));
         food("croptopia:sea_lettuce", s("vegetable", 1.0f));
-        food("croptopia:shepherds_pie", s("grain", 0.3669f), s("protein", 0.1111f), s("vegetable", 0.522f));
+        food("croptopia:shepherds_pie", s("grain", 0.3669f), s("protein", 0.111f), s("vegetable", 0.5221f));
         food("croptopia:shrimp", s("protein", 1.0f));
         food("croptopia:snicker_doodle", s("fruit", 0.3589f), s("grain", 0.6411f));
         food("croptopia:soy_milk", s("dairy", 0.3333f), s("protein", 0.6667f));
@@ -286,7 +286,7 @@ final class CompatCroptopia {
         food("croptopia:steamed_green_beans", s("protein", 0.3333f), s("vegetable", 0.6667f));
         food("croptopia:steamed_rice", s("grain", 1.0f));
         food("croptopia:sticky_toffee_pudding", s("dairy", 0.4461f), s("fruit", 0.2979f), s("grain", 0.1111f), s("protein", 0.145f));
-        food("croptopia:stir_fry", s("fruit", 0.107f), s("protein", 0.1111f), s("vegetable", 0.7819f));
+        food("croptopia:stir_fry", s("fruit", 0.1072f), s("protein", 0.1111f), s("vegetable", 0.7817f));
         food("croptopia:strawberry", s("fruit", 1.0f));
         food("croptopia:strawberry_ice_cream", s("dairy", 0.3528f), s("fruit", 0.3837f), s("protein", 0.2635f));
         food("croptopia:strawberry_jam", s("fruit", 1.0f));
@@ -294,13 +294,13 @@ final class CompatCroptopia {
         food("croptopia:stuffed_artichoke", s("fruit", 0.2237f), s("grain", 0.1559f), s("vegetable", 0.6204f));
         food("croptopia:stuffed_poblanos", s("dairy", 0.2242f), s("grain", 0.1385f), s("protein", 0.2075f), s("vegetable", 0.4299f));
         food("croptopia:sunny_side_eggs", s("protein", 1.0f));
-        food("croptopia:supreme_pizza", s("dairy", 0.1864f), s("fruit", 0.1047f), s("grain", 0.3269f), s("protein", 0.165f), s("vegetable", 0.217f));
+        food("croptopia:supreme_pizza", s("dairy", 0.1865f), s("fruit", 0.1048f), s("grain", 0.327f), s("protein", 0.1651f), s("vegetable", 0.2167f));
         food("croptopia:sushi", s("grain", 0.4778f), s("protein", 0.3415f), s("vegetable", 0.1807f));
         food("croptopia:sweet_crepes", s("dairy", 0.1445f), s("fruit", 0.1684f), s("grain", 0.4755f), s("protein", 0.2116f));
         food("croptopia:sweet_potato_fries", s("fruit", 0.3333f), s("vegetable", 0.6667f));
         food("croptopia:sweetpotato", s("vegetable", 1.0f));
         food("croptopia:taco", s("dairy", 0.1515f), s("grain", 0.3452f), s("protein", 0.1796f), s("vegetable", 0.3237f));
-        food("croptopia:tamales", s("grain", 0.3573f), s("protein", 0.29f), s("vegetable", 0.3527f));
+        food("croptopia:tamales", s("grain", 0.3569f), s("protein", 0.2894f), s("vegetable", 0.3537f));
         food("croptopia:tea", s("fruit", 1.0f));
         food("croptopia:the_big_breakfast", s("grain", 0.1916f), s("protein", 0.5195f), s("vegetable", 0.2889f));
         food("croptopia:toast", s("grain", 1.0f));
@@ -308,18 +308,18 @@ final class CompatCroptopia {
         food("croptopia:toast_with_jam", s("fruit", 0.5f), s("grain", 0.5f));
         food("croptopia:tofu", s("protein", 1.0f));
         food("croptopia:tofu_and_dumplings", s("grain", 0.3528f), s("protein", 0.461f), s("vegetable", 0.1862f));
-        food("croptopia:tofuburger", s("grain", 0.2919f), s("protein", 0.4516f), s("vegetable", 0.2565f));
+        food("croptopia:tofuburger", s("grain", 0.292f), s("protein", 0.4517f), s("vegetable", 0.2563f));
         food("croptopia:tomatillo", s("vegetable", 1.0f));
         food("croptopia:tomato", s("vegetable", 1.0f));
         food("croptopia:tomato_juice", s("vegetable", 1.0f));
         food("croptopia:tortilla", s("grain", 0.8822f), s("vegetable", 0.1178f));
-        food("croptopia:tostada", s("grain", 0.385f), s("protein", 0.1556f), s("vegetable", 0.4593f));
+        food("croptopia:tostada", s("grain", 0.3856f), s("protein", 0.1562f), s("vegetable", 0.4582f));
         food("croptopia:trail_mix", s("fruit", 0.3757f), s("protein", 0.6243f));
         food("croptopia:treacle_tart", s("fruit", 0.267f), s("grain", 0.733f));
         food("croptopia:tres_leche_cake", s("dairy", 0.1487f), s("fruit", 0.3129f), s("grain", 0.4157f), s("protein", 0.1226f));
         food("croptopia:trifle", s("dairy", 0.215f), s("fruit", 0.4283f), s("grain", 0.2396f), s("protein", 0.1172f));
         food("croptopia:tuna", s("protein", 1.0f));
-        food("croptopia:tuna_roll", s("grain", 0.3524f), s("protein", 0.3524f), s("vegetable", 0.2952f));
+        food("croptopia:tuna_roll", s("grain", 0.3518f), s("protein", 0.3518f), s("vegetable", 0.2965f));
         food("croptopia:tuna_sandwich", s("grain", 0.5f), s("protein", 0.5f));
         food("croptopia:turmeric", s("vegetable", 1.0f));
         food("croptopia:turnip", s("vegetable", 1.0f));

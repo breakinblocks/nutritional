@@ -60,5 +60,6 @@ public final class ModCompatFoods {
         CompatCroptopia.register();
         CompatHarvestCraft.register();
         CompatWorldMods.register();
+        CompatPantryForBlockheads.register();
     }
 }

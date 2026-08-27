@@ -41,17 +41,14 @@ public final class EatingEvents {
     public static void onFinishUsing(LivingEntityUseItemEvent.Finish event) {
         LivingEntity entity = event.getEntity();
         if (!(entity instanceof ServerPlayer player)) return;
-        if (event.getItem().getItem() == Items.MILK_BUCKET) {
-            NutritionEvaluator.evaluate(player);
-            return;
-        }
-        ApplicationPhase phase = phaseFor(event.getItem(), player);
-        if (phase == ApplicationPhase.FINISH_USING) applyNutrients(player, event.getItem());
+        ItemStack stack = event.getItem();
+        boolean applied = phaseFor(stack, player) == ApplicationPhase.FINISH_USING && applyNutrients(player, stack);
+        if (!applied && stack.getItem() == Items.MILK_BUCKET) NutritionEvaluator.evaluate(player);
     }
 
-    private static void applyNutrients(ServerPlayer player, ItemStack stack) {
+    private static boolean applyNutrients(ServerPlayer player, ItemStack stack) {
         Map<ResourceLocation, Float> deltas = NutritionalLogic.calculateNutrition(stack, player);
-        if (deltas.isEmpty()) return;
+        if (deltas.isEmpty()) return false;
 
         Registry<NutrientDefinition> registry = NutritionalDatapack.nutrients(player.serverLevel().registryAccess());
         PlayerNutritionData current = player.getData(NutritionalAttachments.PLAYER_NUTRITION);
@@ -62,6 +59,7 @@ public final class EatingEvents {
         player.setData(NutritionalAttachments.PLAYER_NUTRITION, updated);
         NutritionalNetwork.sendDelta(player, deltaSnapshot(updated, current, deltas.keySet()));
         NutritionEvaluator.evaluate(player);
+        return true;
     }
 
     private static Map<ResourceLocation, Float> deltaSnapshot(PlayerNutritionData updated,

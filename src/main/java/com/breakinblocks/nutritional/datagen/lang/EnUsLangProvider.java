@@ -61,6 +61,9 @@ public final class EnUsLangProvider extends LanguageProvider {
         add("screen.nutritional.hud.place.sample", "Nutrition");
         add("screen.nutritional.hud.place.reset", "Reset");
         add("screen.nutritional.hud.place.done", "Done");
+        add("screen.nutritional.hud.place.always_show.on", "Always Show: On");
+        add("screen.nutritional.hud.place.always_show.off", "Always Show: Off");
+        add("hud.nutritional.hotkey", "Hotkey %s");
 
         add(HudAnchor.TOP_LEFT.translationKey(), "Top left");
         add(HudAnchor.TOP_CENTER.translationKey(), "Top center");

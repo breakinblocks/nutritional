@@ -45,13 +45,19 @@ public final class HudPlacementScreen extends Screen {
 
         addRenderableWidget(
                 Button.builder(Component.translatable("screen.nutritional.hud.place.reset"), b -> reset())
-                        .pos(width / 2 - 105, height - 28)
+                        .pos(width / 2 - 155, height - 28)
+                        .size(100, 20)
+                        .build());
+
+        addRenderableWidget(
+                Button.builder(alwaysShowLabel(), this::toggleAlwaysShow)
+                        .pos(width / 2 - 50, height - 28)
                         .size(100, 20)
                         .build());
 
         addRenderableWidget(
                 Button.builder(Component.translatable("screen.nutritional.hud.place.done"), b -> onClose())
-                        .pos(width / 2 + 5, height - 28)
+                        .pos(width / 2 + 55, height - 28)
                         .size(100, 20)
                         .build());
     }
@@ -175,6 +181,18 @@ public final class HudPlacementScreen extends Screen {
         widgetX = placedX;
         widgetY = placedY;
         HudPlacement.moveTo(widgetX, widgetY);
+    }
+
+    private Component alwaysShowLabel() {
+        return Component.translatable(NutritionalConfig.CLIENT.hudAlwaysShow.get()
+                ? "screen.nutritional.hud.place.always_show.on"
+                : "screen.nutritional.hud.place.always_show.off");
+    }
+
+    private void toggleAlwaysShow(Button button) {
+        NutritionalConfig.CLIENT.hudAlwaysShow.set(!NutritionalConfig.CLIENT.hudAlwaysShow.get());
+        NutritionalConfig.CLIENT_SPEC.save();
+        button.setMessage(alwaysShowLabel());
     }
 
     private void reset() {

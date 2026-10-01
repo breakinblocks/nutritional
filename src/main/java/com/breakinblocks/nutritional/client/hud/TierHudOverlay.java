@@ -2,11 +2,14 @@ package com.breakinblocks.nutritional.client.hud;
 
 import com.breakinblocks.nutritional.Nutritional;
 import com.breakinblocks.nutritional.client.ClientNutritionCache;
+import com.breakinblocks.nutritional.client.key.NutritionalKeybinds;
 import com.breakinblocks.nutritional.config.HudAnchor;
 import com.breakinblocks.nutritional.config.NutritionalConfig;
 import com.breakinblocks.nutritional.data.codec.DietTierDefinition;
 import com.breakinblocks.nutritional.data.codec.TierDisplay;
 import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
+import com.mojang.blaze3d.systems.RenderSystem;
+import net.minecraft.Util;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
@@ -25,6 +28,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterGuiLayersEvent;
 import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 
+import java.util.Objects;
 import java.util.Optional;
 
 @EventBusSubscriber(modid = Nutritional.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
@@ -37,6 +41,13 @@ public final class TierHudOverlay {
     private static final int ICON_SIZE = 10;
     private static final int ICON_GAP = 4;
     private static final float ICON_SCALE = 0.625f;
+    private static final int HINT_GAP = 2;
+    private static final long VISIBLE_MILLIS = 10_000L;
+    private static final long FADE_MILLIS = 1_500L;
+    private static final int MIN_ALPHA = 5;
+
+    private static Optional<ResourceLocation> lastTier;
+    private static long tierChangedAt;
 
     private TierHudOverlay() {}
 
@@ -49,7 +60,12 @@ public final class TierHudOverlay {
 
     private static void render(GuiGraphics graphics, DeltaTracker delta) {
         Minecraft mc = Minecraft.getInstance();
-        if (mc.player == null || mc.getConnection() == null) return;
+        if (mc.player == null || mc.getConnection() == null) {
+            lastTier = null;
+            return;
+        }
+
+        trackTierChange();
 
         boolean placing = HudPlacement.isActive();
         if (!placing && (!NutritionalConfig.CLIENT.hudEnabled.get() || mc.options.hideGui)) return;
@@ -59,10 +75,52 @@ public final class TierHudOverlay {
         if (active.isEmpty() && !placing) return;
         Content content = active.orElseGet(TierHudOverlay::sampleContent);
 
+        float alpha = placing ? 1.0f : visibility();
+        if (alpha <= 0.0f) return;
+
         int width = width(mc.font, content);
         int x = placing ? HudPlacement.x() : resolveX(graphics.guiWidth(), width);
         int y = placing ? HudPlacement.y() : resolveY(graphics.guiHeight(), HEIGHT);
-        draw(graphics, mc.font, content, x, y);
+        draw(graphics, mc.font, content, x, y, alpha);
+        hotkeyHint().ifPresent(hint -> drawHint(graphics, mc.font, hint, x, y, width, alpha));
+    }
+
+    private static void trackTierChange() {
+        Optional<ResourceLocation> tier = ClientNutritionCache.get().currentTier();
+        if (!Objects.equals(tier, lastTier)) {
+            lastTier = tier;
+            tierChangedAt = Util.getMillis();
+        }
+    }
+
+    private static float visibility() {
+        if (NutritionalConfig.CLIENT.hudAlwaysShow.get()) return 1.0f;
+        long elapsed = Util.getMillis() - tierChangedAt;
+        if (elapsed >= VISIBLE_MILLIS) return 0.0f;
+        long fadeStart = VISIBLE_MILLIS - FADE_MILLIS;
+        if (elapsed <= fadeStart) return 1.0f;
+        return 1.0f - (float) (elapsed - fadeStart) / FADE_MILLIS;
+    }
+
+    private static Optional<Component> hotkeyHint() {
+        if (NutritionalConfig.CLIENT.hudAlwaysShow.get() || NutritionalKeybinds.OPEN_NUTRITION.isUnbound()) {
+            return Optional.empty();
+        }
+        return Optional.of(Component.translatable("hud.nutritional.hotkey",
+                NutritionalKeybinds.OPEN_NUTRITION.getTranslatedKeyMessage()));
+    }
+
+    private static void drawHint(GuiGraphics graphics, Font font, Component hint, int x, int y, int width, float alpha) {
+        int hintWidth = font.width(hint);
+        int hintX = clamp(x + (width - hintWidth) / 2, graphics.guiWidth(), hintWidth);
+        int below = y + HEIGHT + HINT_GAP;
+        int hintY = below + font.lineHeight <= graphics.guiHeight() ? below : y - HINT_GAP - font.lineHeight;
+        graphics.drawString(font, hint, hintX, hintY, withAlpha(0xAAAAAA, alpha), true);
+    }
+
+    private static int withAlpha(int rgb, float alpha) {
+        int a = Math.max(MIN_ALPHA, Math.round(alpha * 255.0f));
+        return (a << 24) | (rgb & 0xFFFFFF);
     }
 
     private static Optional<Content> activeContent(Minecraft mc) {
@@ -108,20 +166,23 @@ public final class TierHudOverlay {
         return Math.max(0, Math.min(position, Math.max(0, screenSize - elementSize)));
     }
 
-    public static void draw(GuiGraphics graphics, Font font, Content content, int x, int y) {
+    public static void draw(GuiGraphics graphics, Font font, Content content, int x, int y, float alpha) {
         int width = width(font, content);
-        graphics.fill(x, y, x + width, y + HEIGHT, 0xA0000000);
-        graphics.renderOutline(x, y, width, HEIGHT, content.color() | 0xFF000000);
+        graphics.fill(x, y, x + width, y + HEIGHT, withAlpha(0x000000, alpha * 0xA0 / 255.0f));
+        graphics.renderOutline(x, y, width, HEIGHT, withAlpha(content.color(), alpha));
 
         int textX = x + PADDING;
         if (content.icon().isPresent()) {
             ItemStack iconStack = new ItemStack(content.icon().get());
+            RenderSystem.enableBlend();
+            RenderSystem.setShaderColor(1.0f, 1.0f, 1.0f, alpha);
             graphics.pose().pushPose();
             graphics.pose().scale(ICON_SCALE, ICON_SCALE, 1.0f);
             graphics.renderItem(iconStack, (int) ((x + PADDING) / ICON_SCALE), (int) ((y + 2) / ICON_SCALE));
             graphics.pose().popPose();
+            RenderSystem.setShaderColor(1.0f, 1.0f, 1.0f, 1.0f);
             textX += ICON_SIZE + ICON_GAP;
         }
-        graphics.drawString(font, content.label(), textX, y + 3, content.color() | 0xFF000000, false);
+        graphics.drawString(font, content.label(), textX, y + 3, withAlpha(content.color(), alpha), false);
     }
 }

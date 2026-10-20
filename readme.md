@@ -77,6 +77,18 @@ Two attributes are added and can be modified by equipment, mob effects, and othe
 - `/nutritional get|set|add|subtract|reset <player> <nutrient> [<value>]`
 - `/nutritional reload` reloads datapacks
 - `/nutritional-food` prints the nutrient yield for the held item
+- `/nutritional-food unmapped [<mod>]` lists every food that is not in any nutrient tag, or only the foods from one mod. Chat shows the first 50 and the full list is written to the server log.
+
+All of these need operator permission.
+
+### Finding foods without nutrients
+
+Two options in the `logging` section of `nutritional-server.toml` help when adding mods to a pack. Both are off by default. When turned on, they run when the server starts and again after every `/reload`, and write to `latest.log`.
+
+- `missing_nutrients` logs a `Food with no nutrient mapping: <item>` line for every edible item that is not in any nutrient tag, then a total. An item counts as edible if a player can eat it for hunger, or if a food hint marks it as valid food.
+- `missing_food` logs a `Missing food item:` line for every item listed in a nutrient or food hint tag whose mod is installed but which does not exist, usually because the mod renamed or removed it. Items from mods that are not installed are skipped.
+
+For a quick check without restarting, `/nutritional-food unmapped` gives the same list as `missing_nutrients`.
 
 ### Advancement triggers
 

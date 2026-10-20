@@ -1,7 +1,9 @@
 package com.breakinblocks.nutritional.event;
 
 import com.breakinblocks.nutritional.Nutritional;
+import com.breakinblocks.nutritional.common.FoodMappingAudit;
 import com.breakinblocks.nutritional.common.InvertedNutrientIndex;
+import com.breakinblocks.nutritional.config.NutritionalConfig;
 import com.breakinblocks.nutritional.data.codec.NutritionEffectDef;
 import com.breakinblocks.nutritional.data.registry.NutritionalDatapack;
 import net.minecraft.core.Registry;
@@ -35,6 +37,12 @@ public final class NutritionalServerEvents {
         RegistryAccess access = server.registryAccess();
         validate(access);
         InvertedNutrientIndex.rebuild(access);
+        if (NutritionalConfig.SERVER.logMissingFood.get()) {
+            FoodMappingAudit.logMissingTagEntries(server);
+        }
+        if (NutritionalConfig.SERVER.logMissingNutrients.get()) {
+            FoodMappingAudit.logUnmappedFoods(FoodMappingAudit.unmappedFoods(access));
+        }
         Nutritional.LOGGER.info("Loaded {} nutrients, {} effects, {} food hints, {} diet tiers, {} sustained rewards.",
                 NutritionalDatapack.nutrients(access).size(),
                 NutritionalDatapack.effects(access).size(),

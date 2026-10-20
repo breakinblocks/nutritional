@@ -69,7 +69,7 @@ public final class NutritionalLogic {
     public static boolean isEdible(ItemStack stack, RegistryAccess access) {
         Optional<FoodHintDef> hint = findFoodHint(stack, access);
         if (hint.isPresent()) return hint.get().isValidFood();
-        return stack.has(DataComponents.FOOD);
+        return stack.has(DataComponents.FOOD) && stack.has(DataComponents.CONSUMABLE);
     }
 
     public static float applyDecay(float current, int foodDrop, NutrientDefinition def, ServerPlayer player) {

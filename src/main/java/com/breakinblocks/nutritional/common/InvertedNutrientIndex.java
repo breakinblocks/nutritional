@@ -30,8 +30,7 @@ public final class InvertedNutrientIndex {
 
         for (Holder.Reference<NutrientDefinition> ref : nutrients.listElements().toList()) {
             Identifier nutrientId = ref.key().identifier();
-            NutrientDefinition def = ref.value();
-            TagKey<Item> tag = def.items().orElseGet(() -> defaultTagFor(nutrientId));
+            TagKey<Item> tag = tagFor(nutrientId, ref.value());
             BuiltInRegistries.ITEM.get(tag).ifPresent(holderSet ->
                     holderSet.forEach(itemHolder ->
                             built.computeIfAbsent(itemHolder.value(), k -> new ArrayList<>()).add(nutrientId)));
@@ -51,6 +50,10 @@ public final class InvertedNutrientIndex {
 
     public static Set<Item> items() {
         return index.keySet();
+    }
+
+    public static TagKey<Item> tagFor(Identifier nutrientId, NutrientDefinition def) {
+        return def.items().orElseGet(() -> defaultTagFor(nutrientId));
     }
 
     private static TagKey<Item> defaultTagFor(Identifier nutrientId) {

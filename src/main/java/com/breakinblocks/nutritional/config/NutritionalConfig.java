@@ -75,7 +75,7 @@ public final class NutritionalConfig {
             b.pop();
 
             b.push("logging");
-            logMissingFood = b.comment("Log items referenced by nutrient/food_hint JSON that are not present in the item registry.")
+            logMissingFood = b.comment("Log items listed in nutrient or food_hint tags whose mod is installed but which do not exist, such as renamed or removed foods.")
                     .define("missing_food", false);
             logMissingNutrients = b.comment("Log food items that have no nutrient mapping.")
                     .define("missing_nutrients", false);

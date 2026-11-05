@@ -5205,6 +5205,38 @@
       "required": false
     },
     {
+      "id": "chovys_apocalypse_mod:cannedbeef",
+      "required": false
+    },
+    {
+      "id": "chovys_apocalypse_mod:cannedmutton",
+      "required": false
+    },
+    {
+      "id": "chovys_apocalypse_mod:cannedsalmon",
+      "required": false
+    },
+    {
+      "id": "chovys_apocalypse_mod:cannedtuna",
+      "required": false
+    },
+    {
+      "id": "chovys_apocalypse_mod:cookedanchovy",
+      "required": false
+    },
+    {
+      "id": "chovys_apocalypse_mod:mre",
+      "required": false
+    },
+    {
+      "id": "chovys_apocalypse_mod:proteinbar",
+      "required": false
+    },
+    {
+      "id": "chovys_apocalypse_mod:rawanchovy",
+      "required": false
+    },
+    {
       "id": "eternal_starlight:aurora_deer_steak",
       "required": false
     },
@@ -5746,6 +5778,1678 @@
     },
     {
       "id": "pantryforblockheads:tofu",
+      "required": false
+    },
+    {
+      "id": "createfood:apple_custard_bottle",
+      "required": false
+    },
+    {
+      "id": "createfood:bacon_bits",
+      "required": false
+    },
+    {
+      "id": "createfood:bacon_calzone",
+      "required": false
+    },
+    {
+      "id": "createfood:bacon_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:bacon_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:bacon_sandwich_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:baked_potato_butter_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:baked_potato_butter_fish",
+      "required": false
+    },
+    {
+      "id": "createfood:baked_potato_butter_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:baked_potato_butter_sausage",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_bacon_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_bacon_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_onion",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_onion_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_onion_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_onion_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_onion_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_cheese_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_crimson_fungus",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_onion",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_onion_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_onion_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_onion_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_onion_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_peanut_butter",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_peanut_butter_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_bun_warped_fungus",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_burrito_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_calzone",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_meatball",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_meatball_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_meatball_stick_1",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_meatball_stick_2",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_meatball_stick_3",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_mashed_potatoes",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_mashed_potatoes_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_mashed_potatoes_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_mashed_potatoes_gravy",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_mashed_potatoes_gravy_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_mashed_potatoes_gravy_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_mashed_potatoes_gravy_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_mashed_potatoes_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_rice_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_rice_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_plate_rice_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_rice_bowl_kelp",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_taco",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_taco_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_taco_lettuce_taco_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:beef_wrap_lettuce_beetroot",
+      "required": false
+    },
+    {
+      "id": "createfood:berry_custard_bottle",
+      "required": false
+    },
+    {
+      "id": "createfood:boiled_egg_peeled",
+      "required": false
+    },
+    {
+      "id": "createfood:boiled_egg_peeled_salt",
+      "required": false
+    },
+    {
+      "id": "createfood:bread_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:bread_slice_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:bread_slice_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:bread_slice_bacon_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:bread_slice_mutton",
+      "required": false
+    },
+    {
+      "id": "createfood:bread_slice_mutton_beetroot",
+      "required": false
+    },
+    {
+      "id": "createfood:bread_slice_peanut_butter",
+      "required": false
+    },
+    {
+      "id": "createfood:bread_slice_scrambled_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:cheese_potato_dumplings",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_bacon_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_onion",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_onion_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_onion_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_onion_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_onion_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:cheeseburger_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_cheese",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_cheese_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_cheese_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_cheese_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_cheese_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_cheese_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_bun_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_burger",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_burger_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_burger_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_burger_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_burger_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_burger_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_burrito_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_calzone",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_cheeseburger",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_cheeseburger_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_cheeseburger_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_cheeseburger_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_cheeseburger_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_cheeseburger_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_nuggets",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_patty",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_mashed_potatoes",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_mashed_potatoes_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_mashed_potatoes_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_mashed_potatoes_gravy",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_mashed_potatoes_gravy_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_mashed_potatoes_gravy_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_mashed_potatoes_gravy_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_mashed_potatoes_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_rice_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_rice_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_plate_rice_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_rice_bowl_kelp",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_taco",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_taco_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_taco_lettuce_taco_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:chicken_wrap_onion_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:chocolate_custard_bottle",
+      "required": false
+    },
+    {
+      "id": "createfood:chorus_fruit_custard_bottle",
+      "required": false
+    },
+    {
+      "id": "createfood:cooked_beef_cuts",
+      "required": false
+    },
+    {
+      "id": "createfood:cooked_rabbit_cuts",
+      "required": false
+    },
+    {
+      "id": "createfood:cooked_tropical_fish",
+      "required": false
+    },
+    {
+      "id": "createfood:cooked_tropical_fish_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:creme_brulee_bottle",
+      "required": false
+    },
+    {
+      "id": "createfood:custard_bottle",
+      "required": false
+    },
+    {
+      "id": "createfood:custard_sugar_bottle",
+      "required": false
+    },
+    {
+      "id": "createfood:dragon_bun",
+      "required": false
+    },
+    {
+      "id": "createfood:dragon_bun_crimson_fungus",
+      "required": false
+    },
+    {
+      "id": "createfood:dragon_bun_warped_fungus",
+      "required": false
+    },
+    {
+      "id": "createfood:dragon_burger",
+      "required": false
+    },
+    {
+      "id": "createfood:dragon_burger_crimson_fungus",
+      "required": false
+    },
+    {
+      "id": "createfood:dragon_burger_warped_fungus",
+      "required": false
+    },
+    {
+      "id": "createfood:dragon_patty",
+      "required": false
+    },
+    {
+      "id": "createfood:egg_burrito",
+      "required": false
+    },
+    {
+      "id": "createfood:egg_burrito_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:egg_burrito_cheese",
+      "required": false
+    },
+    {
+      "id": "createfood:egg_burrito_cheese_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:egg_burrito_cheese_sausage",
+      "required": false
+    },
+    {
+      "id": "createfood:egg_burrito_cheese_sausage_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:egg_burrito_sausage",
+      "required": false
+    },
+    {
+      "id": "createfood:egg_dumplings",
+      "required": false
+    },
+    {
+      "id": "createfood:endermite_meatball",
+      "required": false
+    },
+    {
+      "id": "createfood:endermite_meatball_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:endermite_meatball_stick_1",
+      "required": false
+    },
+    {
+      "id": "createfood:endermite_meatball_stick_2",
+      "required": false
+    },
+    {
+      "id": "createfood:endermite_meatball_stick_3",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_bacon_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_burrito_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_calzone",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_chowder_bowl",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_chowder_bowl_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_chowder_bowl_croutons",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_onion_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_mashed_potatoes",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_mashed_potatoes_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_mashed_potatoes_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_mashed_potatoes_gravy",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_mashed_potatoes_gravy_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_mashed_potatoes_gravy_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_mashed_potatoes_gravy_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_mashed_potatoes_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_rice_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_rice_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_plate_rice_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_rice_bowl_kelp",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_sticks",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_taco",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_taco_kelp",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_taco_kelp_taco_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:fish_wrap_kelp_onion",
+      "required": false
+    },
+    {
+      "id": "createfood:fishcake",
+      "required": false
+    },
+    {
+      "id": "createfood:french_toast_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:french_toast_slice_apple_jam",
+      "required": false
+    },
+    {
+      "id": "createfood:french_toast_slice_berry_jam",
+      "required": false
+    },
+    {
+      "id": "createfood:french_toast_slice_butter",
+      "required": false
+    },
+    {
+      "id": "createfood:french_toast_slice_chorus_fruit_jam",
+      "required": false
+    },
+    {
+      "id": "createfood:french_toast_slice_glow_berry_jam",
+      "required": false
+    },
+    {
+      "id": "createfood:french_toast_slice_melon_jam",
+      "required": false
+    },
+    {
+      "id": "createfood:french_toast_slice_sugar",
+      "required": false
+    },
+    {
+      "id": "createfood:fried_egg_hash_browns_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:fried_egg_plate",
+      "required": false
+    },
+    {
+      "id": "createfood:gyro_meat_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_bacon_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_crimson_fungus",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_onion",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_onion_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_onion_bacon_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_onion_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_peanut_butter",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_peanut_butter_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:hamburger_warped_fungus",
+      "required": false
+    },
+    {
+      "id": "createfood:hash_browns_plate_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:kelp_roll_fish",
+      "required": false
+    },
+    {
+      "id": "createfood:kelp_roll_slice_fish",
+      "required": false
+    },
+    {
+      "id": "createfood:kelp_soup_bowl_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:leather_soup_bowl",
+      "required": false
+    },
+    {
+      "id": "createfood:macaroni_bowl_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:macaroni_bowl_cheese_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:macaroni_bowl_cheese_sausage",
+      "required": false
+    },
+    {
+      "id": "createfood:macaroni_bowl_sausage",
+      "required": false
+    },
+    {
+      "id": "createfood:mashed_potatoes_bowl_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:mashed_potatoes_bowl_gravy",
+      "required": false
+    },
+    {
+      "id": "createfood:mashed_potatoes_bowl_sausage",
+      "required": false
+    },
+    {
+      "id": "createfood:mashed_potatoes_plate_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:mashed_potatoes_plate_gravy",
+      "required": false
+    },
+    {
+      "id": "createfood:mashed_potatoes_plate_gravy_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:mashed_potatoes_plate_gravy_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:mashed_potatoes_plate_gravy_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:meat_pie_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:melon_custard_bottle",
+      "required": false
+    },
+    {
+      "id": "createfood:meringue_cookie",
+      "required": false
+    },
+    {
+      "id": "createfood:mixed_salad_plate_mashed_potatoes_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:mixed_salad_plate_mashed_potatoes_gravy",
+      "required": false
+    },
+    {
+      "id": "createfood:mixed_salad_plate_mashed_potatoes_gravy_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:mixed_salad_plate_mashed_potatoes_gravy_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:mixed_salad_plate_mashed_potatoes_gravy_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:mixed_salad_plate_rice_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:mushroom_bacon_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:mushroom_cream_soup_bowl_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:mushroom_fish_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_burrito_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_calzone",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_mashed_potatoes",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_mashed_potatoes_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_mashed_potatoes_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_mashed_potatoes_gravy",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_mashed_potatoes_gravy_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_mashed_potatoes_gravy_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_mashed_potatoes_gravy_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_mashed_potatoes_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_rice_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_rice_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_plate_rice_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_rice_bowl_kelp",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_sandwich_beetroot",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_stew_bowl",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_stew_bowl_croutons",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_stew_bowl_sour_cream",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_taco",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_taco_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_taco_lettuce_taco_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:mutton_wrap_lettuce_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:nacho_bowl_beef",
+      "required": false
+    },
+    {
+      "id": "createfood:nacho_bowl_beef_sour_cream",
+      "required": false
+    },
+    {
+      "id": "createfood:nacho_bowl_beef_taco_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:onion_bacon_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_bacon_alfredo_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_bacon_tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_beef_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_chicken_cut",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_chicken_cut_alfredo_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_chicken_cut_tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_endermite_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_endermite_meatballs_tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_fish",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_fish_alfredo_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_fish_tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_mutton_chop",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_pork_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_pork_meatballs_tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_rabbit_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_rabbit_meatballs_tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_sausage",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_slime",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_slimeballs",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_squid_ink",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_strider_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:pasta_plate_strider_meatballs_tomato_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:peanut_butter_apple_jam_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:peanut_butter_chorus_fruit_jam_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:peanut_butter_melon_jam_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_burrito_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_meatball",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_meatball_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_meatball_stick_1",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_meatball_stick_2",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_meatball_stick_3",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_mashed_potatoes",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_mashed_potatoes_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_mashed_potatoes_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_mashed_potatoes_gravy",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_mashed_potatoes_gravy_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_mashed_potatoes_gravy_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_mashed_potatoes_gravy_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_mashed_potatoes_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_rice_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_rice_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_plate_rice_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_rice_bowl_kelp",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_stew_bowl",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_stew_bowl_croutons",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_stew_bowl_sour_cream",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_taco",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_taco_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_taco_lettuce_taco_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:pork_wrap_onion_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:potato_cream_soup_bowl_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:pumpernickel_toast_cream_cheese_mushroom_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:pumpernickel_toast_cream_cheese_salmon",
+      "required": false
+    },
+    {
+      "id": "createfood:pumpernickel_toast_cream_cheese_salmon_onion",
+      "required": false
+    },
+    {
+      "id": "createfood:pumpkin_custard_bottle",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_burrito_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_calzone",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_jerky",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_meatball",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_meatball_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_meatball_stick_1",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_meatball_stick_2",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_meatball_stick_3",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_mashed_potatoes",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_mashed_potatoes_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_mashed_potatoes_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_mashed_potatoes_gravy",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_mashed_potatoes_gravy_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_mashed_potatoes_gravy_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_mashed_potatoes_gravy_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_mashed_potatoes_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_rice",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_rice_carrot",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_rice_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_plate_rice_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_rice_bowl_kelp",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_taco",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_taco_lettuce",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_taco_lettuce_taco_sauce",
+      "required": false
+    },
+    {
+      "id": "createfood:rabbit_wrap_onion_potato",
+      "required": false
+    },
+    {
+      "id": "createfood:rice_plate_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_bacon_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_cheese",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_cheese_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_cheese_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_cheese_fried_egg_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_fried_egg_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_sandwich_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_sandwich_cheese",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_sandwich_cheese_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_sandwich_cheese_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_sandwich_cheese_fried_egg_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_sandwich_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_biscuit_sandwich_fried_egg_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_bits",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_calzone",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_fish_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_mushroom_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_onion_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_patty",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_pizza_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_roll",
+      "required": false
+    },
+    {
+      "id": "createfood:sausage_roll_cheese",
+      "required": false
+    },
+    {
+      "id": "createfood:sausages",
+      "required": false
+    },
+    {
+      "id": "createfood:scotch_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:scotch_egg_slice",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_egg_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate_cheese",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate_cheese_bacon",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate_cheese_sausage",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate_cheese_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate_mushroom",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate_onion",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate_sausage",
+      "required": false
+    },
+    {
+      "id": "createfood:scrambled_eggs_plate_tomato",
+      "required": false
+    },
+    {
+      "id": "createfood:shakshuka_bowl",
+      "required": false
+    },
+    {
+      "id": "createfood:small_beef_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:small_endermite_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:small_pork_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:small_rabbit_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:small_slimeballs",
+      "required": false
+    },
+    {
+      "id": "createfood:small_strider_meatballs",
+      "required": false
+    },
+    {
+      "id": "createfood:spicy_chicken_nuggets",
+      "required": false
+    },
+    {
+      "id": "createfood:spicy_sausage_roll",
+      "required": false
+    },
+    {
+      "id": "createfood:spicy_sausage_roll_cheese",
+      "required": false
+    },
+    {
+      "id": "createfood:spicy_sausages",
+      "required": false
+    },
+    {
+      "id": "createfood:strider_meatball",
+      "required": false
+    },
+    {
+      "id": "createfood:strider_meatball_sandwich",
+      "required": false
+    },
+    {
+      "id": "createfood:strider_meatball_stick_1",
+      "required": false
+    },
+    {
+      "id": "createfood:strider_meatball_stick_2",
+      "required": false
+    },
+    {
+      "id": "createfood:strider_meatball_stick_3",
+      "required": false
+    },
+    {
+      "id": "createfood:toast_plate_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:toast_plate_hash_browns_fried_egg",
+      "required": false
+    },
+    {
+      "id": "createfood:tropical_fish_slice",
       "required": false
     }
   ]

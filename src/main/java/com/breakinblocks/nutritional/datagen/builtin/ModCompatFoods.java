@@ -36,6 +36,7 @@ public final class ModCompatFoods {
     }
 
     static {
+        food("create:bar_of_chocolate", s("dairy", 0.3942f), s("fruit", 0.6058f));
         food("create:builders_tea", s("dairy", 0.25f));
         food("create:chocolate_glazed_berries", s("fruit", 1.0f));
         food("create:honeyed_apple", s("fruit", 1.0f));
@@ -61,5 +62,6 @@ public final class ModCompatFoods {
         CompatHarvestCraft.register();
         CompatWorldMods.register();
         CompatPantryForBlockheads.register();
+        CompatCreateFood.register();
     }
 }

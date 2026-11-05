@@ -1,5 +1,6 @@
 package com.breakinblocks.nutritional.command;
 
+import com.breakinblocks.nutritional.Nutritional;
 import com.breakinblocks.nutritional.common.FoodMappingAudit;
 import com.breakinblocks.nutritional.common.InvertedNutrientIndex;
 import com.breakinblocks.nutritional.common.NutritionalLogic;
@@ -21,6 +22,8 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
+import java.io.IOException;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -81,7 +84,6 @@ public final class NutritionalFoodCommand {
             return 0;
         }
 
-        FoodMappingAudit.logUnmappedFoods(unmapped);
         MutableComponent message = Component.literal(unmapped.size() + " foods" + scope + " have no nutrient mapping:");
         for (Item item : unmapped.subList(0, Math.min(CHAT_LIST_LIMIT, unmapped.size()))) {
             message.append(Component.literal("\n" + BuiltInRegistries.ITEM.getKey(item) + " ").withStyle(ChatFormatting.GRAY))
@@ -89,10 +91,24 @@ public final class NutritionalFoodCommand {
                             .withStyle(ChatFormatting.DARK_GRAY));
         }
         if (unmapped.size() > CHAT_LIST_LIMIT) {
-            message.append(Component.literal("\n...and " + (unmapped.size() - CHAT_LIST_LIMIT)
-                    + " more. The full list is in the server log.").withStyle(ChatFormatting.YELLOW));
+            message.append(Component.literal("\n...and " + (unmapped.size() - CHAT_LIST_LIMIT) + " more.")
+                    .withStyle(ChatFormatting.YELLOW));
         }
+        message.append(saveReport(ctx.getSource(), unmapped, mod));
         ctx.getSource().sendSuccess(() -> message, false);
         return unmapped.size();
+    }
+
+    private static Component saveReport(CommandSourceStack source, List<Item> unmapped, Optional<String> mod) {
+        try {
+            Path report = FoodMappingAudit.writeUnmappedReport(unmapped, mod);
+            String where = source.getServer().isDedicatedServer() ? "on the server" : "in your game folder";
+            return Component.literal("\nFull list saved to " + report + " " + where + ".").withStyle(ChatFormatting.YELLOW);
+        } catch (IOException e) {
+            Nutritional.LOGGER.error("Could not save the unmapped food list.", e);
+            FoodMappingAudit.logUnmappedFoods(unmapped);
+            return Component.literal("\nCould not save the full list, so it was written to the server log instead.")
+                    .withStyle(ChatFormatting.RED);
+        }
     }
 }

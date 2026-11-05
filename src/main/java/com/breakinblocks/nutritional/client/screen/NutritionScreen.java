@@ -1,5 +1,6 @@
 package com.breakinblocks.nutritional.client.screen;
 
+import com.breakinblocks.nutritional.Nutritional;
 import com.breakinblocks.nutritional.client.ClientNutritionCache;
 import com.breakinblocks.nutritional.config.NutritionalConfig;
 import com.breakinblocks.nutritional.data.attachment.PlayerNutritionData;
@@ -11,33 +12,80 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.multiplayer.ClientPacketListener;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.Holder;
-import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.protocol.game.ServerboundContainerClosePacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.network.PacketDistributor;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public final class NutritionScreen extends Screen {
 
+    public static final int PANEL_WIDTH = 176;
+
+    private static final ResourceLocation PANEL_SPRITE = Nutritional.id("panel");
+    private static final ResourceLocation SLOT_SPRITE = ResourceLocation.withDefaultNamespace("container/slot");
+
+    private static final int MIN_PANEL_HEIGHT = 166;
+    private static final int PADDING = 8;
+    private static final int HEADER_HEIGHT = 20;
+    private static final int ROW_HEIGHT = 22;
+    private static final int SLOT_SIZE = 18;
+    private static final int BAR_X = PADDING + SLOT_SIZE + 4;
+    private static final int BAR_WIDTH = PANEL_WIDTH - PADDING - BAR_X;
+    private static final int BAR_HEIGHT = 6;
+    private static final int BUTTON_HEIGHT = 20;
+    private static final int BUTTON_GAP = 2;
+    private static final int FOOTER_HEIGHT = BUTTON_HEIGHT + PADDING * 2;
+    private static final int TIER_HEIGHT = 12;
+    private static final int TIER_PADDING = 3;
+
+    private static final int TEXT_COLOR = 0xFF404040;
+    private static final int INSET_SHADOW = 0xFF373737;
+    private static final int INSET_HIGHLIGHT = 0xFFFFFFFF;
+    private static final int BAR_TRACK = 0xFF555555;
+    private static final int DARK_TIER_LUMA = 100;
+
+    private final Screen parent;
+
+    private List<Holder.Reference<NutrientDefinition>> rows = List.of();
+    private int panelHeight;
+    private int left;
+    private int top;
     private Button hudToggle;
     private Button hudMove;
 
-    private static final int ICON_COL = 22;
-    private static final int NAME_COL = 70;
-    private static final int BAR_WIDTH = 150;
-    private static final int BAR_HEIGHT = 12;
-    private static final int PCT_COL = 36;
-    private static final int ROW_HEIGHT = 22;
-    private static final int PANEL_PAD = 12;
-
-    public NutritionScreen() {
+    public NutritionScreen(Screen parent) {
         super(Component.translatable("screen.nutritional.title"));
+        this.parent = parent;
+    }
+
+    public static void openFromMenu(Screen parent) {
+        Minecraft mc = Minecraft.getInstance();
+        LocalPlayer player = mc.player;
+        if (player != null && mc.getConnection() != null) {
+            mc.getConnection().send(new ServerboundContainerClosePacket(player.containerMenu.containerId));
+            player.containerMenu = player.inventoryMenu;
+        }
+        mc.setScreen(new NutritionScreen(parent));
+    }
+
+    public static int panelHeight() {
+        return Math.max(MIN_PANEL_HEIGHT, HEADER_HEIGHT + visibleNutrients().size() * ROW_HEIGHT + FOOTER_HEIGHT);
+    }
+
+    private static List<Holder.Reference<NutrientDefinition>> visibleNutrients() {
+        ClientPacketListener connection = Minecraft.getInstance().getConnection();
+        if (connection == null) return List.of();
+        return NutritionalDatapack.nutrients(connection.registryAccess()).holders()
+                .filter(ref -> ref.value().visible())
+                .toList();
     }
 
     @Override
@@ -45,25 +93,30 @@ public final class NutritionScreen extends Screen {
         super.init();
         PacketDistributor.sendToServer(new RequestNutritionPayload());
 
-        hudToggle = Button.builder(hudButtonText(), b -> toggleHud())
-                .pos(width / 2 - 145, height - 30)
-                .size(100, 20)
-                .build();
-        addRenderableWidget(hudToggle);
+        rows = visibleNutrients();
+        panelHeight = panelHeight();
+        left = (width - PANEL_WIDTH) / 2;
+        top = (height - panelHeight) / 2;
 
-        hudMove = Button.builder(Component.translatable("screen.nutritional.hud.move"),
+        int buttonWidth = (PANEL_WIDTH - PADDING * 2 - BUTTON_GAP * 2) / 3;
+        int buttonY = top + panelHeight - PADDING - BUTTON_HEIGHT;
+
+        hudToggle = addRenderableWidget(Button.builder(hudButtonText(), b -> toggleHud())
+                .pos(left + PADDING, buttonY)
+                .size(buttonWidth, BUTTON_HEIGHT)
+                .build());
+
+        hudMove = addRenderableWidget(Button.builder(Component.translatable("screen.nutritional.hud.move"),
                         b -> Minecraft.getInstance().setScreen(new HudPlacementScreen(this)))
-                .pos(width / 2 - 40, height - 30)
-                .size(100, 20)
-                .build();
+                .pos(left + PADDING + buttonWidth + BUTTON_GAP, buttonY)
+                .size(buttonWidth, BUTTON_HEIGHT)
+                .build());
         hudMove.active = NutritionalConfig.CLIENT.hudEnabled.get();
-        addRenderableWidget(hudMove);
 
-        addRenderableWidget(
-                Button.builder(Component.translatable("screen.nutritional.close"), b -> onClose())
-                        .pos(width / 2 + 65, height - 30)
-                        .size(80, 20)
-                        .build());
+        addRenderableWidget(Button.builder(Component.translatable("screen.nutritional.close"), b -> onClose())
+                .pos(left + PADDING + (buttonWidth + BUTTON_GAP) * 2, buttonY)
+                .size(buttonWidth, BUTTON_HEIGHT)
+                .build());
     }
 
     private Component hudButtonText() {
@@ -80,81 +133,89 @@ public final class NutritionScreen extends Screen {
     }
 
     @Override
-    public void render(GuiGraphics graphics, int mouseX, int mouseY, float partial) {
-        renderBackground(graphics, mouseX, mouseY, partial);
-        super.render(graphics, mouseX, mouseY, partial);
+    public void renderBackground(GuiGraphics graphics, int mouseX, int mouseY, float partial) {
+        renderTransparentBackground(graphics);
+        graphics.blitSprite(PANEL_SPRITE, left, top, PANEL_WIDTH, panelHeight);
+        graphics.drawString(font, title, left + PADDING, top + 6, TEXT_COLOR, false);
 
         Minecraft mc = Minecraft.getInstance();
         if (mc.getConnection() == null) return;
-        RegistryAccess access = mc.getConnection().registryAccess();
-        Registry<NutrientDefinition> nutrients = NutritionalDatapack.nutrients(access);
 
-        List<NutrientRow> rows = new ArrayList<>();
-        for (Holder.Reference<NutrientDefinition> ref : nutrients.holders().toList()) {
-            NutrientDefinition def = ref.value();
-            if (!def.visible()) continue;
-            rows.add(new NutrientRow(ref.key().location(), def));
-        }
+        PlayerNutritionData data = ClientNutritionCache.get();
+        renderActiveTier(graphics, data, mc.getConnection().registryAccess());
+
         if (rows.isEmpty()) {
-            graphics.drawCenteredString(font, Component.literal("No nutrients defined."), width / 2, height / 2, 0xFFFFFF);
+            Component empty = Component.literal("No nutrients defined.");
+            graphics.drawString(font, empty, left + (PANEL_WIDTH - font.width(empty)) / 2, top + HEADER_HEIGHT + 6, TEXT_COLOR, false);
             return;
         }
 
-        PlayerNutritionData data = ClientNutritionCache.get();
-        int panelWidth = ICON_COL + NAME_COL + BAR_WIDTH + PCT_COL + PANEL_PAD * 2;
-        int panelHeight = rows.size() * ROW_HEIGHT + PANEL_PAD * 2 + 28;
-        int x = (width - panelWidth) / 2;
-        int y = (height - panelHeight) / 2;
-
-        graphics.fill(x, y, x + panelWidth, y + panelHeight, 0xC0000000);
-        graphics.renderOutline(x, y, panelWidth, panelHeight, 0xFFFFFFFF);
-
-        graphics.drawCenteredString(font, title, x + panelWidth / 2, y + 6, 0xFFFFFF);
-
-        renderActiveTier(graphics, data, access, x + PANEL_PAD, y + 20);
-
-        int rowY = y + 40;
-        for (NutrientRow row : rows) {
-            renderRow(graphics, row, data, x + PANEL_PAD, rowY);
+        int rowY = top + HEADER_HEIGHT;
+        for (Holder.Reference<NutrientDefinition> row : rows) {
+            renderRow(graphics, row, data, rowY);
             rowY += ROW_HEIGHT;
         }
     }
 
-    private void renderActiveTier(GuiGraphics graphics, PlayerNutritionData data, RegistryAccess access, int x, int y) {
+    private void renderActiveTier(GuiGraphics graphics, PlayerNutritionData data, RegistryAccess access) {
         Optional<ResourceLocation> tierId = data.currentTier();
         if (tierId.isEmpty()) return;
-        Registry<DietTierDefinition> tiers = NutritionalDatapack.tiers(access);
-        DietTierDefinition def = tiers.get(tierId.get());
+        DietTierDefinition def = NutritionalDatapack.tiers(access).get(tierId.get());
         if (def == null) return;
+
         Component name = Component.translatable(def.display().name());
-        Component label = Component.literal("Tier: ").append(name);
-        graphics.drawString(font, label, x, y, def.display().color() | 0xFF000000, false);
+        int color = def.display().color();
+        int chipWidth = font.width(name) + TIER_PADDING * 2;
+        int chipX = left + PANEL_WIDTH - PADDING - chipWidth;
+        int chipY = top + 4;
+        if (luma(color) >= DARK_TIER_LUMA) {
+            renderInset(graphics, chipX, chipY, chipWidth, TIER_HEIGHT, INSET_SHADOW);
+        }
+        graphics.drawString(font, name, chipX + TIER_PADDING, chipY + 2, color | 0xFF000000, false);
     }
 
-    private void renderRow(GuiGraphics graphics, NutrientRow row, PlayerNutritionData data, int x, int y) {
-        float value = data.get(row.id, row.def.defaultValue());
+    private static int luma(int color) {
+        int r = color >> 16 & 0xFF;
+        int g = color >> 8 & 0xFF;
+        int b = color & 0xFF;
+        return (r * 299 + g * 587 + b * 114) / 1000;
+    }
 
-        ItemStack icon = row.def.icon();
-        if (!icon.isEmpty()) graphics.renderItem(icon, x, y - 2);
+    private void renderRow(GuiGraphics graphics, Holder.Reference<NutrientDefinition> row, PlayerNutritionData data, int y) {
+        NutrientDefinition def = row.value();
+        ResourceLocation id = row.key().location();
+        float value = data.get(id, def.defaultValue());
 
-        Component name = Component.translatable("nutrient." + row.id.getNamespace() + "." + row.id.getPath());
-        graphics.drawString(font, name, x + ICON_COL, y + 2, 0xFFFFFF, false);
+        graphics.blitSprite(SLOT_SPRITE, left + PADDING, y, SLOT_SIZE, SLOT_SIZE);
+        ItemStack icon = def.icon();
+        if (!icon.isEmpty()) graphics.renderItem(icon, left + PADDING + 1, y + 1);
 
-        int barX = x + ICON_COL + NAME_COL;
-        int barY = y + 1;
-        graphics.fill(barX, barY, barX + BAR_WIDTH, barY + BAR_HEIGHT, 0xFF333333);
-        int filled = (int) (BAR_WIDTH * Math.min(1.0f, Math.max(0.0f, value / 100.0f)));
-        graphics.fill(barX, barY, barX + filled, barY + BAR_HEIGHT, row.def.color() | 0xFF000000);
-        graphics.renderOutline(barX, barY, BAR_WIDTH, BAR_HEIGHT, 0xFF000000);
+        int barX = left + BAR_X;
+        Component name = Component.translatable("nutrient." + id.getNamespace() + "." + id.getPath());
+        graphics.drawString(font, name, barX, y + 1, TEXT_COLOR, false);
 
-        String pct = String.format("%.0f%%", value);
-        graphics.drawString(font, pct, barX + BAR_WIDTH + 6, y + 2, 0xFFFFFF, false);
+        String percent = String.format("%.0f%%", value);
+        graphics.drawString(font, percent, barX + BAR_WIDTH - font.width(percent), y + 1, TEXT_COLOR, false);
+
+        int barY = y + SLOT_SIZE - BAR_HEIGHT;
+        renderInset(graphics, barX, barY, BAR_WIDTH, BAR_HEIGHT, BAR_TRACK);
+        int filled = (int) ((BAR_WIDTH - 2) * Math.min(1.0f, Math.max(0.0f, value / 100.0f)));
+        graphics.fill(barX + 1, barY + 1, barX + 1 + filled, barY + BAR_HEIGHT - 1, def.color() | 0xFF000000);
+    }
+
+    private static void renderInset(GuiGraphics graphics, int x, int y, int w, int h, int fill) {
+        graphics.fill(x, y, x + w, y + h, INSET_HIGHLIGHT);
+        graphics.fill(x, y, x + w - 1, y + h - 1, INSET_SHADOW);
+        graphics.fill(x + 1, y + 1, x + w - 1, y + h - 1, fill);
+    }
+
+    @Override
+    public void onClose() {
+        Minecraft.getInstance().setScreen(parent);
     }
 
     @Override
     public boolean isPauseScreen() {
         return false;
     }
-
-    private record NutrientRow(ResourceLocation id, NutrientDefinition def) {}
 }

@@ -34,12 +34,14 @@ public final class DefaultAdvancements implements AdvancementProvider.Advancemen
     private static final TagKey<Item> VEGETABLE_TAG = nutrientTag("vegetable");
     private static final TagKey<Item> DAIRY_TAG     = nutrientTag("dairy");
 
+    private static final ResourceLocation ROOT_BACKGROUND =
+            ResourceLocation.withDefaultNamespace("textures/gui/advancements/backgrounds/husbandry.png");
+
     @Override
     public void generate(HolderLookup.Provider lookup, Consumer<AdvancementHolder> saver, ExistingFileHelper existing) {
         AdvancementHolder root = Advancement.Builder.advancement()
                 .display(displayRoot())
-                .addCriterion("eat_anything",
-                        ConsumeItemTrigger.TriggerInstance.usedItem(ItemPredicate.Builder.item().of(FRUIT_TAG)))
+                .addCriterion("eat_anything", ConsumeItemTrigger.TriggerInstance.usedItem())
                 .requirements(AdvancementRequirements.Strategy.OR)
                 .save(saver, Nutritional.id("diet/root").toString());
 
@@ -97,7 +99,7 @@ public final class DefaultAdvancements implements AdvancementProvider.Advancemen
                 new ItemStack(Items.BREAD),
                 Component.translatable("advancement.nutritional.root"),
                 Component.translatable("advancement.nutritional.root.desc"),
-                Optional.empty(),
+                Optional.of(ROOT_BACKGROUND),
                 AdvancementType.TASK,
                 false, false, false);
     }

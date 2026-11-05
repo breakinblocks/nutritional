@@ -21,10 +21,9 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
-import java.util.TreeMap;
 
 @EventBusSubscriber(modid = Nutritional.MOD_ID, value = Dist.CLIENT)
 public final class NutritionTooltip {
@@ -47,23 +46,22 @@ public final class NutritionTooltip {
 
         Optional<NutrientScales> scales = Optional.ofNullable(
                 BuiltInRegistries.ITEM.wrapAsHolder(stack.getItem()).getData(NutritionalDataMaps.NUTRIENT_SCALES));
+        boolean showMultipliers = NutritionalConfig.CLIENT.tooltipShowMultipliers.get();
 
-        TreeMap<String, List<String>> byScale = new TreeMap<>();
+        MutableComponent line = Component.empty();
         for (ResourceLocation id : applicable) {
             NutrientDefinition def = nutrients.get(id);
             if (def == null || !def.visible()) continue;
-            float scale = scales.map(s -> s.scaleFor(id)).orElse(1.0f);
-            String scaleKey = String.format("%.2f", scale);
-            String displayName = Component.translatable(translationKey(id)).getString();
-            byScale.computeIfAbsent(scaleKey, k -> new ArrayList<>()).add(displayName);
+            if (!line.getSiblings().isEmpty()) {
+                line.append(Component.literal(", ").withStyle(ChatFormatting.GRAY));
+            }
+            line.append(Component.translatable(translationKey(id)).withColor(def.color()));
+            if (showMultipliers) {
+                float scale = scales.map(s -> s.scaleFor(id)).orElse(1.0f);
+                line.append(Component.literal(String.format(Locale.ROOT, " (%.2fx)", scale)).withStyle(ChatFormatting.DARK_AQUA));
+            }
         }
-        if (byScale.isEmpty()) return;
-
-        for (var entry : byScale.entrySet()) {
-            String names = String.join(", ", entry.getValue());
-            MutableComponent line = Component.literal("Nutrients: ").withStyle(ChatFormatting.DARK_GREEN)
-                    .append(Component.literal(names).withStyle(ChatFormatting.DARK_GREEN))
-                    .append(Component.literal(" (" + entry.getKey() + "x)").withStyle(ChatFormatting.DARK_AQUA));
+        if (!line.getSiblings().isEmpty()) {
             event.getToolTip().add(line);
         }
     }

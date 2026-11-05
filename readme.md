@@ -24,10 +24,10 @@ On top of the tiers:
 
 ## Seeing your diet
 
-- Press **N** to open a screen with a bar for every food group and your current diet tier.
+- Press **N**, or click the apple button next to the recipe book in your inventory, to open a screen with a bar for every food group and your current diet tier. If you use [Mod Tabs](https://www.curseforge.com/minecraft/mc-mods/mod-tabs), the screen also gets its own tab.
 - A small widget in the top-right corner shows your current tier at a glance. The diet screen has buttons to toggle it and to move it: pick **Move HUD**, then drag the widget wherever you like, or nudge it with the arrow keys. It snaps to screen edges and centers, and keeps its place when you change resolution or GUI scale.
-- Hovering a food shows which groups it fills and how much.
-- If you use JEI, looking up a food shows a "Provides nutrients" entry with the same information.
+- Hovering a food shows which groups it fills. Turn on `tooltip_show_multipliers` to see how much of each.
+- If you use JEI, looking up a food shows a "Provides nutrients" entry with the group multipliers.
 
 ## Advancements
 
@@ -37,7 +37,7 @@ The mod ships a small advancement tree for eating from each food group, eating a
 
 Most behavior can be changed in two config files:
 
-- `nutritional-client.toml` for personal display options like the tooltip, the HUD widget, and the diet screen button.
+- `nutritional-client.toml` for personal display options like the tooltip, the HUD widget, the inventory button and its position, and the Mod Tabs tab.
 - `nutritional-server.toml` for world rules like how fast groups drain, the death penalty, and overall difficulty multipliers.
 
 Pack makers can change far more than this through datapacks, covered next.
@@ -77,7 +77,7 @@ Two attributes are added and can be modified by equipment, mob effects, and othe
 - `/nutritional get|set|add|subtract|reset <player> <nutrient> [<value>]`
 - `/nutritional reload` reloads datapacks
 - `/nutritional-food` prints the nutrient yield for the held item
-- `/nutritional-food unmapped [<mod>]` lists every food that is not in any nutrient tag, or only the foods from one mod. Chat shows the first 50 and the full list is written to the server log.
+- `/nutritional-food unmapped [<mod>]` lists every food that is not in any nutrient tag, or only the foods from one mod. Chat shows the first 50 and the full list is saved to `logs/nutritional-unmapped-foods.txt` in the game folder, or `logs/nutritional-unmapped-foods-<mod>.txt` for one mod. On a dedicated server that file is on the server.
 
 All of these need operator permission.
 
@@ -88,7 +88,7 @@ Two options in the `logging` section of `nutritional-server.toml` help when addi
 - `missing_nutrients` logs a `Food with no nutrient mapping: <item>` line for every edible item that is not in any nutrient tag, then a total. An item counts as edible if a player can eat it for hunger, or if a food hint marks it as valid food.
 - `missing_food` logs a `Missing food item:` line for every item listed in a nutrient or food hint tag whose mod is installed but which does not exist, usually because the mod renamed or removed it. Items from mods that are not installed are skipped.
 
-For a quick check without restarting, `/nutritional-food unmapped` gives the same list as `missing_nutrients`.
+For a quick check without restarting, `/nutritional-food unmapped` gives the same list as `missing_nutrients`, in its own file with each food's name.
 
 ### Advancement triggers
 

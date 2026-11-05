@@ -1,16 +1,12 @@
 {
   "criteria": {
     "eat_anything": {
-      "conditions": {
-        "item": {
-          "items": "#nutritional:nutrient/fruit"
-        }
-      },
       "trigger": "minecraft:consume_item"
     }
   },
   "display": {
     "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png",
     "description": {
       "translate": "advancement.nutritional.root.desc"
     },

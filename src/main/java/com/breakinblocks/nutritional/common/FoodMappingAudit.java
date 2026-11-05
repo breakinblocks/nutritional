@@ -21,14 +21,19 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.fml.ModList;
+import net.neoforged.fml.loading.FMLPaths;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 public final class FoodMappingAudit {
@@ -53,6 +58,20 @@ public final class FoodMappingAudit {
             Nutritional.LOGGER.warn("Food with no nutrient mapping: {}", BuiltInRegistries.ITEM.getKey(item));
         }
         Nutritional.LOGGER.info("{} foods have no nutrient mapping.", unmapped.size());
+    }
+
+    public static Path writeUnmappedReport(List<Item> unmapped, Optional<String> mod) throws IOException {
+        List<String> lines = new ArrayList<>();
+        lines.add(unmapped.size() + " foods" + mod.map(m -> " from " + m).orElse("") + " have no nutrient mapping:");
+        for (Item item : unmapped) {
+            lines.add(BuiltInRegistries.ITEM.getKey(item) + " (" + new ItemStack(item).getHoverName().getString() + ")");
+        }
+        Path gameDir = FMLPaths.GAMEDIR.get();
+        Path report = gameDir.resolve("logs").resolve("nutritional-unmapped-foods" + mod.map(m -> "-" + m).orElse("") + ".txt");
+        Files.createDirectories(report.getParent());
+        Files.write(report, lines, StandardCharsets.UTF_8);
+        Nutritional.LOGGER.info("Wrote {} foods with no nutrient mapping to {}", unmapped.size(), report);
+        return gameDir.relativize(report);
     }
 
     public static void logMissingTagEntries(MinecraftServer server) {

@@ -34,6 +34,9 @@ public final class DefaultAdvancements implements AdvancementSubProvider {
     private static final TagKey<Item> VEGETABLE_TAG = nutrientTag("vegetable");
     private static final TagKey<Item> DAIRY_TAG     = nutrientTag("dairy");
 
+    private static final Identifier ROOT_BACKGROUND =
+            Identifier.withDefaultNamespace("gui/advancements/backgrounds/husbandry");
+
     @Override
     public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> saver) {
         HolderGetter<Item> items = registries.lookupOrThrow(Registries.ITEM);
@@ -43,11 +46,10 @@ public final class DefaultAdvancements implements AdvancementSubProvider {
                         new ItemStackTemplate(Items.BREAD),
                         Component.translatable("advancement.nutritional.root"),
                         Component.translatable("advancement.nutritional.root.desc"),
-                        Identifier.withDefaultNamespace("gui/advancements/backgrounds/stone"),
+                        ROOT_BACKGROUND,
                         AdvancementType.TASK,
                         false, false, false)
-                .addCriterion("eat_anything",
-                        ConsumeItemTrigger.TriggerInstance.usedItem(ItemPredicate.Builder.item().of(items, FRUIT_TAG)))
+                .addCriterion("eat_anything", ConsumeItemTrigger.TriggerInstance.usedItem())
                 .requirements(AdvancementRequirements.Strategy.OR)
                 .save(saver, Nutritional.id("diet/root").toString());
 

@@ -71,6 +71,5 @@
   "tier.nutritional.starving": "Starving",
   "tier.nutritional.starving.enter": "You feel yourself wasting away.",
   "tier.nutritional.starving.exit": "The hollow ache subsides.",
-  "tier.nutritional.surviving": "Surviving",
-  "tooltip.nutritional.nutrients": "Nutrients: %s"
+  "tier.nutritional.surviving": "Surviving"
 }

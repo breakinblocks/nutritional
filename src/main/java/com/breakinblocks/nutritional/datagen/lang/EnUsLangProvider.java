@@ -47,7 +47,6 @@ public final class EnUsLangProvider extends LanguageProvider {
         add(NutritionalMobEffects.TOUGHNESS.get().getDescriptionId(), "Toughness");
 
         add("commands.nutritional.set", "%s.%s = %s");
-        add("tooltip.nutritional.nutrients", "Nutrients: %s");
 
         add("screen.nutritional.title", "Nutrition");
         add("screen.nutritional.close", "Close");

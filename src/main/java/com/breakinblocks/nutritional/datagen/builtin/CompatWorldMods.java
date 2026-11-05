@@ -12,6 +12,8 @@ final class CompatWorldMods {
         alexsmobs();
         aquaculture();
         brewery();
+        chovys_apocalypse_mod();
+        cold_sweat();
         eternal_starlight();
         farm_and_charm();
         gobber2();
@@ -166,6 +168,35 @@ final class CompatWorldMods {
         food("brewery:whiskey_lilitusinglemalt", s("grain", 1.0f));
         food("brewery:whiskey_maggoallan", s("grain", 1.0f));
         food("brewery:whiskey_smokey_reverie", s("grain", 1.0f));
+    }
+
+    private static void chovys_apocalypse_mod() {
+        food("chovys_apocalypse_mod:banana", s("fruit", 1.0f));
+        food("chovys_apocalypse_mod:cannedbeef", s("protein", 1.0f));
+        food("chovys_apocalypse_mod:cannedmutton", s("protein", 1.0f));
+        food("chovys_apocalypse_mod:cannedpatato", s("vegetable", 1.0f));
+        food("chovys_apocalypse_mod:cannedsalmon", s("protein", 1.0f));
+        food("chovys_apocalypse_mod:cannedtuna", s("protein", 1.0f));
+        food("chovys_apocalypse_mod:cheese", s("dairy", 1.0f));
+        food("chovys_apocalypse_mod:chocolate", s("dairy", 0.3942f), s("fruit", 0.6058f));
+        food("chovys_apocalypse_mod:cookedanchovy", s("protein", 1.0f));
+        food("chovys_apocalypse_mod:corn", s("grain", 0.3333f), s("vegetable", 0.6667f));
+        food("chovys_apocalypse_mod:croissan", s("dairy", 0.25f), s("grain", 0.75f));
+        food("chovys_apocalypse_mod:donut", s("fruit", 0.25f), s("grain", 0.75f));
+        food("chovys_apocalypse_mod:lettuce", s("vegetable", 1.0f));
+        food("chovys_apocalypse_mod:milkbottle", s("dairy", 1.0f));
+        food("chovys_apocalypse_mod:mre", s("grain", 0.25f), s("protein", 0.5f), s("vegetable", 0.25f));
+        food("chovys_apocalypse_mod:necroshroom", s("vegetable", 1.0f));
+        food("chovys_apocalypse_mod:onion", s("vegetable", 1.0f));
+        food("chovys_apocalypse_mod:pepper", s("vegetable", 1.0f));
+        food("chovys_apocalypse_mod:proteinbar", s("grain", 0.25f), s("protein", 0.75f));
+        food("chovys_apocalypse_mod:rawanchovy", s("protein", 1.0f));
+        food("chovys_apocalypse_mod:soda", s("fruit", 1.0f));
+        food("chovys_apocalypse_mod:tomato", s("vegetable", 1.0f));
+    }
+
+    private static void cold_sweat() {
+        food("cold_sweat:soul_sprout", s("vegetable", 1.0f));
     }
 
     private static void eternal_starlight() {

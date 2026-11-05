@@ -86,7 +86,10 @@ public final class NutritionalConfig {
     public static final class Client {
         public final ModConfigSpec.BooleanValue guiEnabled;
         public final ModConfigSpec.BooleanValue guiButtonEnabled;
+        public final ModConfigSpec.IntValue guiButtonX;
+        public final ModConfigSpec.IntValue guiButtonY;
         public final ModConfigSpec.BooleanValue tooltipEnabled;
+        public final ModConfigSpec.BooleanValue tooltipShowMultipliers;
         public final ModConfigSpec.BooleanValue hudEnabled;
         public final ModConfigSpec.BooleanValue hudAlwaysShow;
         public final ModConfigSpec.EnumValue<HudAnchor> hudAnchor;
@@ -95,9 +98,18 @@ public final class NutritionalConfig {
 
         Client(ModConfigSpec.Builder b) {
             b.push("ui");
-            guiEnabled = b.define("gui_enabled", true);
-            guiButtonEnabled = b.define("gui_button_enabled", true);
-            tooltipEnabled = b.define("tooltip_enabled", true);
+            guiEnabled = b.comment("Allow the nutrition screen to open. When false, the hotkey and the inventory button are turned off.")
+                    .define("gui_enabled", true);
+            guiButtonEnabled = b.comment("Show the nutrition button next to the recipe book in the inventory.")
+                    .define("gui_button_enabled", true);
+            guiButtonX = b.comment("Horizontal position of the inventory button, in pixels from the left edge of the inventory.")
+                    .defineInRange("gui_button_x", 126, -4096, 4096);
+            guiButtonY = b.comment("Vertical position of the inventory button, in pixels from the middle of the screen. The recipe book button sits at -22.")
+                    .defineInRange("gui_button_y", -22, -4096, 4096);
+            tooltipEnabled = b.comment("Show the food groups a food belongs to in its tooltip.")
+                    .define("tooltip_enabled", true);
+            tooltipShowMultipliers = b.comment("Also show each food group's multiplier in the tooltip, such as Grain (1.00x).")
+                    .define("tooltip_show_multipliers", false);
             hudEnabled = b.comment("Render the diet-tier HUD widget.")
                     .define("hud_enabled", true);
             hudAlwaysShow = b.comment("Keep the diet-tier HUD widget on screen. When false it shows for 10 seconds after the tier changes, then fades out.")

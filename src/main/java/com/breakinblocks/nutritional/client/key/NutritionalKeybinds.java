@@ -2,6 +2,7 @@ package com.breakinblocks.nutritional.client.key;
 
 import com.breakinblocks.nutritional.Nutritional;
 import com.breakinblocks.nutritional.client.screen.NutritionScreen;
+import com.breakinblocks.nutritional.config.NutritionalConfig;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
@@ -44,7 +45,9 @@ public final class NutritionalKeybinds {
             Minecraft mc = Minecraft.getInstance();
             if (mc.player == null || mc.screen != null) return;
             while (OPEN_NUTRITION.consumeClick()) {
-                mc.setScreen(new NutritionScreen());
+                if (NutritionalConfig.CLIENT.guiEnabled.get()) {
+                    mc.setScreen(new NutritionScreen(null));
+                }
             }
         }
     }
